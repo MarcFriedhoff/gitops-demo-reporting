@@ -1,0 +1,77 @@
+replicaCount: 1
+
+image:
+  repository: elasticsearch
+  tag: 8.5.1
+  pullPolicy: IfNotPresent
+
+serviceAccountName: elastic
+
+resources:
+  limits:
+    cpu: "1"
+    memory: 2Gi
+  requests:
+    cpu: 400m
+    memory: 1500Mi
+
+probes:
+  readinessProbe:
+    initialDelaySeconds: 5
+    httpGet:
+      path: /_cluster/health?local=true
+      port: 9200
+
+ports:
+  - name: req
+    containerPort: 9200
+    protocol: TCP
+  - name: inter-node
+    containerPort: 9300
+    protocol: TCP
+
+env:
+  - name: cluster.name
+    value: es-cluster-ocp
+  - name: node.name
+    valueFrom:
+      fieldRef:
+        fieldPath: metadata.name
+  - name: discovery.type
+    value: "single-node"
+  - name: ES_JAVA_OPTS
+    value: "-Xms1024m -Xmx1024m"
+  - name: xpack.security.enabled
+    value: "false"
+  - name: bootstrap.memory_lock
+    value: "false"
+
+initContainers:
+  - name: fix-permissions
+    image: busybox
+    command: ["sh", "-c", "chown -R 1000:1000 /usr/share/elasticsearch/data"]
+  - name: increase-vm-max-map
+    image: busybox
+    command: ["sysctl", "-w", "vm.max_map_count=262144"]
+  - name: increase-fd-ulimit
+    image: busybox
+    command: ["sh", "-c", "ulimit -n 65536"]
+
+volumeClaimTemplates:
+  - name: data
+    accessModes: [ "ReadWriteOnce" ]
+    resources:
+      requests:
+        storage: 10Gi
+
+service:
+  type: ClusterIP
+  ports:
+    - port: 9200
+      targetPort: 9200
+      protocol: TCP
+
+route:
+  host: elastic.apps-crc.testing
+  tls:
+    termination: edge

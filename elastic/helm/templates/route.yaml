@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: elasticsearch-route
+  labels:
+    app: es-cluster
+spec:
+  to:
+    kind: Service
+    name: elasticsearch
+  port:
+    targetPort: 9200
+ 

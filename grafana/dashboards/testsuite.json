@@ -1,0 +1,109 @@
+{
+    "dashboard": {
+      "id": null,
+      "title": "Test Suite Results",
+      "timezone": "browser",
+      "panels": [
+        {
+          "type": "barchart",
+          "title": "Test Suite Summary",
+          "datasource": "es-testsuite",
+          "gridPos": {
+            "x": 0,
+            "y": 0,
+            "w": 12,
+            "h": 9
+          },
+          "fieldConfig": {
+            "defaults": {
+              "custom": {
+                "align": null
+              }
+            },
+            "overrides": []
+          },
+          "options": {
+            "legend": {
+              "displayMode": "list",
+              "placement": "right"
+            },
+            "stacking": {
+              "group": "stacked",
+              "mode": "normal"
+            }
+          },
+          "targets": [
+            {
+              "refId": "A",
+              "metrics": [
+                {
+                  "id": "1",
+                  "type": "sum",
+                  "field": "tests"
+                }
+              ],
+              "bucketAggs": [
+                {
+                  "type": "terms",
+                  "field": "name",
+                  "id": "2"
+                },
+                {
+                  "type": "date_histogram",
+                  "field": "timestamp",
+                  "id": "3"
+                }
+              ]
+            },
+            {
+              "refId": "B",
+              "metrics": [
+                {
+                  "id": "1",
+                  "type": "sum",
+                  "field": "failures"
+                }
+              ],
+              "bucketAggs": [
+                {
+                  "type": "terms",
+                  "field": "name",
+                  "id": "2"
+                },
+                {
+                  "type": "date_histogram",
+                  "field": "timestamp",
+                  "id": "3"
+                }
+              ]
+            },
+            {
+              "refId": "C",
+              "metrics": [
+                {
+                  "id": "1",
+                  "type": "sum",
+                  "field": "errors"
+                }
+              ],
+              "bucketAggs": [
+                {
+                  "type": "terms",
+                  "field": "name",
+                  "id": "2"
+                },
+                {
+                  "type": "date_histogram",
+                  "field": "timestamp",
+                  "id": "3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "schemaVersion": 30,
+      "version": 1
+    }
+  }
+  

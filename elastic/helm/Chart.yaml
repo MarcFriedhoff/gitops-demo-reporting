@@ -1,0 +1,10 @@
+apiVersion: v2
+name: es-chart
+description: A simple Helm chart for Kubernetes to deploy an Elasticsearch cluster
+type: application
+version: 0.1.0
+appVersion: "8.5.1"
+keywords:
+  - elasticsearch
+  - es
+  - search
