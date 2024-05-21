@@ -1,3 +1,2 @@
+go 1.17
 module junit
-
-go 1.21.6
