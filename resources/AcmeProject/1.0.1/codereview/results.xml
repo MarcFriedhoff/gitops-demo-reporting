@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results buildName="Current build" totalChecks="14615" totalFailed="313" totalPassed="13902" totalWarnings="400">
+                            
+    
+    
+    
+    
+    
+    <result date="2024-02-27T07:05:01+0000" packageName="AcmeAtContractServiceV2" totalChecks="2978" totalFailed="4" totalPassed="2972" totalWarnings="2"/>
+                        
+    
+    
+    
+    
+    
+    <result date="2024-02-27T07:05:31+0000" packageName="AcmeAtIntegration" totalChecks="3949" totalFailed="130" totalPassed="3819" totalWarnings="0"/>
+                    
+    
+    
+    
+    
+    <result date="2024-02-27T07:06:05+0000" packageName="AcmeECMAccessManagementCache" totalChecks="644" totalFailed="0" totalPassed="642" totalWarnings="2"/>
+                
+    
+    
+    
+    <result date="2024-02-27T07:06:15+0000" packageName="AcmeGlobal" totalChecks="3435" totalFailed="48" totalPassed="3188" totalWarnings="199"/>
+            
+    
+    
+    <result date="2024-02-27T07:06:35+0000" packageName="AcmeLogging" totalChecks="1001" totalFailed="26" totalPassed="967" totalWarnings="8"/>
+        
+    
+    <result date="2024-02-27T07:06:43+0000" packageName="AcmeSecurityHelper" totalChecks="177" totalFailed="1" totalPassed="166" totalWarnings="10"/>
+    
+    <result date="2024-02-27T07:06:47+0000" packageName="AcmeSupport" totalChecks="2431" totalFailed="104" totalPassed="2148" totalWarnings="179"/>
+</results>

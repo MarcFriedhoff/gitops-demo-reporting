@@ -1,0 +1,38 @@
+# create deployment for the application
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: build-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: build-dashboard
+  template:
+    metadata:
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/cm.yaml") . | sha256sum }}
+      labels:
+        app: build-dashboard
+    spec:
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecrets }}
+      containers:
+        - name: build-dashboard
+          env:
+            - name: CONFIG_FILE
+              value: /config/config.yaml
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 3001
+          volumeMounts:
+            - name: build-dashboard
+              mountPath: /projects
+      volumes:
+        - configMap:
+            name: gitops-config
+          name: gitops-config
+        - name: gitops-dashboard
+          persistentVolumeClaim:
+            claimName: build-dashboard-pvc

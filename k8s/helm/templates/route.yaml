@@ -1,0 +1,17 @@
+# openshift route
+{{- if .Values.route.enabled }}
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: build-dashboard
+spec:
+  host: {{ .Values.host }}
+  to:
+    kind: Service
+    name: build-dashboard
+    weight: 100
+  port:
+    targetPort: 80
+  tls:
+    termination: edge
+{{- end }}

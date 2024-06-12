@@ -1,0 +1,67 @@
+Status: FAILED
+Time Taken: 1505
+Size: 696
+Timestamp: Thu Mar 07 09:05:12 GMT 2024
+TestStep: 01 getElectronicFileList - Success
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:500 is not in acceptable list of status codes
+[XPath Match <status> SUCCESS] XPathContains assertion failed for path [//status] : Exception:Missing content for xpath [//status] in Response
+[XPath Match <ResultSize> 11] XPathContains assertion failed for path [//ResultInfo/ResultSize] : Exception:Missing content for xpath [//ResultInfo/ResultSize] in Response
+
+----------------- Properties ------------------------------
+Endpoint: http://uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws/uniqa.integration.contract.v2.ws.provider:ContractService/ContractServiceSOAP
+Username: uesbpegacrm
+domain: 
+Encoding: UTF-8
+Password: RVU6j4gw
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://uniqa.at/schema/integration/service/ContractService/v2/getElectronicFileList"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 1076
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://uniqa.at/schema/common/service/header/v1" xmlns:v2="http://uniqa.at/schema/integration/service/ContractService/v2">
+   <soapenv:Header>
+      <v1:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>12121212</contextId>
+            <messageId>34343434</messageId>
+            <timestamp>2019-09-09T12:00:00</timestamp>
+         </messageIdentity>
+         <consumer>
+            <applicationName>ABC</applicationName>
+         </consumer>
+      </v1:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v2:getElectronicFileListRequest>
+         <UserId>vaxfash</UserId>
+         <Versicherungsscheinnummer>2492735</Versicherungsscheinnummer>
+         <MandantenCodeVersicherungsscheinnummer>USV</MandantenCodeVersicherungsscheinnummer>
+         <VertragsSystemCode>S085</VertragsSystemCode>
+         <Host>W</Host>
+      </v2:getElectronicFileListRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 500 [ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'uniqa.integration.contract.v2.pub:getElectronicFileList' invoking unknown service 'uniqa.logging.pub.common:setTrackingId' at 'Invoke for uniqa.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>[ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'uniqa.integration.contract.v2.pub:getElectronicFileList' invoking unknown service 'uniqa.logging.pub.common:setTrackingId' at 'Invoke for uniqa.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.</faultstring>
+         <faultactor>http://uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws</faultactor>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>

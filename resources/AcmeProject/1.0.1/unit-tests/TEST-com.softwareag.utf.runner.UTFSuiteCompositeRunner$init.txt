@@ -1,0 +1,821 @@
+Testsuite: com.softwareag.utf.runner.UTFSuiteCompositeRunner$init
+Tests run: 142, Failures: 3, Errors: 4, Skipped: 0, Time elapsed: 1.889 sec
+------------- Standard Output ---------------
+[WmTestSuite]::Thu Mar 07 08:59:29 UTC 2024::Suite Started : AcmeAtContractService Unit Tests: 02 getContractDetails file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite02_getContractDetails.xml
+[WmTestSuite]::Thu Mar 07 08:59:29 UTC 2024::Test Started: 0.0 TC02 - mapToBackend - mapGetContractDetailsRequestToRead
+[WmTestSuite]::Thu Mar 07 08:59:29 UTC 2024::Test Finished: 0.0 TC02 - mapToBackend - mapGetContractDetailsRequestToRead
+[WmTestSuite]::Thu Mar 07 08:59:29 UTC 2024::Duration : 0.092 seconds
+[WmTestSuite]::Thu Mar 07 08:59:29 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:29 UTC 2024::Test Started: 0.1 TC07 - mapToUIDM - mapToGetContractDetailsResponse
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Failure
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.1 TC07 - mapToUIDM - mapToGetContractDetailsResponse
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.2155 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.2 TC08 - mapToUIDM - subMapAenderungsgrund
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.2 TC08 - mapToUIDM - subMapAenderungsgrund
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0283 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.3 TC09 - mapToUIDM - subMapBankverbindung
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.3 TC09 - mapToUIDM - subMapBankverbindung
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.01 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.4 TC10 - mapToUIDM - subMapBeitrag
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.4 TC10 - mapToUIDM - subMapBeitrag
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0103 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.5 TC11 - mapToUIDM - subMapHostsystem
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.5 TC11 - mapToUIDM - subMapHostsystem
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0073 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.6 TC12 - mapToUIDM - subMapProvisionsteilung - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.6 TC12 - mapToUIDM - subMapProvisionsteilung - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.007 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.7 TC12a - mapToUIDM - subMapProvisionsteilung - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.7 TC12a - mapToUIDM - subMapProvisionsteilung - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0064 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.8 TC12b - mapToUIDM - subMapProvisionsteilung - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.8 TC12b - mapToUIDM - subMapProvisionsteilung - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0071 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.9 TC13 - mapToUIDM - subMapVerkaufsprodukt
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.9 TC13 - mapToUIDM - subMapVerkaufsprodukt
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0069 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.10 TC14 - mapToUIDM - subMapVermittler
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.10 TC14 - mapToUIDM - subMapVermittler
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0077 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.11 TC15 - mapToUIDM - subMapVertragsklauseln - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.11 TC15 - mapToUIDM - subMapVertragsklauseln - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.035 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.12 TC15a - mapToUIDM - subMapVertragsklauseln - 1 element with 2 Klasuenzeilen
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.12 TC15a - mapToUIDM - subMapVertragsklauseln - 1 element with 2 Klasuenzeilen
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0073 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.13 TC15b - mapToUIDM - subMapVertragsklauseln - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.13 TC15b - mapToUIDM - subMapVertragsklauseln - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0061 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.14 TC15c - mapToUIDM - subMapVertragsklauseln - 1 element with 1 Klausenzeile
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.14 TC15c - mapToUIDM - subMapVertragsklauseln - 1 element with 1 Klausenzeile
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0072 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.15 TC15d - mapToUIDM - subMapVertragsklauseln - 1 element with 0 Klausenzeile
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.15 TC15d - mapToUIDM - subMapVertragsklauseln - 1 element with 0 Klausenzeile
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0098 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.16 TC16 - mapToUIDM - subMapVertragspersonen - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.16 TC16 - mapToUIDM - subMapVertragspersonen - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0064 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.17 TC16a - mapToUIDM - subMapVertragspersonen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.17 TC16a - mapToUIDM - subMapVertragspersonen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0073 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.18 TC16b - mapToUIDM - subMapVertragspersonen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.18 TC16b - mapToUIDM - subMapVertragspersonen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0062 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.19 TC17 - mapToUIDM - subMapVertragsstatus
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.19 TC17 - mapToUIDM - subMapVertragsstatus
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0055 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.20 TC18 - subMapToUIDM - subMapVertragszuordnungen - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.20 TC18 - subMapToUIDM - subMapVertragszuordnungen - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0062 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.21 TC18a - subMapToUIDM - subMapVertragszuordnungen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.21 TC18a - subMapToUIDM - subMapVertragszuordnungen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0051 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.22 TC18b - subMapToUIDM - subMapVertragszuordnungen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.22 TC18b - subMapToUIDM - subMapVertragszuordnungen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0055 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.23 TC19 - subMapToUIDM - subMapZahlungsart
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.23 TC19 - subMapToUIDM - subMapZahlungsart
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0057 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.24 TC20 - subMapToUIDM - subMapZahlungsweise
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.24 TC20 - subMapToUIDM - subMapZahlungsweise
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0065 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.25 TC21 - mapToUIDM - subMapLeistungsstoerung - J
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.25 TC21 - mapToUIDM - subMapLeistungsstoerung - J
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0051 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.26 TC22 - mapToUIDM - subMapLeistungsstoerung - N
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.26 TC22 - mapToUIDM - subMapLeistungsstoerung - N
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0046 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.27 TC22a - mapToUIDM - subMapLeistungsstoerung - N (null)
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.27 TC22a - mapToUIDM - subMapLeistungsstoerung - N (null)
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0046 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 0.28 TC23 - mapToUIDM - subMapContractDetails - subMapKlauselZeile
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 0.28 TC23 - mapToUIDM - subMapContractDetails - subMapKlauselZeile
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0257 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Suite Ended : AcmeAtContractService Unit Tests: 02 getContractDetails file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite02_getContractDetails.xml
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Suite Started : AcmeAtContractService Unit Tests: 02 searchContracts file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite03_searchContractDetails.xml
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.0 TC01.01 -  mapToUIDM - subMapToVertrag (no techn user auth)
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Failure
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.0 TC01.01 -  mapToUIDM - subMapToVertrag (no techn user auth)
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0187 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.1 TC01.02 -  mapToUIDM - subMapToVertrag (techn user auth)
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.1 TC01.02 -  mapToUIDM - subMapToVertrag (techn user auth)
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0229 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.2 TC31 - mapToUIDM - subMapToBeitrag
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.2 TC31 - mapToUIDM - subMapToBeitrag
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0047 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.3 TC31a - mapToUIDM - subMapToBeitrag
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.3 TC31a - mapToUIDM - subMapToBeitrag
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0053 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.4 TC32 - mapToUIDM - subMapToBerufsschlussel
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.4 TC32 - mapToUIDM - subMapToBerufsschlussel
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0044 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.5 TC33 - mapToUIDM - subMapToVertragsnummer
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.5 TC33 - mapToUIDM - subMapToVertragsnummer
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0041 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.6 TC34 - mapToUIDM - subMapToPolizzentyp
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.6 TC34 - mapToUIDM - subMapToPolizzentyp
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0037 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.7 TC35 - mapToUIDM - subMapToHostsystem
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.7 TC35 - mapToUIDM - subMapToHostsystem
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0042 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.8 TC36 - mapToUIDM - subMapToVermittler
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.8 TC36 - mapToUIDM - subMapToVermittler
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.9 TC37 - mapToUIDM - subMapToProdukt
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.9 TC37 - mapToUIDM - subMapToProdukt
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0044 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.10 TC38 - mapToUIDM - subMapToZahlungsweise
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.10 TC38 - mapToUIDM - subMapToZahlungsweise
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0038 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.11 TC39 - mapToUIDM - subMapToZahlungsart
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.11 TC39 - mapToUIDM - subMapToZahlungsart
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0038 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.12 TC40 - mapToUIDM - subMapToVertragsstatus
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.12 TC40 - mapToUIDM - subMapToVertragsstatus
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0037 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.13 TC41 - mapToUIDM - subMapToPartnertyp
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.13 TC41 - mapToUIDM - subMapToPartnertyp
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0039 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.14 TC41a - mapToUIDM - subMapToPartnerContainer - NatuerlichePerson
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Failure
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::java.lang.AssertionError: partnerContainer[0]/partner:NatuerlichePerson/partner:Geburtsdatum :Expected and actual objects don't match.: expected <1980-02-01> but was <1980-01-31>
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at junit.framework.TestCase.runBare(TestCase.java:142)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:130)
+	at junit.framework.TestSuite.runTest(TestSuite.java:241)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at junit.framework.TestSuite.run(TestSuite.java:236)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:50)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1197)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1042)
+
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.14 TC41a - mapToUIDM - subMapToPartnerContainer - NatuerlichePerson
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0152 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.15 TC41b - mapToUIDM - subMapToPartnerContainer - Null
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.15 TC41b - mapToUIDM - subMapToPartnerContainer - Null
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0056 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.16 TC42 - mapToUIDM - subMapToAkademischertitel
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.16 TC42 - mapToUIDM - subMapToAkademischertitel
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0056 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.17 TC43 - mapToUIDM - subMapToGeschlecht
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.17 TC43 - mapToUIDM - subMapToGeschlecht
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0044 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.18 TC44 - mapToUIDM - subMapToFamilienstand
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.18 TC44 - mapToUIDM - subMapToFamilienstand
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0044 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.19 TC45 - mapToUIDM - subMapToStaatsangehoerigkeit
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.19 TC45 - mapToUIDM - subMapToStaatsangehoerigkeit
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0042 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.20 TC46 - mapToUIDM - subMapToRechtsform
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.20 TC46 - mapToUIDM - subMapToRechtsform
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0047 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.21 TC47 - mapToUIDM - subMapToBetriebsart
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.21 TC47 - mapToUIDM - subMapToBetriebsart
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0054 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.22 TC48 - mapToUIDM - subMapToAnschrift
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.22 TC48 - mapToUIDM - subMapToAnschrift
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0047 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.23 TC49 - mapToUIDM - mapToSearchContractsResponse - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Failure
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.23 TC49 - mapToUIDM - mapToSearchContractsResponse - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0279 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.24 TC50 - mapToUIDM - mapToSearchContractsResponse - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Failure
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.24 TC50 - mapToUIDM - mapToSearchContractsResponse - 2 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0283 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.25 TC51 - mapToUIDM - mapToSearchContractsResponse - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.25 TC51 - mapToUIDM - mapToSearchContractsResponse - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0053 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.26 TC65 - mapToBackend - mapToVertragSearch
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.26 TC65 - mapToBackend - mapToVertragSearch
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0077 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.27 TC107 - mapToUIDM - subMapBenutzerAuthorisierung - all 3 attributes set
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.27 TC107 - mapToUIDM - subMapBenutzerAuthorisierung - all 3 attributes set
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0053 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.28 TC107b - mapToUIDM - subMapBenutzerAuthorisierung - 1 attribute set
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.28 TC107b - mapToUIDM - subMapBenutzerAuthorisierung - 1 attribute set
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0053 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.29 TC107c - mapToUIDM - subMapBenutzerAuthorisierung - 0 attributes set
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.29 TC107c - mapToUIDM - subMapBenutzerAuthorisierung - 0 attributes set
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 1.30 TC108 - mapToUIDM - subMapToHauptsparte
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 1.30 TC108 - mapToUIDM - subMapToHauptsparte
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0088 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Suite Ended : AcmeAtContractService Unit Tests: 02 searchContracts file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite03_searchContractDetails.xml
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Suite Started : AcmeAtContractService Unit Tests: 01 errorHandling file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite01_errorHandling.xml
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.0 TC03 - errorHandling - checkReadResponse - SUCCESS
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.0 TC03 - errorHandling - checkReadResponse - SUCCESS
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0052 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.1 TC04 - errorHandling - checkReadResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.1 TC04 - errorHandling - checkReadResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0196 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.2 TC05a - errorHandling - checkReadResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.2 TC05a - errorHandling - checkReadResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0114 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.3 TC05b - errorHandling - checkReadResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.3 TC05b - errorHandling - checkReadResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0075 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.4 TC06 - errorHandling - checkReadResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.4 TC06 - errorHandling - checkReadResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0074 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.5 TC24 - errorHandling - checkReadPositionszeilenResponse - SUCCESS
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.5 TC24 - errorHandling - checkReadPositionszeilenResponse - SUCCESS
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0048 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.6 TC25 - errorHandling - checkReadPositionszeilenResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.6 TC25 - errorHandling - checkReadPositionszeilenResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.7 TC26a - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.7 TC26a - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0079 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.8 TC26b - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.8 TC26b - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0086 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.9 TC27 - errorHandling - checkReadPositionszeilenResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Finished: 2.9 TC27 - errorHandling - checkReadPositionszeilenResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Duration : 0.0065 seconds
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:30 UTC 2024::Test Started: 2.10 TC27b - errorHandling - checkReadPositionszeilenResponse - FAULT HANDLING
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.10 TC27b - errorHandling - checkReadPositionszeilenResponse - FAULT HANDLING
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0244 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.11 TC52 - errorHandling - checkSearchResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.11 TC52 - errorHandling - checkSearchResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0048 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.12 TC53a - errorHandling - checkSearchResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.12 TC53a - errorHandling - checkSearchResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0073 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.13 TC53b - errorHandling - checkSearchResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.13 TC53b - errorHandling - checkSearchResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0071 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.14 TC53c - errorHandling - checkSearchResponse - BAD_REQUEST_4111 MessageId = 020006
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.14 TC53c - errorHandling - checkSearchResponse - BAD_REQUEST_4111 MessageId = 020006
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.007 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.15 TC53d - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 200020
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.15 TC53d - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 200020
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0086 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.16 TC53e - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 010805
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.16 TC53e - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 010805
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0087 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.17 TC53f - errorHandling - checkSearchResponse - BAD_REQUEST_4103
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.17 TC53f - errorHandling - checkSearchResponse - BAD_REQUEST_4103
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0093 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.18 TC53g - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200014
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.18 TC53g - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200014
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0084 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.19 TC53h - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200015
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.19 TC53h - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200015
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0081 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.20 TC53i - errorHandling - checkSearchResponse - BAD_REQUEST_4202
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.20 TC53i - errorHandling - checkSearchResponse - BAD_REQUEST_4202
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0082 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.21 TC53j - errorHandling - checkSearchResponse - BAD_REQUEST_4011
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.21 TC53j - errorHandling - checkSearchResponse - BAD_REQUEST_4011
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0078 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.22 TC53k - errorHandling - checkSearchResponse - BAD_REQUEST_4119
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.22 TC53k - errorHandling - checkSearchResponse - BAD_REQUEST_4119
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0077 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.23 TC54 - errorHandling - checkSearchResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.23 TC54 - errorHandling - checkSearchResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.01 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.24 TC54a - errorHandling - checkSearchResponse - INTERNAL_ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.24 TC54a - errorHandling - checkSearchResponse - INTERNAL_ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0084 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.25 TC54b - errorHandling - checkSearchResponse - FAULT HANDLING
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.25 TC54b - errorHandling - checkSearchResponse - FAULT HANDLING
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0059 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.26 TC56 - errorHandling - checkReadVersicherteKFZResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.26 TC56 - errorHandling - checkReadVersicherteKFZResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.004 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.27 TC57a - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.27 TC57a - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.007 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.28 TC57b - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.28 TC57b - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0065 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.29 TC58 - errorHandling - checkReadVersicherteKFZResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.29 TC58 - errorHandling - checkReadVersicherteKFZResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0065 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.30 TC76 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.30 TC76 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.006 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.31 TC77 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4701
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.31 TC77 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4701
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0063 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.32 TC78 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4702
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.32 TC78 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4702
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0069 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.33 TC79 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.33 TC79 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0078 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.34 TC80 - errorHandling - checkElektrAktLesenResponse - ERROR_5140
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.34 TC80 - errorHandling - checkElektrAktLesenResponse - ERROR_5140
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0156 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.35 TC81 - errorHandling - checkElektrAktLesenResponse - INTERNAL_ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.35 TC81 - errorHandling - checkElektrAktLesenResponse - INTERNAL_ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0067 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.36 TC82 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.36 TC82 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0079 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.37 TC83 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.37 TC83 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0066 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.38 TC95 - ErrorHandling - checkReadRiskoAdressenResponse - SUCCESS
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.38 TC95 - ErrorHandling - checkReadRiskoAdressenResponse - SUCCESS
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.39 TC96 - ErrorHandling - checkReadRiskoAdressenResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.39 TC96 - ErrorHandling - checkReadRiskoAdressenResponse - NOTFOUND
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.40 TC97 - ErrorHandling - checkReadRiskoAdressenResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.40 TC97 - ErrorHandling - checkReadRiskoAdressenResponse - ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0077 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.41 TC98 - ErrorHandling - checkReadRiskoAdressenResponse - INTERNAL_ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.41 TC98 - ErrorHandling - checkReadRiskoAdressenResponse - INTERNAL_ERROR
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0099 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.42 TC99 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.42 TC99 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4000
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0087 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.43 TC100 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.43 TC100 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4010
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0106 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 2.44 TC101 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4701
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 2.44 TC101 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4701
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0092 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Suite Ended : AcmeAtContractService Unit Tests: 01 errorHandling file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite01_errorHandling.xml
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Suite Started : AcmeAtContractService Unit Tests: 04 all other operations file=/workspace/source/packages/AcmeAtContractServiceV2_Test/resources/test/setup/Testsuite04_otherOperations.xml
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.0 TC23 - mapToBackend - mapToReadPositionszeilen
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.0 TC23 - mapToBackend - mapToReadPositionszeilen
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0049 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.1 TC28 - mapToUIDM - mapToGetContractRiskPositionsFormattedResponse
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.1 TC28 - mapToUIDM - mapToGetContractRiskPositionsFormattedResponse
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0151 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.2 TC29 - mapToUIDM - subMapVertragPositionsZeilen - many elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.2 TC29 - mapToUIDM - subMapVertragPositionsZeilen - many elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.005 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.3 TC29a - mapToUIDM - subMapVertragPositionsZeilen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.3 TC29a - mapToUIDM - subMapVertragPositionsZeilen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0045 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.4 TC29b - mapToUIDM - subMapVertragPositionsZeilen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.4 TC29b - mapToUIDM - subMapVertragPositionsZeilen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0039 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.5 TC30 - mapToUIDM - subMapErweiterungen - many elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.5 TC30 - mapToUIDM - subMapErweiterungen - many elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0045 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.6 TC30a - mapToUIDM - subMapErweiterungen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.6 TC30a - mapToUIDM - subMapErweiterungen - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0041 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.7 TC30b - mapToUIDM - subMapErweiterungen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.7 TC30b - mapToUIDM - subMapErweiterungen - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0047 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.8 TC55 - mapToBackend - mapToReadVersicherteKFZ
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.8 TC55 - mapToBackend - mapToReadVersicherteKFZ
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.005 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.9 TC59 - mapToUIDM - subMapFahrzeugliste - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.9 TC59 - mapToUIDM - subMapFahrzeugliste - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.10 TC60 - mapToUIDM - subMapFahrzeugliste - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.10 TC60 - mapToUIDM - subMapFahrzeugliste - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0054 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.11 TC61 - mapToUIDM - subMapFahrzeugliste - 3 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.11 TC61 - mapToUIDM - subMapFahrzeugliste - 3 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0064 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.12 TC62 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.12 TC62 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 0 elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0039 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.13 TC63 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.13 TC63 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 1 element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0062 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.15 TC65 - mapToBackend - mapToVertragSearch
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.15 TC65 - mapToBackend - mapToVertragSearch
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0056 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.16 TC66 - mapToBackend - mapGetElectronicFileListRequestToElektrAktLesen
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.16 TC66 - mapToBackend - mapGetElectronicFileListRequestToElektrAktLesen
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0052 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.17 TC67 - mapToUIDM - mapToGetElectronicFileListResponse - multiple elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.17 TC67 - mapToUIDM - mapToGetElectronicFileListResponse - multiple elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0075 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.18 TC68 - mapToUIDM - mapToGetElectronicFileListResponse - one element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.18 TC68 - mapToUIDM - mapToGetElectronicFileListResponse - one element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0066 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.19 TC69 - mapToUIDM - mapToGetElectronicFileListResponse - no element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.19 TC69 - mapToUIDM - mapToGetElectronicFileListResponse - no element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0053 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.20 TC70 - mapToUIDM - subMapToElektronischerAktEintragListe - multiple elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.20 TC70 - mapToUIDM - subMapToElektronischerAktEintragListe - multiple elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0109 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.21 TC71 - mapToUIDM - subMapToElektronischerAktEintragListe - one element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.21 TC71 - mapToUIDM - subMapToElektronischerAktEintragListe - one element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0059 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.22 TC72 - mapToUIDM - subMapToElektronischerAktEintragListe - no element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.22 TC72 - mapToUIDM - subMapToElektronischerAktEintragListe - no element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0043 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.23 TC73 - mapToUIDM - subMapToTextZeile - multiple elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.23 TC73 - mapToUIDM - subMapToTextZeile - multiple elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0059 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.24 TC74 - mapToUIDM - subMapToTextZeile - one element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.24 TC74 - mapToUIDM - subMapToTextZeile - one element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0045 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.25 TC75 - mapToUIDM - subMapToTextZeile - no element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.25 TC75 - mapToUIDM - subMapToTextZeile - no element
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0035 seconds
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Success
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Started: 3.26 TC84 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - n elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Result: Failure
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::java.lang.AssertionError: tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don't match.: expected <2015-01-01> but was <2014-12-31>
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at junit.framework.TestCase.runBare(TestCase.java:142)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:130)
+	at junit.framework.TestSuite.runTest(TestSuite.java:241)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at junit.framework.TestSuite.run(TestSuite.java:236)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:50)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1197)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1042)
+
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Test Finished: 3.26 TC84 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - n elements
+[WmTestSuite]::Thu Mar 07 08:59:31 UTC 2024::Duration : 0.0072 seco------------- ---------------- ---------------
+------------- Standard Error -----------------
+[Fatal Error] :1:1: Premature end of file.
+[Fatal Error] :1:1: Premature end of file.
+[Fatal Error] :23:3: The element type "record" must be terminated by the matching end-tag "</record>".
+com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.com.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:Mandatory input parameter is missing!com.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"status":"ERROR"}com.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:Input parameters missing!com.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"status":"ERROR"}com.wm.lang.flow.FlowException:Invalid or insufficient input parametercom.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:Combination of search criteria is not possible!com.wm.lang.flow.FlowException:If the ?Postleitzahl? is partially filled, attribute ?Name?, ?Strasse? or ?Geburtsdatum? has to be present.com.wm.lang.flow.FlowException:Please enter search criteria of sufficient length to get an optimal search result!com.wm.lang.flow.FlowException:Date of birth must not be in the future!com.wm.lang.flow.FlowException:The e-mail address must contain at least three letters.com.wm.lang.flow.FlowException:The telephone number must contain at least three digits excluding country code and leading zeros.com.wm.lang.flow.FlowException:Last name / company name, Polizzennr./Vertragsnr., License plate number or zip code must be filled.com.wm.lang.flow.FlowException:An unexpected technical error is occured in the service provider implementationcom.wm.lang.flow.FlowException:Search parameters declined from other reason: %tns:searchResponse/return/resultInfo/message/messageText%com.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"businessErrorCode":"1234","errorReason":"Some Error","message":{"messageId":"msg1","messageText":"Hello World","placeHolderValues":["valueA","valueB"]},"status":"ERROR"}com.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"businessErrorCode":"1234","errorReason":"Some Error","message":{"messageId":"msg1","messageText":"Hello World","placeHolderValues":["valueA","valueB"]},"status":"INTERNAL_ERROR"}com.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:Input parameters missing or invalidcom.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"status":"ERROR"}com.wm.lang.flow.FlowException:Mandatory input parameter is missing!com.wm.lang.flow.FlowException:Invalid MandantenCodeVersicherungsscheinnummercom.wm.lang.flow.FlowException:No response due to Data Privacy.com.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:ElektrAktResource#elektrAktLesen reported status ERRORcom.wm.lang.flow.FlowException:ElektrAktResource#elektrAktLesen reported status INTERNAL_ERRORcom.wm.lang.flow.FlowException:Mandatory input parameter is missing!com.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"status":"ERROR"}com.wm.lang.flow.FlowException:Search exited with unknown resultInfo={"status":"INTERNAL_ERROR"}com.wm.lang.flow.FlowException:Input parameters missing or invalidcom.wm.lang.flow.FlowException:Parameter value not in the valid range!com.wm.lang.flow.FlowException:Invalid MandantenCodeVersicherungsscheinnummer------------- ---------------- ---------------
+
+Testcase: 0.0 TC02 - mapToBackend - mapGetContractDetailsRequestToRead took 0.099 sec
+Testcase: 0.1 TC07 - mapToUIDM - mapToGetContractDetailsResponse took 0.215 sec
+	Caused an ERROR
+[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+
+Testcase: 0.2 TC08 - mapToUIDM - subMapAenderungsgrund took 0.03 sec
+Testcase: 0.3 TC09 - mapToUIDM - subMapBankverbindung took 0.013 sec
+Testcase: 0.4 TC10 - mapToUIDM - subMapBeitrag took 0.013 sec
+Testcase: 0.5 TC11 - mapToUIDM - subMapHostsystem took 0.01 sec
+Testcase: 0.6 TC12 - mapToUIDM - subMapProvisionsteilung - 2 elements took 0.01 sec
+Testcase: 0.7 TC12a - mapToUIDM - subMapProvisionsteilung - 1 element took 0.009 sec
+Testcase: 0.8 TC12b - mapToUIDM - subMapProvisionsteilung - 0 elements took 0.009 sec
+Testcase: 0.9 TC13 - mapToUIDM - subMapVerkaufsprodukt took 0.01 sec
+Testcase: 0.10 TC14 - mapToUIDM - subMapVermittler took 0.011 sec
+Testcase: 0.11 TC15 - mapToUIDM - subMapVertragsklauseln - 2 elements took 0.038 sec
+Testcase: 0.12 TC15a - mapToUIDM - subMapVertragsklauseln - 1 element with 2 Klasuenzeilen took 0.01 sec
+Testcase: 0.13 TC15b - mapToUIDM - subMapVertragsklauseln - 0 elements took 0.008 sec
+Testcase: 0.14 TC15c - mapToUIDM - subMapVertragsklauseln - 1 element with 1 Klausenzeile took 0.009 sec
+Testcase: 0.15 TC15d - mapToUIDM - subMapVertragsklauseln - 1 element with 0 Klausenzeile took 0.013 sec
+Testcase: 0.16 TC16 - mapToUIDM - subMapVertragspersonen - 2 elements took 0.009 sec
+Testcase: 0.17 TC16a - mapToUIDM - subMapVertragspersonen - 1 element took 0.01 sec
+Testcase: 0.18 TC16b - mapToUIDM - subMapVertragspersonen - 0 elements took 0.009 sec
+Testcase: 0.19 TC17 - mapToUIDM - subMapVertragsstatus took 0.008 sec
+Testcase: 0.20 TC18 - subMapToUIDM - subMapVertragszuordnungen - 2 elements took 0.008 sec
+Testcase: 0.21 TC18a - subMapToUIDM - subMapVertragszuordnungen - 1 element took 0.007 sec
+Testcase: 0.22 TC18b - subMapToUIDM - subMapVertragszuordnungen - 0 elements took 0.008 sec
+Testcase: 0.23 TC19 - subMapToUIDM - subMapZahlungsart took 0.008 sec
+Testcase: 0.24 TC20 - subMapToUIDM - subMapZahlungsweise took 0.009 sec
+Testcase: 0.25 TC21 - mapToUIDM - subMapLeistungsstoerung - J took 0.007 sec
+Testcase: 0.26 TC22 - mapToUIDM - subMapLeistungsstoerung - N took 0.007 sec
+Testcase: 0.27 TC22a - mapToUIDM - subMapLeistungsstoerung - N (null) took 0.006 sec
+Testcase: 0.28 TC23 - mapToUIDM - subMapContractDetails - subMapKlauselZeile took 0.005 sec
+Testcase: 1.0 TC01.01 -  mapToUIDM - subMapToVertrag (no techn user auth) took 0.021 sec
+	Caused an ERROR
+[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+
+Testcase: 1.1 TC01.02 -  mapToUIDM - subMapToVertrag (techn user auth) took 0.024 sec
+Testcase: 1.2 TC31 - mapToUIDM - subMapToBeitrag took 0.006 sec
+Testcase: 1.3 TC31a - mapToUIDM - subMapToBeitrag took 0.006 sec
+Testcase: 1.4 TC32 - mapToUIDM - subMapToBerufsschlussel took 0.006 sec
+Testcase: 1.5 TC33 - mapToUIDM - subMapToVertragsnummer took 0.005 sec
+Testcase: 1.6 TC34 - mapToUIDM - subMapToPolizzentyp took 0.006 sec
+Testcase: 1.7 TC35 - mapToUIDM - subMapToHostsystem took 0.005 sec
+Testcase: 1.8 TC36 - mapToUIDM - subMapToVermittler took 0.006 sec
+Testcase: 1.9 TC37 - mapToUIDM - subMapToProdukt took 0.006 sec
+Testcase: 1.10 TC38 - mapToUIDM - subMapToZahlungsweise took 0.005 sec
+Testcase: 1.11 TC39 - mapToUIDM - subMapToZahlungsart took 0.004 sec
+Testcase: 1.12 TC40 - mapToUIDM - subMapToVertragsstatus took 0.005 sec
+Testcase: 1.13 TC41 - mapToUIDM - subMapToPartnertyp took 0.005 sec
+Testcase: 1.14 TC41a - mapToUIDM - subMapToPartnerContainer - NatuerlichePerson took 0.014 sec
+	FAILED
+partnerContainer[0]/partner:NatuerlichePerson/partner:Geburtsdatum :Expected and actual objects don't match.: expected <1980-02-01> but was <1980-01-31>
+junit.framework.AssertionFailedError: partnerContainer[0]/partner:NatuerlichePerson/partner:Geburtsdatum :Expected and actual objects don't match.: expected <1980-02-01> but was <1980-01-31>
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+
+Testcase: 1.15 TC41b - mapToUIDM - subMapToPartnerContainer - Null took 0.008 sec
+Testcase: 1.16 TC42 - mapToUIDM - subMapToAkademischertitel took 0.007 sec
+Testcase: 1.17 TC43 - mapToUIDM - subMapToGeschlecht took 0.006 sec
+Testcase: 1.18 TC44 - mapToUIDM - subMapToFamilienstand took 0.006 sec
+Testcase: 1.19 TC45 - mapToUIDM - subMapToStaatsangehoerigkeit took 0.006 sec
+Testcase: 1.20 TC46 - mapToUIDM - subMapToRechtsform took 0.006 sec
+Testcase: 1.21 TC47 - mapToUIDM - subMapToBetriebsart took 0.008 sec
+Testcase: 1.22 TC48 - mapToUIDM - subMapToAnschrift took 0.007 sec
+Testcase: 1.23 TC49 - mapToUIDM - mapToSearchContractsResponse - 1 element took 0.029 sec
+	Caused an ERROR
+[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+
+Testcase: 1.24 TC50 - mapToUIDM - mapToSearchContractsResponse - 2 elements took 0.03 sec
+	Caused an ERROR
+[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+com.wm.lang.flow.FlowException:[ISC.0049.9010] Service 'uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig' invoking unknown service 'uniqa.logging.pub.all:logError' at 'Invoke for uniqa.logging.pub.all:logError'. The service may have been renamed, moved or disabled.
+
+Testcase: 1.25 TC51 - mapToUIDM - mapToSearchContractsResponse - 0 elements took 0.007 sec
+Testcase: 1.26 TC65 - mapToBackend - mapToVertragSearch took 0.009 sec
+Testcase: 1.27 TC107 - mapToUIDM - subMapBenutzerAuthorisierung - all 3 attributes set took 0.007 sec
+Testcase: 1.28 TC107b - mapToUIDM - subMapBenutzerAuthorisierung - 1 attribute set took 0.007 sec
+Testcase: 1.29 TC107c - mapToUIDM - subMapBenutzerAuthorisierung - 0 attributes set took 0.006 sec
+Testcase: 1.30 TC108 - mapToUIDM - subMapToHauptsparte took 0.007 sec
+Testcase: 2.0 TC03 - errorHandling - checkReadResponse - SUCCESS took 0.009 sec
+Testcase: 2.1 TC04 - errorHandling - checkReadResponse - NOTFOUND took 0.021 sec
+Testcase: 2.2 TC05a - errorHandling - checkReadResponse - BAD_REQUEST_4010 took 0.013 sec
+Testcase: 2.3 TC05b - errorHandling - checkReadResponse - BAD_REQUEST_4000 took 0.009 sec
+Testcase: 2.4 TC06 - errorHandling - checkReadResponse - ERROR took 0.01 sec
+Testcase: 2.5 TC24 - errorHandling - checkReadPositionszeilenResponse - SUCCESS took 0.006 sec
+Testcase: 2.6 TC25 - errorHandling - checkReadPositionszeilenResponse - NOTFOUND took 0.006 sec
+Testcase: 2.7 TC26a - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4010 took 0.009 sec
+Testcase: 2.8 TC26b - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4000 took 0.01 sec
+Testcase: 2.9 TC27 - errorHandling - checkReadPositionszeilenResponse - ERROR took 0.009 sec
+Testcase: 2.10 TC27b - errorHandling - checkReadPositionszeilenResponse - FAULT HANDLING took 0.026 sec
+Testcase: 2.11 TC52 - errorHandling - checkSearchResponse - NOTFOUND took 0.006 sec
+Testcase: 2.12 TC53a - errorHandling - checkSearchResponse - BAD_REQUEST_4000 took 0.009 sec
+Testcase: 2.13 TC53b - errorHandling - checkSearchResponse - BAD_REQUEST_4010 took 0.008 sec
+Testcase: 2.14 TC53c - errorHandling - checkSearchResponse - BAD_REQUEST_4111 MessageId = 020006 took 0.008 sec
+Testcase: 2.15 TC53d - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 200020 took 0.011 sec
+Testcase: 2.16 TC53e - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 010805 took 0.01 sec
+Testcase: 2.17 TC53f - errorHandling - checkSearchResponse - BAD_REQUEST_4103 took 0.011 sec
+Testcase: 2.18 TC53g - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200014 took 0.011 sec
+Testcase: 2.19 TC53h - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200015 took 0.013 sec
+Testcase: 2.20 TC53i - errorHandling - checkSearchResponse - BAD_REQUEST_4202 took 0.012 sec
+Testcase: 2.21 TC53j - errorHandling - checkSearchResponse - BAD_REQUEST_4011 took 0.011 sec
+Testcase: 2.22 TC53k - errorHandling - checkSearchResponse - BAD_REQUEST_4119 took 0.009 sec
+Testcase: 2.23 TC54 - errorHandling - checkSearchResponse - ERROR took 0.012 sec
+Testcase: 2.24 TC54a - errorHandling - checkSearchResponse - INTERNAL_ERROR took 0.011 sec
+Testcase: 2.25 TC54b - errorHandling - checkSearchResponse - FAULT HANDLING took 0.008 sec
+Testcase: 2.26 TC56 - errorHandling - checkReadVersicherteKFZResponse - NOTFOUND took 0.006 sec
+Testcase: 2.27 TC57a - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4010 took 0.009 sec
+Testcase: 2.28 TC57b - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4000 took 0.009 sec
+Testcase: 2.29 TC58 - errorHandling - checkReadVersicherteKFZResponse - ERROR took 0.008 sec
+Testcase: 2.30 TC76 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4000 took 0.008 sec
+Testcase: 2.31 TC77 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4701 took 0.008 sec
+Testcase: 2.32 TC78 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4702 took 0.009 sec
+Testcase: 2.33 TC79 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4010 took 0.01 sec
+Testcase: 2.34 TC80 - errorHandling - checkElektrAktLesenResponse - ERROR_5140 took 0.017 sec
+Testcase: 2.35 TC81 - errorHandling - checkElektrAktLesenResponse - INTERNAL_ERROR took 0.008 sec
+Testcase: 2.36 TC82 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4000 took 0.01 sec
+Testcase: 2.37 TC83 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4010 took 0.009 sec
+Testcase: 2.38 TC95 - ErrorHandling - checkReadRiskoAdressenResponse - SUCCESS took 0.007 sec
+Testcase: 2.39 TC96 - ErrorHandling - checkReadRiskoAdressenResponse - NOTFOUND took 0.006 sec
+Testcase: 2.40 TC97 - ErrorHandling - checkReadRiskoAdressenResponse - ERROR took 0.01 sec
+Testcase: 2.41 TC98 - ErrorHandling - checkReadRiskoAdressenResponse - INTERNAL_ERROR took 0.039 sec
+Testcase: 2.42 TC99 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4000 took 0.011 sec
+Testcase: 2.43 TC100 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4010 took 0.014 sec
+Testcase: 2.44 TC101 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4701 took 0.009 sec
+Testcase: 3.0 TC23 - mapToBackend - mapToReadPositionszeilen took 0.007 sec
+Testcase: 3.1 TC28 - mapToUIDM - mapToGetContractRiskPositionsFormattedResponse took 0.016 sec
+Testcase: 3.2 TC29 - mapToUIDM - subMapVertragPositionsZeilen - many elements took 0.006 sec
+Testcase: 3.3 TC29a - mapToUIDM - subMapVertragPositionsZeilen - 1 element took 0.005 sec
+Testcase: 3.4 TC29b - mapToUIDM - subMapVertragPositionsZeilen - 0 elements took 0.005 sec
+Testcase: 3.5 TC30 - mapToUIDM - subMapErweiterungen - many elements took 0.006 sec
+Testcase: 3.6 TC30a - mapToUIDM - subMapErweiterungen - 1 element took 0.005 sec
+Testcase: 3.7 TC30b - mapToUIDM - subMapErweiterungen - 0 elements took 0.006 sec
+Testcase: 3.8 TC55 - mapToBackend - mapToReadVersicherteKFZ took 0.007 sec
+Testcase: 3.9 TC59 - mapToUIDM - subMapFahrzeugliste - 0 elements took 0.005 sec
+Testcase: 3.10 TC60 - mapToUIDM - subMapFahrzeugliste - 1 element took 0.007 sec
+Testcase: 3.11 TC61 - mapToUIDM - subMapFahrzeugliste - 3 elements took 0.007 sec
+Testcase: 3.12 TC62 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 0 elements took 0.005 sec
+Testcase: 3.13 TC63 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 1 element took 0.008 sec
+Testcase: 3.15 TC65 - mapToBackend - mapToVertragSearch took 0.008 sec
+Testcase: 3.16 TC66 - mapToBackend - mapGetElectronicFileListRequestToElektrAktLesen took 0.006 sec
+Testcase: 3.17 TC67 - mapToUIDM - mapToGetElectronicFileListResponse - multiple elements took 0.009 sec
+Testcase: 3.18 TC68 - mapToUIDM - mapToGetElectronicFileListResponse - one element took 0.009 sec
+Testcase: 3.19 TC69 - mapToUIDM - mapToGetElectronicFileListResponse - no element took 0.006 sec
+Testcase: 3.20 TC70 - mapToUIDM - subMapToElektronischerAktEintragListe - multiple elements took 0.012 sec
+Testcase: 3.21 TC71 - mapToUIDM - subMapToElektronischerAktEintragListe - one element took 0.007 sec
+Testcase: 3.22 TC72 - mapToUIDM - subMapToElektronischerAktEintragListe - no element took 0.006 sec
+Testcase: 3.23 TC73 - mapToUIDM - subMapToTextZeile - multiple elements took 0.007 sec
+Testcase: 3.24 TC74 - mapToUIDM - subMapToTextZeile - one element took 0.006 sec
+Testcase: 3.25 TC75 - mapToUIDM - subMapToTextZeile - no element took 0.005 sec
+Testcase: 3.26 TC84 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - n elements took 0.007 sec
+	FAILED
+tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don't match.: expected <2015-01-01> but was <2014-12-31>
+junit.framework.AssertionFailedError: tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don't match.: expected <2015-01-01> but was <2014-12-31>
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+
+Testcase: 3.27 TC85 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - 1 element took 0.007 sec
+	FAILED
+tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don't match.: expected <2015-01-01> but was <2014-12-31>
+junit.framework.AssertionFailedError: tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don't match.: expected <2015-01-01> but was <2014-12-31>
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+
+Testcase: 3.28 TC86 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - 0 elements took 0.006 sec
+Testcase: 3.29 TC87 - mapToBackend - mapPOSPersonResourceTogetPolicyPaymentStatementList - 0 elements took 0.006 sec
+Testcase: 3.30 TC93 - splitStreetName - OK took 0.005 sec
+Testcase: 3.31 TC94 - splitStreetName - NOK took 0.005 sec
+Testcase: 3.32 TC102 - mapToBackend - mapToReadRiskoAdressen took 0.006 sec
+Testcase: 3.33 TC103 - mapToUIDM - subMapToRiskObjectList - one address took 0.006 sec
+Testcase: 3.34 TC104 - maptpUIDM - subMapToRiskObjectList - another addresses took 0.006 sec
+Testcase: 3.35 TC105 - mapToUIDM - mapToGetRiskObjectListResponse - one address took 0.006 sec
+Testcase: 3.36 TC106 - mapToUIDM - mapToGetRiskObjectListResponse - two address took 0.007 sec
+Testcase: 3.37 TC108 - mapToUIDM - subMapToHauptsparte took 0.005 sec

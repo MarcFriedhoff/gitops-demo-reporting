@@ -1,0 +1,82 @@
+Status: FAILED
+Time Taken: 567
+Size: 692
+Timestamp: Thu Mar 07 09:05:12 GMT 2024
+TestStep: 01 gerRiskObjectList - success
+
+----------------- Messages ------------------------------
+[XPath Match] XPathContains assertion failed for path [declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace tns='http://uniqa.at/schema/common/service/header/v1';
+
+/soapenv:Envelope/soapenv:Header/tns:ServiceResponseHeader/result/status] : Exception:Missing content for xpath [declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace tns='http://uniqa.at/schema/common/service/header/v1';
+
+/soapenv:Envelope/soapenv:Header/tns:ServiceResponseHeader/result/status] in Response
+[Not SOAP Fault] Response is a SOAP Fault
+[Contains] Missing token [RisikoSachListe] in Response
+
+----------------- Properties ------------------------------
+Endpoint: http://uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws/uniqa.integration.contract.v2.ws.provider:ContractService/ContractServiceSOAP
+Username: uesbpegacrm
+domain: 
+Encoding: UTF-8
+Password: RVU6j4gw
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://uniqa.at/schema/integration/service/ContractService/v2/getRiskObjectList"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 1461
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://uniqa.at/schema/common/service/header/v1" xmlns:v2="http://uniqa.at/schema/integration/service/ContractService/v2">
+   <soapenv:Header>
+      <v1:ServiceLoggingHeader>
+         <logMetadata>
+            <userId>myUserID</userId>
+            <userIdType>USERID</userIdType>
+         </logMetadata>
+      </v1:ServiceLoggingHeader>
+      <v1:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>78393311-2b5c-4376-b66b-4688c84aed18</contextId>
+            <messageId>6cd6ac91-5193-4c53-a71e-715604d6fc95</messageId>
+            <timestamp>2019-11-16T22:35:10Z</timestamp>
+         </messageIdentity>
+         <consumer>
+            <applicationName>Test-ContractService V2</applicationName>
+         </consumer>
+         <user>
+            <userId>VBABA55</userId>
+         </user>
+      </v1:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v2:getRiskObjectListRequest>
+         <Versicherungsscheinnummer>1010017369</Versicherungsscheinnummer>
+         <MandantenCodeVersicherungsscheinnummer>USV</MandantenCodeVersicherungsscheinnummer>
+         <ReadWertebereiche>true</ReadWertebereiche>
+         <Language>de</Language>
+         <Host>T</Host>
+      </v2:getRiskObjectListRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 500 [ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'uniqa.integration.contract.v2.pub:getRiskObjectList' invoking unknown service 'uniqa.logging.pub.common:setTrackingId' at 'Invoke for uniqa.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>[ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'uniqa.integration.contract.v2.pub:getRiskObjectList' invoking unknown service 'uniqa.logging.pub.common:setTrackingId' at 'Invoke for uniqa.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.</faultstring>
+         <faultactor>http://uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws</faultactor>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: build-dashboard
+description: Helm chart for deploying Build Dashboard
+version: 0.1.0
+appVersion: 1.0.0

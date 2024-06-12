@@ -1,0 +1,12 @@
+{
+    "result": "ok",
+    "codereview": {
+        "result": "ok"
+    },
+    "unittest": {
+        "result": "ok"
+    },
+    "soapui": {
+        "result": "ok"
+    }
+}

@@ -1,0 +1,42 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  name: ${IMAGE_NAME}-template
+objects:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: ${IMAGE_NAME}
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    name: ${IMAGE_NAME}-build
+  spec:
+    runPolicy: Serial
+    source:
+      git:
+        uri: ${GIT_URL}
+      type: Git
+      sourceSecret:
+        name: ${GIT_SECRET}
+    strategy:
+      type: Docker
+      dockerStrategy:
+        dockerfilePath: Dockerfile
+        env:
+          - name: GIT_SSL_NO_VERIFY
+            value: 'true'
+    output:
+      to:
+        kind: ImageStreamTag
+        name: '${IMAGE_NAME}:latest'
+parameters:
+- name: GIT_URL
+  description: The URL of the Git repository.
+  required: true
+- name: IMAGE_NAME
+  description: The name of the image:tag.
+  required: true
+- name: GIT_SECRET
+  description: The name of the secret containing the Git credentials.
+  required: true
