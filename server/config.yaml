@@ -1,2 +1,3 @@
 projectDirectory: /tmp/projects
-teamsWebhookUrl: https://sagportal.webhook.office.com/webhookb2/0d171f55-e05f-46e8-b906-a10717cdd69c@d9662eb9-ad98-4e74-a8a2-04ed5d544db6/IncomingWebhook/f9949fdda4e94c5181c2fe57bc4e0504/83ac60c2-42f7-41e4-bb7d-0ea03e54de7c
+uploadDirectory: /tmp/upload
+teamsWebhookUrl: https://xxx

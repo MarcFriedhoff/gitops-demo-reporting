@@ -15,8 +15,10 @@ spec:
       labels:
         app: build-dashboard
     spec:
+    {{- if .Values.imagePullSecrets }}
       imagePullSecrets:
       - name: {{ .Values.imagePullSecrets }}
+    {{- end }}
       containers:
         - name: build-dashboard
           env:
@@ -29,10 +31,17 @@ spec:
           volumeMounts:
             - name: build-dashboard
               mountPath: /projects
+            - name: build-config
+              mountPath: /config/config.yaml
+              subPath: config.yaml
+            - name: build-upload
+              mountPath: /upload
       volumes:
         - configMap:
-            name: gitops-config
-          name: gitops-config
-        - name: gitops-dashboard
+            name: build-config
+          name: build-config
+        - name: build-dashboard
           persistentVolumeClaim:
             claimName: build-dashboard-pvc
+        - name: build-upload
+          emptyDir: {}
