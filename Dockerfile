@@ -2,6 +2,7 @@
 FROM node:16 as build
 WORKDIR /app
 COPY client/package.json ./
+COPY models/ /models
 RUN npm install
 COPY client/ ./
 RUN npm run build
@@ -11,6 +12,7 @@ FROM node:16
 WORKDIR /app
 # copy package.json and packages-lock.json to install dependencies
 COPY server/ server/
+COPY models/ models/
 RUN cd server && npm install && npx tsc
 COPY --from=build /app/build ./client/build
 
