@@ -13,7 +13,9 @@ export class Project {
 
 export class AppConfig {
   projectDirectory: string = "";
-    teamsWebhookUrl: any;
+  teamsWebhookUrl: any;
+  uploadDirectory: string = "";
+
   constructor(projectDirectory: string) {
     this.projectDirectory = projectDirectory;
   }
