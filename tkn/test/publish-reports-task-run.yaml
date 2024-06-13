@@ -1,0 +1,30 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: create-and-post-zip-run
+spec:
+  taskRef:
+    name: create-and-post-zip
+  params:
+    - name: pipeline
+      value: "zip-and-post-pipeline"
+    - name: pipelinerun
+      value: "zip-and-post-pipelinerun"
+    - name: repository
+      value: "https://github.com/example/repo"
+    - name: tags
+      value: "v1.0.0"
+    - name: revision
+      value: "abc123"
+    - name: date
+      value: "2022-01-01"
+    - name: time
+      value: "12:00:00"
+    - name: pipelineurl
+      value: "https://tekton.dev/pipelines/zip-and-post-pipeline"
+    - name: buildSuccess
+      value: "true"
+  workspaces:
+    - name: source-dir
+      persistentVolumeClaim:
+        claimName: source-dir-pvc

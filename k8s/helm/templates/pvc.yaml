@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: gitops-dashboard-pvc
+  name: build-dashboard-pvc
 spec:
   accessModes:
     - ReadWriteOnce

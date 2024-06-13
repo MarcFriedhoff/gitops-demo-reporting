@@ -1,0 +1,74 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: publish-reports-task
+spec:
+  params:
+    - name: soapui-reports
+      type: string
+      description: soapui reports directory
+    - name: codereview-reports
+      type: string
+      description: codereview reports directory
+    - name: junit-reports
+      type: string
+      description: junit reports directory
+    - name: pipeline
+      type: string
+      description: The name of the pipeline
+    - name: pipelinerun
+      type: string
+      description: The name of the pipelinerun
+    - name: repository
+      type: string
+      description: The git repository
+    - name: tags
+      type: string
+      description: The git tags
+    - name: revision
+      type: string
+      description: The git revision
+    - name: date
+      type: string
+      description: The date of the pipelinerun
+    - name: time
+      type: string
+      description: The time of the pipelinerun
+    - name: pipelineurl
+      type: string
+      description: The URL of the pipelinerun
+    - name: buildSuccess
+      type: string
+      description: Whether the build was successful
+    - name: upload-url
+      type: string
+      description: The URL to upload the reports
+  workspaces:
+    - name: reports
+  steps:
+    - name: create-zip
+      image: busybox
+      script: |
+        #!/bin/sh
+        cd $(workspaces.reports.path)
+        zip -r $(params.pipelinerun).zip $(workspaces.reports.path)/$(params.soapui-reports) $(workspaces.reports.path)/$(params.codereview-reports) $(workspaces.reports.path)/$(params.junit-reports)
+    - name: post-zip
+      image: curlimages/curl
+      script: |
+        #!/bin/sh
+        cd $(workspaces.reports.path)
+        buildInfo=$(cat <<EOF
+        {
+          "project": "$(params.pipeline)",
+          "build": "$(params.pipelinerun)",
+          "repository": "$(params.repository)",
+          "tags": "$(params.tags)",
+          "revision": "$(params.revision)",
+          "date": "$(params.date)",
+          "time": "$(params.time)",
+          "pipeline": "$(params.pipelineurl)",
+          "buildSuccess": "$(params.buildSuccess)"
+        }
+        EOF
+        )
+        curl -X POST -H "Content-Type: multipart/form-data" -F "file=@$(params.pipelinerun).zip" -F "buildInfo=$buildInfo" $(params.upload-url)
