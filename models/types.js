@@ -16,6 +16,7 @@ exports.Project = Project;
 class AppConfig {
     constructor(projectDirectory) {
         this.projectDirectory = "";
+        this.uploadDirectory = "";
         this.projectDirectory = projectDirectory;
     }
 }

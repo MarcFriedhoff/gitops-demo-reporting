@@ -22,9 +22,9 @@ const yaml = require('js-yaml');
 const xml2js = require('xml2js');
 const globSync = require('glob').sync;
 const axios = require('axios');
-const upload = multer({ dest: 'uploads/' }); // Set the destination for uploaded files
 const configFile = process.env.CONFIG_FILE || path.join(__dirname, '../server/config.yaml');
 const config = yaml.load(fs.readFileSync(configFile, 'utf8'));
+const upload = multer({ dest: config.uploadDirectory }); // Set the destination for uploaded files
 app.use(express.static(path.join(__dirname, '../client/build')));
 function getBuildSummaries() {
     // read the files from the resources directory and return them as projects
