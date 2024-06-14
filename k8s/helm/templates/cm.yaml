@@ -3,4 +3,5 @@ kind: ConfigMap
 metadata:
   name: build-config
 data:
-  {{- toYaml .Values.config | nindent 2 }}
+  config.yaml: |
+  {{- toYaml .Values.config | nindent 4 }}
