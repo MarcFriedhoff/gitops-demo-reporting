@@ -39,6 +39,9 @@ spec:
       volumes:
         - configMap:
             name: build-config
+            items:
+            - key: config.yaml
+              path: config.yaml
           name: build-config
         - name: build-dashboard
           persistentVolumeClaim:
