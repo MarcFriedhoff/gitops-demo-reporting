@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites name="Integration Server Code Review" disabled="15" failures="1" tests="166" time="0.62" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-SP1.1" failures="0" tests="10" time="0.041" name="SP1: Stateless">
+        <properties/>
+        <testcase time="0.009" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Stateless"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Stateless"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode" name="Stateless"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode" name="Stateless"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage" name="Stateless"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage" name="Stateless"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey" name="Stateless"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Stateless"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Stateless"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Stateless"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-SP2.1" failures="0" tests="10" time="0.046" name="SP2: Pipeline Save Restore">
+        <properties/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Pipeline Save Restore"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ1.1" failures="0" tests="5" time="0.075" name="FQ1: Pipeline Services">
+        <properties/>
+        <testcase time="0.041" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Pipeline Services"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Pipeline Services"/>
+        <testcase time="0.007" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Pipeline Services"/>
+        <testcase time="0.009" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Pipeline Services"/>
+        <testcase time="0.008" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Pipeline Services"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ3_v9.1" failures="0" tests="5" time="0.022" name="FQ3_v9: Deprecated Services (v9)">
+        <properties/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Deprecated Services (v9)"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Deprecated Services (v9)"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Deprecated Services (v9)"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ4.1" failures="0" tests="5" time="0.046" name="FQ4: Disabled Services">
+        <properties/>
+        <testcase time="0.018" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Disabled Services"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Disabled Services"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Disabled Services"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Disabled Services"/>
+        <testcase time="0.01" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Disabled Services"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ5.1" failures="0" tests="5" time="0.017" name="FQ5: Use of Pub.Storage">
+        <properties/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Use of Pub.Storage"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Use of Pub.Storage"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Use of Pub.Storage"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ6.1" failures="0" tests="5" time="0.018" name="FQ6: Debug Log">
+        <properties/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Debug Log"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Debug Log"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Debug Log"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Debug Log"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Debug Log"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ8.1" failures="0" tests="1" time="0.001" name="FQ8: Connections Package">
+        <properties/>
+        <testcase time="0" classname="Connections" name="Connections Package"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ9.1" failures="0" tests="5" time="0.056" name="FQ9: FTP Timeout">
+        <properties/>
+        <testcase time="0.01" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="FTP Timeout"/>
+        <testcase time="0.008" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="FTP Timeout"/>
+        <testcase time="0.01" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="FTP Timeout"/>
+        <testcase time="0.009" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="FTP Timeout"/>
+        <testcase time="0.017" classname="DemoProjectSecurityHelper.Test:testEncryption" name="FTP Timeout"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ12.1" failures="0" tests="10" time="0.017" name="FQ12: Unauthorised Access/Orphaned">
+        <properties/>
+        <testcase time="0.012" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Unauthorised Access/Orphaned"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ13.1" failures="0" tests="5" time="0.04" name="FQ13: Branch without switch or evaluate labels">
+        <properties/>
+        <testcase time="0.007" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.008" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.013" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Branch without switch or evaluate labels"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ14.1" failures="0" tests="5" time="0.038" name="FQ14: Branch on expression when child step is without specified label or $null">
+        <properties/>
+        <testcase time="0.008" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.011" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Branch on expression when child step is without specified label or $null"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ15.1" failures="0" tests="5" time="0.035" name="FQ15: Exit Node From Specification">
+        <properties/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Exit Node From Specification"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Exit Node From Specification"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Exit Node From Specification"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Exit Node From Specification"/>
+        <testcase time="0.011" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Exit Node From Specification"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ16.1" failures="0" tests="5" time="0.025" name="FQ16: Branch step must have child nodes">
+        <properties/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Branch step must have child nodes"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Branch step must have child nodes"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Branch step must have child nodes"/>
+        <testcase time="0.007" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Branch step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ17.1" failures="0" tests="5" time="0.022" name="FQ17: Loop step must have child nodes">
+        <properties/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Loop step must have child nodes"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Loop step must have child nodes"/>
+        <testcase time="0.007" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Loop step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ18.1" failures="0" tests="5" time="0.022" name="FQ18: Repeat step must have child nodes">
+        <properties/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Repeat step must have child nodes"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Repeat step must have child nodes"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Repeat step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ21.1" failures="0" tests="5" time="0.022" name="FQ21: Loop must have an input array provided">
+        <properties/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Loop must have an input array provided"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Loop must have an input array provided"/>
+        <testcase time="0.006" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Loop must have an input array provided"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-FQ22.1" failures="0" tests="5" time="0.026" name="FQ22: Flow service should not be empty">
+        <properties/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Flow service should not be empty"/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Flow service should not be empty"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Flow service should not be empty"/>
+        <testcase time="0.008" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Flow service should not be empty"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-NS1.1" failures="1" tests="1" time="0.003" name="NS1: Root Folder Name">
+        <properties/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Root Folder Name">
+            <failure message="Root Folder should not be the same as the package as this can cause namespace issues should the code need to be refactored or moved to other packages for promotion to common services, inhibiting reusability.  Recommendation is to set a separate prefix folder structure from the package and use this across all packages differentiating below the prefix.  This can be one or two levels deep (but ideally should be no more) and commonly is the inverse domain name of the organisation, e.g. &quot;com.softwareag&quot;" type="com.softwareag.gcs.wm.codereview.operations.NamingStandards">Root Folder should not be the same as the package as this can cause namespace issues should the code need to be refactored or moved to other packages for promotion to common services, inhibiting reusability.  Recommendation is to set a separate prefix folder structure from the package and use this across all packages differentiating below the prefix.  This can be one or two levels deep (but ideally should be no more) and commonly is the inverse domain name of the organisation, e.g. "com.softwareag"</failure>
+        </testcase>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-NS2.1" failures="0" tests="5" time="0.001" name="NS2: Folder Name">
+        <properties/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Folder Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub" name="Folder Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider" name="Folder Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service" name="Folder Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test" name="Folder Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-NS4.1" failures="0" tests="5" time="0.001" name="NS4: Package Name">
+        <properties/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Package Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Package Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Package Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Package Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Package Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-NS5.1" failures="0" tests="10" time="0.005" name="NS5: Service Name">
+        <properties/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Pub:decryptMessage" name="Service Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:encryptMessage" name="Service Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode" name="Service Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode" name="Service Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage" name="Service Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage" name="Service Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey" name="Service Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:decryptMessageCached" name="Service Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:encryptMessageCached" name="Service Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test:testEncryption" name="Service Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-NS16.1" failures="0" tests="52" time="0.026" name="NS16: Service Signature Name">
+        <properties/>
+        <testcase time="0.005" classname="DemoProjectSecurityHelper.Pub:decryptMessage;packageName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:decryptMessage;keyName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:decryptMessage;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:decryptMessage;encryptedMessage" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:decryptMessage;message" name="Service Signature Name"/>
+        <testcase time="0.004" classname="DemoProjectSecurityHelper.Pub:encryptMessage;message" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:encryptMessage;packageName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:encryptMessage;keyName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:encryptMessage;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Pub:encryptMessage;encryptedMessage" name="Service Signature Name"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode;base64DecodeInput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode;messageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode;base64DecodeOutput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Decode;message" name="Service Signature Name"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode;base64EncodeInput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode;message" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode;base64EncodeOutput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:base64Encode;messageBase64" name="Service Signature Name"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage;decryptMessageInput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage;publicKey" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage;encryptedMessage" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage;decryptMessageOutput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:decryptMessage;decryptedMessage" name="Service Signature Name"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage;encryptMessageInput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage;message" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage;privateKey" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage;encryptMessageOutput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:encryptMessage;encryptedMessage" name="Service Signature Name"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey;loadKeyInput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey;keyType" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey;keyName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey;packageName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey;loadKeyOutput" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.SecurityProvider:loadKey;key" name="Service Signature Name"/>
+        <testcase time="0.002" classname="DemoProjectSecurityHelper.Service:decryptMessageCached;packageName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:decryptMessageCached;keyName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:decryptMessageCached;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:decryptMessageCached;encryptedMessage" name="Service Signature Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Service:decryptMessageCached;message" name="Service Signature Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Service:encryptMessageCached;message" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:encryptMessageCached;packageName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:encryptMessageCached;keyName" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Service:encryptMessageCached;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Service:encryptMessageCached;encryptedMessage" name="Service Signature Name"/>
+        <testcase time="0.001" classname="DemoProjectSecurityHelper.Test:testEncryption;message" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test:testEncryption;message" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test:testEncryption;decryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test:testEncryption;decryptedMessageByteArray" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test:testEncryption;encryptedMessageBase64" name="Service Signature Name"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper.Test:testEncryption;encryptedMessage" name="Service Signature Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-02-27T07:06:43+0000" package="DemoProjectSecurityHelper" id="DemoProjectSecurityHelper-MS1.1" failures="0" tests="3" time="0.001" name="MS1: Non-Production Service Package Suffixes">
+        <properties/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Non-Production Service Package Suffixes"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Non-Production Service Package Suffixes"/>
+        <testcase time="0" classname="DemoProjectSecurityHelper" name="Non-Production Service Package Suffixes"/>
+    </testsuite>
+</testsuites>
