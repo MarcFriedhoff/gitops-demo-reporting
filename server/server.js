@@ -253,32 +253,31 @@ app.post('/api/projects/:project/build', upload.single('file'), (req, res) => __
         // write the buildInfo to a file in the build directory
         fs.writeFileSync(path.join(projectDir, buildDir, 'buildInfo.json'), JSON.stringify(buildInfo));
         let codeReviewDir = path.join(projectDir, buildDir, 'codereview');
-        if (!fs.existsSync(codeReviewDir)) {
-            throw new Error('Code review directory not found');
+        let codeReviewResult = new types_1.ReportResult(codeReviewDir, []);
+        if (fs.existsSync(codeReviewDir)) {
+            codeReviewResult = parseCodeReviewXML(codeReviewDir, 'results.xml');
+            fs.writeFileSync(path.join(codeReviewDir, 'reportResult.json'), JSON.stringify(codeReviewResult));
         }
-        const codeReviewResult = parseCodeReviewXML(codeReviewDir, 'results.xml');
-        fs.writeFileSync(path.join(codeReviewDir, 'reportResult.json'), JSON.stringify(codeReviewResult));
         let unitTestDir = path.join(projectDir, buildDir, 'unit-tests');
-        if (!fs.existsSync(unitTestDir)) {
-            throw new Error('Unit test directory not found');
+        let junitReportResult = new types_1.ReportResult(unitTestDir, []);
+        if (fs.existsSync(unitTestDir)) {
+            junitReportResult = parseTestSuiteXML(unitTestDir, 'TESTS-TestSuites.xml', 'testsuites');
+            fs.writeFileSync(path.join(unitTestDir, 'reportResult.json'), JSON.stringify(junitReportResult));
         }
-        const junitReportResult = parseTestSuiteXML(unitTestDir, 'TESTS-TestSuites.xml', 'testsuites');
-        fs.writeFileSync(path.join(unitTestDir, 'reportResult.json'), JSON.stringify(junitReportResult));
         // SOAP UI test directory
         let soapUITestDir = path.join(projectDir, buildDir, 'soapui');
-        if (!fs.existsSync(soapUITestDir)) {
-            throw new Error('SOAP UI test directory not found');
+        let soapUIReportResult = new types_1.ReportResult(soapUITestDir, []);
+        if (fs.existsSync(soapUITestDir)) {
+            //iterate over the directories in soapUITestDir
+            const soapUITestDirs = fs.readdirSync(soapUITestDir);
+            soapUITestDirs.forEach((dir) => {
+                const fullDir = path.join(soapUITestDir, dir);
+                if (fs.statSync(fullDir).isDirectory()) {
+                    soapUIReportResult = parseTestSuiteXML(fullDir, 'TEST-*SOAP_TestSuite.xml');
+                    fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
+                }
+            });
         }
-        //iterate over the directories in soapUITestDir
-        const soapUITestDirs = fs.readdirSync(soapUITestDir);
-        let soapUIReportResult = {};
-        soapUITestDirs.forEach((dir) => {
-            const fullDir = path.join(soapUITestDir, dir);
-            if (fs.statSync(fullDir).isDirectory()) {
-                soapUIReportResult = parseTestSuiteXML(fullDir, 'TEST-*SOAP_TestSuite.xml');
-                fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
-            }
-        });
         // create symlink to the latest build
         const latestBuildDir = path.join(projectDir, 'latest');
         if (fs.existsSync(latestBuildDir)) {

@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="ci-temp-pipeline-3vgmbt-solution-ut-task-pod" id="0" name="DemoProjectAtContractService Unit Tests: 01 errorHandling" package="DemoProjectAtContractServiceV2_Test" skipped="0" tests="45" time="0.538" timestamp="2024-03-07T08:59:30">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries" />
+
+          <property name="watt.net.proxyUser" value="" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="test.reports.dir" value="/workspace/source/reports/unit-tests" />
+
+          <property name="watt.net.secureProxyPass" value="" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/ant" />
+
+          <property name="java.runtime.version" value="11.0.21+9-LTS" />
+
+          <property name="user.name" value="root" />
+
+          <property name="watt.net.proxyPass" value="" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/local/java/lib" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="java.version" value="11.0.21" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="55.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="US" />
+
+          <property name="webMethods.integrationServer.userid" value="Administrator" />
+
+          <property name="java.home" value="/usr/local/java" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="os.version" value="4.18.0-372.82.1.el8_6.x86_64" />
+
+          <property name="watt.net.secureProxyHost" value="" />
+
+          <property name="webMethods.test.profile.result.includeExecutionModelReport" value="true" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="11.0.21+9-LTS" />
+
+          <property name="ant.library.dir" value="/usr/local/ant/lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.specification.maintenance.version" value="2" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="watt.net.proxyHost" value="" />
+
+          <property name="user.home" value="/root" />
+
+          <property name="java.version.date" value="2023-10-17" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://www.azul.com/" />
+
+          <property name="pack.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="/workspace/source/reports/unit-tests" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="java.class.path" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/commons-jxpath-1.2.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/hamcrest-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/httpunit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/javax.xml.soap-api.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/junit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceInterceptor.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceMockClient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/wmjxpath.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/xmlunit1.0.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/jackson-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/xml-apis.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-isclient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/icu4j.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/enttoolkit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/IntegrationServer/lib/wm-isserver.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-g11nutils.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/glassfish/gf.jakarta.mail.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ant/ant-contrib-1.0b3.jar:/usr/local/ant/lib/ant-launcher.jar:/usr/local/ant/lib/ant.jar:/usr/local/ant/lib/ant-junit.jar:/usr/local/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junitvmwatcher705640794179950056.properties propsfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junit3155397621900480429.properties" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="11" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://www.azul.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local" />
+
+          <property name="webMethods.test.scope.packages" value="" />
+
+          <property name="webMethods.test.profile.result.includeServiceLevelReport" value="true" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="watt.net.secureProxyPort" value="" />
+
+          <property name="test.externalClasspath.dir" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/classes,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/classes,/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class" />
+
+          <property name="user.dir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="jdk.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="basedir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="ant.java.version" value="11" />
+
+          <property name="ant.core.lib" value="/usr/local/ant/lib/ant.jar" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="watt.net.proxyPort" value="" />
+
+          <property name="current.project" value="WmTestSuiteExecutor" />
+
+          <property name="file.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="watt.net.secureProxyUser" value="" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="java.specification.version" value="11" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="java.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.0 TC03 - errorHandling - checkReadResponse - SUCCESS" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.1 TC04 - errorHandling - checkReadResponse - NOTFOUND" time="0.02" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.2 TC05a - errorHandling - checkReadResponse - BAD_REQUEST_4010" time="0.013" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.3 TC05b - errorHandling - checkReadResponse - BAD_REQUEST_4000" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.4 TC06 - errorHandling - checkReadResponse - ERROR" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.5 TC24 - errorHandling - checkReadPositionszeilenResponse - SUCCESS" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.6 TC25 - errorHandling - checkReadPositionszeilenResponse - NOTFOUND" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.7 TC26a - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4010" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.8 TC26b - errorHandling - checkReadPositionszeilenResponse - BAD_REQUEST_4000" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.9 TC27 - errorHandling - checkReadPositionszeilenResponse - ERROR" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.10 TC27b - errorHandling - checkReadPositionszeilenResponse - FAULT HANDLING" time="0.026" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.11 TC52 - errorHandling - checkSearchResponse - NOTFOUND" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.12 TC53a - errorHandling - checkSearchResponse - BAD_REQUEST_4000" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.13 TC53b - errorHandling - checkSearchResponse - BAD_REQUEST_4010" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.14 TC53c - errorHandling - checkSearchResponse - BAD_REQUEST_4111 MessageId = 020006" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.15 TC53d - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 200020" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.16 TC53e - errorHandling - checkSearchResponse - BAD_REQUEST_4112 MessageId = 010805" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.17 TC53f - errorHandling - checkSearchResponse - BAD_REQUEST_4103" time="0.011" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.18 TC53g - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200014" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.19 TC53h - errorHandling - checkSearchResponse - BAD_REQUEST_4104_200015" time="0.013" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.20 TC53i - errorHandling - checkSearchResponse - BAD_REQUEST_4202" time="0.011" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.21 TC53j - errorHandling - checkSearchResponse - BAD_REQUEST_4011" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.22 TC53k - errorHandling - checkSearchResponse - BAD_REQUEST_4119" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.23 TC54 - errorHandling - checkSearchResponse - ERROR" time="0.011" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.24 TC54a - errorHandling - checkSearchResponse - INTERNAL_ERROR" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.25 TC54b - errorHandling - checkSearchResponse - FAULT HANDLING" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.26 TC56 - errorHandling - checkReadVersicherteKFZResponse - NOTFOUND" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.27 TC57a - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4010" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.28 TC57b - errorHandling - checkReadVersicherteKFZResponse - BAD_REQUEST_4000" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.29 TC58 - errorHandling - checkReadVersicherteKFZResponse - ERROR" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.30 TC76 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4000" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.31 TC77 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4701" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.32 TC78 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4702" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.33 TC79 - errorHandling - checkElektrAktLesenResponse - BAD_REQUEST_4010" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.34 TC80 - errorHandling - checkElektrAktLesenResponse - ERROR_5140" time="0.017" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.35 TC81 - errorHandling - checkElektrAktLesenResponse - INTERNAL_ERROR" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.36 TC82 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4000" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.37 TC83 - errorHandling - checkPerson_readPersonFinabest - BAD_REQUEST 4010" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.38 TC95 - ErrorHandling - checkReadRiskoAdressenResponse - SUCCESS" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.39 TC96 - ErrorHandling - checkReadRiskoAdressenResponse - NOTFOUND" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.40 TC97 - ErrorHandling - checkReadRiskoAdressenResponse - ERROR" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.41 TC98 - ErrorHandling - checkReadRiskoAdressenResponse - INTERNAL_ERROR" time="0.039" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.42 TC99 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4000" time="0.011" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.43 TC100 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4010" time="0.014" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="2.44 TC101 - ErrorHandling - checkReadRiskoAdressenResponse - BAD_REQUEST - 4701" time="0.009" />
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="ci-temp-pipeline-3vgmbt-solution-ut-task-pod" id="1" name="DemoProjectAtContractService Unit Tests: 02 getContractDetails" package="DemoProjectAtContractServiceV2_Test" skipped="0" tests="29" time="0.674" timestamp="2024-03-07T08:59:29">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries" />
+
+          <property name="watt.net.proxyUser" value="" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="test.reports.dir" value="/workspace/source/reports/unit-tests" />
+
+          <property name="watt.net.secureProxyPass" value="" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/ant" />
+
+          <property name="java.runtime.version" value="11.0.21+9-LTS" />
+
+          <property name="user.name" value="root" />
+
+          <property name="watt.net.proxyPass" value="" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/local/java/lib" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="java.version" value="11.0.21" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="55.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="US" />
+
+          <property name="webMethods.integrationServer.userid" value="Administrator" />
+
+          <property name="java.home" value="/usr/local/java" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="os.version" value="4.18.0-372.82.1.el8_6.x86_64" />
+
+          <property name="watt.net.secureProxyHost" value="" />
+
+          <property name="webMethods.test.profile.result.includeExecutionModelReport" value="true" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="11.0.21+9-LTS" />
+
+          <property name="ant.library.dir" value="/usr/local/ant/lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.specification.maintenance.version" value="2" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="watt.net.proxyHost" value="" />
+
+          <property name="user.home" value="/root" />
+
+          <property name="java.version.date" value="2023-10-17" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://www.azul.com/" />
+
+          <property name="pack.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="/workspace/source/reports/unit-tests" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="java.class.path" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/commons-jxpath-1.2.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/hamcrest-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/httpunit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/javax.xml.soap-api.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/junit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceInterceptor.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceMockClient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/wmjxpath.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/xmlunit1.0.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/jackson-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/xml-apis.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-isclient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/icu4j.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/enttoolkit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/IntegrationServer/lib/wm-isserver.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-g11nutils.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/glassfish/gf.jakarta.mail.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ant/ant-contrib-1.0b3.jar:/usr/local/ant/lib/ant-launcher.jar:/usr/local/ant/lib/ant.jar:/usr/local/ant/lib/ant-junit.jar:/usr/local/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junitvmwatcher705640794179950056.properties propsfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junit3155397621900480429.properties" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="11" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://www.azul.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local" />
+
+          <property name="webMethods.test.scope.packages" value="" />
+
+          <property name="webMethods.test.profile.result.includeServiceLevelReport" value="true" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="watt.net.secureProxyPort" value="" />
+
+          <property name="test.externalClasspath.dir" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/classes,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/classes,/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class" />
+
+          <property name="user.dir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="jdk.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="basedir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="ant.java.version" value="11" />
+
+          <property name="ant.core.lib" value="/usr/local/ant/lib/ant.jar" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="watt.net.proxyPort" value="" />
+
+          <property name="current.project" value="WmTestSuiteExecutor" />
+
+          <property name="file.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="watt.net.secureProxyUser" value="" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="java.specification.version" value="11" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="java.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.0 TC02 - mapToBackend - mapGetContractDetailsRequestToRead" time="0.089" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.1 TC07 - mapToUIDM - mapToGetContractDetailsResponse" time="0.218">
+          <error message="[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled." type="com.wm.app.b2b.client.ServiceException">com.wm.lang.flow.FlowException:[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled.
+</error>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.2 TC08 - mapToUIDM - subMapAenderungsgrund" time="0.03" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.3 TC09 - mapToUIDM - subMapBankverbindung" time="0.013" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.4 TC10 - mapToUIDM - subMapBeitrag" time="0.012" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.5 TC11 - mapToUIDM - subMapHostsystem" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.6 TC12 - mapToUIDM - subMapProvisionsteilung - 2 elements" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.7 TC12a - mapToUIDM - subMapProvisionsteilung - 1 element" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.8 TC12b - mapToUIDM - subMapProvisionsteilung - 0 elements" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.9 TC13 - mapToUIDM - subMapVerkaufsprodukt" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.10 TC14 - mapToUIDM - subMapVermittler" time="0.011" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.11 TC15 - mapToUIDM - subMapVertragsklauseln - 2 elements" time="0.037" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.12 TC15a - mapToUIDM - subMapVertragsklauseln - 1 element with 2 Klasuenzeilen" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.13 TC15b - mapToUIDM - subMapVertragsklauseln - 0 elements" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.14 TC15c - mapToUIDM - subMapVertragsklauseln - 1 element with 1 Klausenzeile" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.15 TC15d - mapToUIDM - subMapVertragsklauseln - 1 element with 0 Klausenzeile" time="0.012" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.16 TC16 - mapToUIDM - subMapVertragspersonen - 2 elements" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.17 TC16a - mapToUIDM - subMapVertragspersonen - 1 element" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.18 TC16b - mapToUIDM - subMapVertragspersonen - 0 elements" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.19 TC17 - mapToUIDM - subMapVertragsstatus" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.20 TC18 - subMapToUIDM - subMapVertragszuordnungen - 2 elements" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.21 TC18a - subMapToUIDM - subMapVertragszuordnungen - 1 element" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.22 TC18b - subMapToUIDM - subMapVertragszuordnungen - 0 elements" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.23 TC19 - subMapToUIDM - subMapZahlungsart" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.24 TC20 - subMapToUIDM - subMapZahlungsweise" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.25 TC21 - mapToUIDM - subMapLeistungsstoerung - J" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.26 TC22 - mapToUIDM - subMapLeistungsstoerung - N" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.27 TC22a - mapToUIDM - subMapLeistungsstoerung - N (null)" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.28 TC23 - mapToUIDM - subMapContractDetails - subMapKlauselZeile" time="0.006" />
+
+  </testsuite>
+  <testsuite errors="3" failures="1" hostname="ci-temp-pipeline-3vgmbt-solution-ut-task-pod" id="2" name="DemoProjectAtContractService Unit Tests: 02 searchContracts" package="DemoProjectAtContractServiceV2_Test" skipped="0" tests="31" time="0.316" timestamp="2024-03-07T08:59:30">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries" />
+
+          <property name="watt.net.proxyUser" value="" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="test.reports.dir" value="/workspace/source/reports/unit-tests" />
+
+          <property name="watt.net.secureProxyPass" value="" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/ant" />
+
+          <property name="java.runtime.version" value="11.0.21+9-LTS" />
+
+          <property name="user.name" value="root" />
+
+          <property name="watt.net.proxyPass" value="" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/local/java/lib" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="java.version" value="11.0.21" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="55.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="US" />
+
+          <property name="webMethods.integrationServer.userid" value="Administrator" />
+
+          <property name="java.home" value="/usr/local/java" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="os.version" value="4.18.0-372.82.1.el8_6.x86_64" />
+
+          <property name="watt.net.secureProxyHost" value="" />
+
+          <property name="webMethods.test.profile.result.includeExecutionModelReport" value="true" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="11.0.21+9-LTS" />
+
+          <property name="ant.library.dir" value="/usr/local/ant/lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.specification.maintenance.version" value="2" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="watt.net.proxyHost" value="" />
+
+          <property name="user.home" value="/root" />
+
+          <property name="java.version.date" value="2023-10-17" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://www.azul.com/" />
+
+          <property name="pack.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="/workspace/source/reports/unit-tests" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="java.class.path" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/commons-jxpath-1.2.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/hamcrest-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/httpunit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/javax.xml.soap-api.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/junit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceInterceptor.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceMockClient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/wmjxpath.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/xmlunit1.0.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/jackson-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/xml-apis.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-isclient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/icu4j.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/enttoolkit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/IntegrationServer/lib/wm-isserver.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-g11nutils.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/glassfish/gf.jakarta.mail.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ant/ant-contrib-1.0b3.jar:/usr/local/ant/lib/ant-launcher.jar:/usr/local/ant/lib/ant.jar:/usr/local/ant/lib/ant-junit.jar:/usr/local/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junitvmwatcher705640794179950056.properties propsfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junit3155397621900480429.properties" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="11" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://www.azul.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local" />
+
+          <property name="webMethods.test.scope.packages" value="" />
+
+          <property name="webMethods.test.profile.result.includeServiceLevelReport" value="true" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="watt.net.secureProxyPort" value="" />
+
+          <property name="test.externalClasspath.dir" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/classes,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/classes,/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class" />
+
+          <property name="user.dir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="jdk.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="basedir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="ant.java.version" value="11" />
+
+          <property name="ant.core.lib" value="/usr/local/ant/lib/ant.jar" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="watt.net.proxyPort" value="" />
+
+          <property name="current.project" value="WmTestSuiteExecutor" />
+
+          <property name="file.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="watt.net.secureProxyUser" value="" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="java.specification.version" value="11" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="java.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.0 TC01.01 -  mapToUIDM - subMapToVertrag (no techn user auth)" time="0.02">
+          <error message="[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled." type="com.wm.app.b2b.client.ServiceException">com.wm.lang.flow.FlowException:[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled.
+</error>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.1 TC01.02 -  mapToUIDM - subMapToVertrag (techn user auth)" time="0.024" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.2 TC31 - mapToUIDM - subMapToBeitrag" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.3 TC31a - mapToUIDM - subMapToBeitrag" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.4 TC32 - mapToUIDM - subMapToBerufsschlussel" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.5 TC33 - mapToUIDM - subMapToVertragsnummer" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.6 TC34 - mapToUIDM - subMapToPolizzentyp" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.7 TC35 - mapToUIDM - subMapToHostsystem" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.8 TC36 - mapToUIDM - subMapToVermittler" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.9 TC37 - mapToUIDM - subMapToProdukt" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.10 TC38 - mapToUIDM - subMapToZahlungsweise" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.11 TC39 - mapToUIDM - subMapToZahlungsart" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.12 TC40 - mapToUIDM - subMapToVertragsstatus" time="0.004" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.13 TC41 - mapToUIDM - subMapToPartnertyp" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.14 TC41a - mapToUIDM - subMapToPartnerContainer - NatuerlichePerson" time="0.016">
+          <failure message="partnerContainer[0]/partner:NatuerlichePerson/partner:Geburtsdatum :Expected and actual objects don&apos;t match.: expected &lt;1980-02-01&gt; but was &lt;1980-01-31&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: partnerContainer[0]/partner:NatuerlichePerson/partner:Geburtsdatum :Expected and actual objects don&apos;t match.: expected &lt;1980-02-01&gt; but was &lt;1980-01-31&gt;
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.15 TC41b - mapToUIDM - subMapToPartnerContainer - Null" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.16 TC42 - mapToUIDM - subMapToAkademischertitel" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.17 TC43 - mapToUIDM - subMapToGeschlecht" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.18 TC44 - mapToUIDM - subMapToFamilienstand" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.19 TC45 - mapToUIDM - subMapToStaatsangehoerigkeit" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.20 TC46 - mapToUIDM - subMapToRechtsform" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.21 TC47 - mapToUIDM - subMapToBetriebsart" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.22 TC48 - mapToUIDM - subMapToAnschrift" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.23 TC49 - mapToUIDM - mapToSearchContractsResponse - 1 element" time="0.029">
+          <error message="[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled." type="com.wm.app.b2b.client.ServiceException">com.wm.lang.flow.FlowException:[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled.
+</error>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.24 TC50 - mapToUIDM - mapToSearchContractsResponse - 2 elements" time="0.031">
+          <error message="[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled." type="com.wm.app.b2b.client.ServiceException">com.wm.lang.flow.FlowException:[ISC.0049.9010] Service &apos;uniqa.integration.ecm.accessmanagement.pub:isTechnicalUserOnAuthConfig&apos; invoking unknown service &apos;uniqa.logging.pub.all:logError&apos; at &apos;Invoke for uniqa.logging.pub.all:logError&apos;. The service may have been renamed, moved or disabled.
+</error>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.25 TC51 - mapToUIDM - mapToSearchContractsResponse - 0 elements" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.26 TC65 - mapToBackend - mapToVertragSearch" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.27 TC107 - mapToUIDM - subMapBenutzerAuthorisierung - all 3 attributes set" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.28 TC107b - mapToUIDM - subMapBenutzerAuthorisierung - 1 attribute set" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.29 TC107c - mapToUIDM - subMapBenutzerAuthorisierung - 0 attributes set" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.30 TC108 - mapToUIDM - subMapToHauptsparte" time="0.006" />
+
+  </testsuite>
+  <testsuite errors="0" failures="2" hostname="ci-temp-pipeline-3vgmbt-solution-ut-task-pod" id="3" name="DemoProjectAtContractService Unit Tests: 04 all other operations" package="DemoProjectAtContractServiceV2_Test" skipped="0" tests="37" time="0.291" timestamp="2024-03-07T08:59:31">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries" />
+
+          <property name="watt.net.proxyUser" value="" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="test.reports.dir" value="/workspace/source/reports/unit-tests" />
+
+          <property name="watt.net.secureProxyPass" value="" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/ant" />
+
+          <property name="java.runtime.version" value="11.0.21+9-LTS" />
+
+          <property name="user.name" value="root" />
+
+          <property name="watt.net.proxyPass" value="" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/local/java/lib" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="java.version" value="11.0.21" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="55.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="US" />
+
+          <property name="webMethods.integrationServer.userid" value="Administrator" />
+
+          <property name="java.home" value="/usr/local/java" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="os.version" value="4.18.0-372.82.1.el8_6.x86_64" />
+
+          <property name="watt.net.secureProxyHost" value="" />
+
+          <property name="webMethods.test.profile.result.includeExecutionModelReport" value="true" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="11.0.21+9-LTS" />
+
+          <property name="ant.library.dir" value="/usr/local/ant/lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.specification.maintenance.version" value="2" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/run-composite-runner.xml" />
+
+          <property name="watt.net.proxyHost" value="" />
+
+          <property name="user.home" value="/root" />
+
+          <property name="java.version.date" value="2023-10-17" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://www.azul.com/" />
+
+          <property name="pack.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="/workspace/source/reports/unit-tests" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="java.class.path" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/commons-jxpath-1.2.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/hamcrest-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/httpunit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/javax.xml.soap-api.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/junit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceInterceptor.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/serviceMockClient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/wmjxpath.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/testsuite/xmlunit1.0.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/jackson-core.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/xml-apis.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-isclient.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/icu4j.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ext/enttoolkit.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/IntegrationServer/lib/wm-isserver.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/wm-g11nutils.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/glassfish/gf.jakarta.mail.jar:/workspace/source/wmtestexecutor/WmTestSuiteExecutor/libraries/common/lib/ant/ant-contrib-1.0b3.jar:/usr/local/ant/lib/ant-launcher.jar:/usr/local/ant/lib/ant.jar:/usr/local/ant/lib/ant-junit.jar:/usr/local/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junitvmwatcher705640794179950056.properties propsfile=/workspace/source/wmtestexecutor/WmTestSuiteExecutor/junit3155397621900480429.properties" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="11" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://www.azul.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local" />
+
+          <property name="webMethods.test.scope.packages" value="" />
+
+          <property name="webMethods.test.profile.result.includeServiceLevelReport" value="true" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="watt.net.secureProxyPort" value="" />
+
+          <property name="test.externalClasspath.dir" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/jars,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/java/classes,/workspace/source/packages/DemoProjectAtContractServiceV2_Test//resources/test/classes,/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class" />
+
+          <property name="user.dir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="jdk.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="basedir" value="/workspace/source/wmtestexecutor/WmTestSuiteExecutor" />
+
+          <property name="ant.java.version" value="11" />
+
+          <property name="ant.core.lib" value="/usr/local/ant/lib/ant.jar" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="watt.net.proxyPort" value="" />
+
+          <property name="current.project" value="WmTestSuiteExecutor" />
+
+          <property name="file.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="watt.net.secureProxyUser" value="" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="java.specification.version" value="11" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="java.vendor.version" value="Zulu11.68+18-SA" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="/workspace/source/packages/DemoProjectAtContractServiceV2_Test/" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.0 TC23 - mapToBackend - mapToReadPositionszeilen" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.1 TC28 - mapToUIDM - mapToGetContractRiskPositionsFormattedResponse" time="0.016" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.2 TC29 - mapToUIDM - subMapVertragPositionsZeilen - many elements" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.3 TC29a - mapToUIDM - subMapVertragPositionsZeilen - 1 element" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.4 TC29b - mapToUIDM - subMapVertragPositionsZeilen - 0 elements" time="0.004" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.5 TC30 - mapToUIDM - subMapErweiterungen - many elements" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.6 TC30a - mapToUIDM - subMapErweiterungen - 1 element" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.7 TC30b - mapToUIDM - subMapErweiterungen - 0 elements" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.8 TC55 - mapToBackend - mapToReadVersicherteKFZ" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.9 TC59 - mapToUIDM - subMapFahrzeugliste - 0 elements" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.10 TC60 - mapToUIDM - subMapFahrzeugliste - 1 element" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.11 TC61 - mapToUIDM - subMapFahrzeugliste - 3 elements" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.12 TC62 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 0 elements" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.13 TC63 - mapToUIDM - mapToGetContractInsuredObjectsResponse - 1 element" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.15 TC65 - mapToBackend - mapToVertragSearch" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.16 TC66 - mapToBackend - mapGetElectronicFileListRequestToElektrAktLesen" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.17 TC67 - mapToUIDM - mapToGetElectronicFileListResponse - multiple elements" time="0.009" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.18 TC68 - mapToUIDM - mapToGetElectronicFileListResponse - one element" time="0.008" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.19 TC69 - mapToUIDM - mapToGetElectronicFileListResponse - no element" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.20 TC70 - mapToUIDM - subMapToElektronischerAktEintragListe - multiple elements" time="0.011" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.21 TC71 - mapToUIDM - subMapToElektronischerAktEintragListe - one element" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.22 TC72 - mapToUIDM - subMapToElektronischerAktEintragListe - no element" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.23 TC73 - mapToUIDM - subMapToTextZeile - multiple elements" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.24 TC74 - mapToUIDM - subMapToTextZeile - one element" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.25 TC75 - mapToUIDM - subMapToTextZeile - no element" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.26 TC84 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - n elements" time="0.008">
+          <failure message="tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don&apos;t match.: expected &lt;2015-01-01&gt; but was &lt;2014-12-31&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don&apos;t match.: expected &lt;2015-01-01&gt; but was &lt;2014-12-31&gt;
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.27 TC85 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - 1 element" time="0.008">
+          <failure message="tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don&apos;t match.: expected &lt;2015-01-01&gt; but was &lt;2014-12-31&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: tns:getPolicyPaymentStatementListResponse/Finanzamtbestaetigungsliste/esb-ps:Finanzamtbestaetigung[0]/esb-ps:GueltigBisDatum :Expected and actual objects don&apos;t match.: expected &lt;2015-01-01&gt; but was &lt;2014-12-31&gt;
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:246)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:178)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:135)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:76)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1245)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1151)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.runTest(CompositeSuiteBuilder.java:218)
+	at com.softwareag.utf.runner.CompositeSuiteBuilder$1.run(CompositeSuiteBuilder.java:224)
+	at com.softwareag.utf.runner.JUnit38ClassRunnerL.run(JUnit38ClassRunnerL.java:30)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:210)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:41)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.28 TC86 - mapToUIDM - mapPOSPersonResourceTogetPolicyPaymentStatementList - 0 elements" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.29 TC87 - mapToBackend - mapPOSPersonResourceTogetPolicyPaymentStatementList - 0 elements" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.30 TC93 - splitStreetName - OK" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.31 TC94 - splitStreetName - NOK" time="0.004" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.32 TC102 - mapToBackend - mapToReadRiskoAdressen" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.33 TC103 - mapToUIDM - subMapToRiskObjectList - one address" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.34 TC104 - maptpUIDM - subMapToRiskObjectList - another addresses" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.35 TC105 - mapToUIDM - mapToGetRiskObjectListResponse - one address" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.36 TC106 - mapToUIDM - mapToGetRiskObjectListResponse - two address" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="3.37 TC108 - mapToUIDM - subMapToHauptsparte" time="0.005" />
+
+  </testsuite>
+</testsuites>
