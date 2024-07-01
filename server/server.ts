@@ -235,8 +235,12 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
     const project = req.params.project;
     const file = req.file;
     const buildInfo = JSON.parse(req.body.buildInfo);
-
+    // check if buildInfo is valid
     console.log('Project: ', project, ' File: ', file, ' Build Info: ', buildInfo);
+    if (!buildInfo.project || !buildInfo.build || !buildInfo.repository || !buildInfo.revision || buildInfo.buildSuccess === undefined) {
+        res.status(400).send('Invalid buildInfo');
+        return;
+    }
 
     if (!file) {
         res.status(400).send('No file uploaded');
@@ -244,37 +248,23 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
     }
 
     // Create the project directory if it doesn't exist
+    const buildDir = path.join(config.projectDirectory, project, buildInfo.build);
     const projectDir = path.join(config.projectDirectory, project);
-    if (!fs.existsSync(projectDir)) {
-        fs.mkdirSync(projectDir);
+    if (!fs.existsSync(buildDir)) {
+        fs.mkdirSync(buildDir, { recursive: true });
     }
 
     try {
-        // create new BuildSummary object
-
         // Unzip the file to the project directory
-        await extract(file.path, { dir: projectDir });
+        await extract(file.path, { dir: buildDir });
 
         // Delete the uploaded zip file
         fs.unlinkSync(file.path);
 
-        let buildDir = '';
-        // get the name of the first subdirectory of projectDir
-        const files = fs.readdirSync(projectDir).filter((f: string) => {
-            const fullPath = path.join(projectDir, f);
-            return !f.startsWith('.') && fs.statSync(fullPath).isDirectory();
-        });
-
-        if (files.length > 0) {
-            buildDir = files[0];
-        } else {
-            throw new Error('No subdirectory found in the project directory');
-        }
-
         // write the buildInfo to a file in the build directory
-        fs.writeFileSync(path.join(projectDir, buildDir, 'buildInfo.json'), JSON.stringify(buildInfo));
+        fs.writeFileSync(path.join(buildDir, 'buildInfo.json'), JSON.stringify(buildInfo));
 
-        let codeReviewDir = path.join(projectDir, buildDir, 'codereview');
+        let codeReviewDir = path.join(buildDir, 'codereview');
         let codeReviewResult = new ReportResult(codeReviewDir, []);
         if (fs.existsSync(codeReviewDir)) {
             codeReviewResult = parseCodeReviewXML(codeReviewDir, 'results.xml');
@@ -282,7 +272,7 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
         }
 
 
-        let unitTestDir = path.join(projectDir, buildDir, 'unit-tests');
+        let unitTestDir = path.join(buildDir, 'unit-tests');
         let junitReportResult = new ReportResult(unitTestDir, []);
         if (fs.existsSync(unitTestDir)) {
             junitReportResult = parseTestSuiteXML(unitTestDir, 'TESTS-TestSuites.xml', 'testsuites');
@@ -290,7 +280,7 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
         }
 
         // SOAP UI test directory
-        let soapUITestDir = path.join(projectDir, buildDir, 'soapui');
+        let soapUITestDir = path.join(buildDir, 'soapui');
         let soapUIReportResult = new ReportResult(soapUITestDir, []);
         if (fs.existsSync(soapUITestDir)) {
             //iterate over the directories in soapUITestDir
@@ -336,35 +326,41 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
             soapUITestSummaryStatus = "Warn";
         }
 
-        // create codeReviewSummary, unitTestSummary, and soapUITestSummary
-        const codeReviewSummaryItem = new BuildSummaryItem(
-            [
-                ['Status', 'Count'],
-                ['Passed', codeReviewResult.result.filter((r: ReportResultItem) => r.failures === 0).length],
-                ['Failed', codeReviewResult.result.filter((r: ReportResultItem) => r.failures > 0).length],
-                ['Warnings', codeReviewResult.result.filter((r: ReportResultItem) => r.warnings > 0).length],
-            ]
-            , codeReviewSummaryStatus
-        );
+       // create codeReviewSummary, unitTestSummary, and soapUITestSummary
 
-        const junitSummaryItem = new BuildSummaryItem(
-            [
-                ['Status', 'Count'],
-                ['Passed', junitReportResult.result.filter((r: ReportResultItem) => r.failures === 0).length],
-                ['Failed', junitReportResult.result.filter((r: ReportResultItem) => r.failures > 0).length],
-                ['Warnings', junitReportResult.result.filter((r: ReportResultItem) => r.warnings > 0).length],
-            ], unitTestSummaryStatus
-        );
+        // sum the tests, failures, and warnings for each test suite
+        const codeReviewTestCount = codeReviewResult.result.reduce((acc, r) => acc + r.tests, 0);
+        const codeReviewFailureCount = codeReviewResult.result.reduce((acc, r) => acc + r.failures, 0);
+        const codeReviewWarnCount = codeReviewResult.result.reduce((acc, r) => acc + r.warnings, 0);
 
-        const soapUISummaryItem = new BuildSummaryItem(
-            [
-                ['Status', 'Count'],
-                ['Passed', soapUIReportResult.result.filter((r: ReportResultItem) => r.failures === 0).length],
-                ['Failed', soapUIReportResult.result.filter((r: ReportResultItem) => r.failures > 0).length],
-                ['Warnings', soapUIReportResult.result.filter((r: ReportResultItem) => r.warnings > 0).length],
-            ], soapUITestSummaryStatus
-        );
+        const codeReviewSummaryItem = new BuildSummaryItem([
+            ['Status', 'Count'],
+            ['Passed', codeReviewTestCount - codeReviewFailureCount - codeReviewWarnCount],
+            ['Failed', codeReviewFailureCount],
+            ['Warnings', codeReviewWarnCount],
+        ], codeReviewSummaryStatus);
+        // sum the tests, failures, and errors for each test suite
+        const junitTestCount = junitReportResult.result.reduce((acc, r) => acc + r.tests, 0);
+        const junitFailureCount = junitReportResult.result.reduce((acc, r) => acc + r.failures, 0);
+        const junitErrorCount = junitReportResult.result.reduce((acc, r) => acc + r.errors, 0);
+        const junitSummaryItem = new BuildSummaryItem([
+            ['Status', 'Count'],
+            ['Passed', junitTestCount - junitFailureCount - junitErrorCount],
+            ['Failed', junitFailureCount],
+            ['Errors', junitErrorCount],
+        ], unitTestSummaryStatus);
 
+        //sum the tests, failures, and errors for each test suite
+        const soapUITestCount = soapUIReportResult.result.reduce((acc, r) => acc + r.tests, 0);
+        const soapUIFailureCount = soapUIReportResult.result.reduce((acc, r) => acc + r.failures, 0);
+        const soapUIErrorCount = soapUIReportResult.result.reduce((acc, r) => acc + r.errors, 0);
+        const soapUISummaryItem = new BuildSummaryItem([
+            ['Status', 'Count'],
+            ['Passed', soapUITestCount - soapUIFailureCount - soapUIErrorCount],
+            ['Failed', soapUIFailureCount],
+            ['Errors', soapUIErrorCount],
+        ], soapUITestSummaryStatus);
+  
         const buildSummary: BuildSummary = new BuildSummary(
             buildInfo,
             codeReviewSummaryItem,
@@ -372,9 +368,9 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
             soapUISummaryItem,
         );
 
-        fs.writeFileSync(path.join(projectDir, buildDir, 'buildSummary.json'), JSON.stringify(buildSummary));
+        fs.writeFileSync(path.join(buildDir, 'buildSummary.json'), JSON.stringify(buildSummary));
 
-        fs.symlinkSync(path.join(projectDir, buildDir), latestBuildDir, 'dir');
+        fs.symlinkSync(path.join(buildDir), latestBuildDir, 'dir');
 
         const messageCard = createTeamsMessageCard(buildSummary);
         console.log('Message card: ', messageCard);

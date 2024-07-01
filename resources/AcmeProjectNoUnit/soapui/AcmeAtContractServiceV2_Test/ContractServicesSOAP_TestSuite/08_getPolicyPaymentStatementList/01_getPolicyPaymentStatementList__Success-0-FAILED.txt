@@ -1,0 +1,88 @@
+Status: FAILED
+Time Taken: 1499
+Size: 704
+Timestamp: Thu Mar 07 09:05:12 GMT 2024
+TestStep: 01 getPolicyPaymentStatementList - Success
+
+----------------- Messages ------------------------------
+[Not SOAP Fault] Response is a SOAP Fault
+[XPath Match - SUCCESS] XPathContains assertion failed for path [declare namespace SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace Q2='http://www.bipro.net/namespace/vertrag';
+declare namespace tns='http://Acme.at/schema/integration/service/ContractService/v2';
+declare namespace pm='http://www.bipro.net/namespace/produktmodell';
+declare namespace esb-ps='http://www.Acme.at/esb/Partner/Services';
+declare namespace tns1='http://Acme.at/schema/common/service/header/v1';
+declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace allg='http://www.bipro.net/namespace/allgemein';
+//result/status] : Exception:Missing content for xpath [declare namespace SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace Q2='http://www.bipro.net/namespace/vertrag';
+declare namespace tns='http://Acme.at/schema/integration/service/ContractService/v2';
+declare namespace pm='http://www.bipro.net/namespace/produktmodell';
+declare namespace esb-ps='http://www.Acme.at/esb/Partner/Services';
+declare namespace tns1='http://Acme.at/schema/common/service/header/v1';
+declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace allg='http://www.bipro.net/namespace/allgemein';
+//result/status] in Response
+
+----------------- Properties ------------------------------
+Endpoint: http://Acme-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws/Acme.integration.contract.v2.ws.provider:ContractService/ContractServiceSOAP
+Username: uesbpegacrm
+domain: 
+Encoding: UTF-8
+Password: RVU6j4gw
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://Acme.at/schema/integration/service/ContractService/v2/getPolicyPaymentStatementList"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : Acme-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 1202
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://Acme.at/schema/common/service/header/v1" xmlns:v2="http://Acme.at/schema/integration/service/ContractService/v2">
+   <soapenv:Header>
+      <v1:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>12121212</contextId>
+            <messageId>34343434</messageId>
+            <timestamp>2019-09-09T12:00:00</timestamp>
+         </messageIdentity>
+         <consumer>
+            <applicationName>ContractServiceV2</applicationName>
+         </consumer>
+      </v1:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v2:getPolicyPaymentStatementListRequest>
+         <PartnerID>2114667</PartnerID>
+         <MandantenCodePartnerID>UNQ</MandantenCodePartnerID>
+         <!--Optional:-->
+         <AbJahr>2000</AbJahr>
+         <!--Optional:-->
+         <AnzahlJahre>10</AnzahlJahre>
+         <!--Optional:-->
+         <ReadWertebereiche>true</ReadWertebereiche>
+         <!--Optional:-->
+         <Language>de</Language>
+         <Host>TT</Host>
+      </v2:getPolicyPaymentStatementListRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 500 [ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'Acme.integration.contract.v2.pub:getPolicyPaymentStatementList' invoking unknown service 'Acme.logging.pub.common:setTrackingId' at 'Invoke for Acme.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>[ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'Acme.integration.contract.v2.pub:getPolicyPaymentStatementList' invoking unknown service 'Acme.logging.pub.common:setTrackingId' at 'Invoke for Acme.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.</faultstring>
+         <faultactor>http://Acme-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws</faultactor>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>

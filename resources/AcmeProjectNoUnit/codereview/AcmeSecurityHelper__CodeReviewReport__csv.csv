@@ -1,0 +1,326 @@
+PACKAGE,ID,NAME,SERVICE,CHECKID,TEST_PASSED,"VALUE",IGNORE_FAILURE,RAGSTATUS
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.Pub:decryptMessage,SP1.1,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.Pub:encryptMessage,SP1.2,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.SecurityProvider:base64Decode,SP1.3,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.SecurityProvider:base64Encode,SP1.4,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.SecurityProvider:decryptMessage,SP1.5,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.SecurityProvider:encryptMessage,SP1.6,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.SecurityProvider:loadKey,SP1.7,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.Service:decryptMessageCached,SP1.8,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.Service:encryptMessageCached,SP1.9,true,"true",false,1
+AcmeSecurityHelper,SP1,Stateless,AcmeSecurityHelper.Test:testEncryption,SP1.10,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.Pub:decryptMessage,SP2.1,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.Pub:encryptMessage,SP2.2,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.SecurityProvider:base64Decode,SP2.3,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.SecurityProvider:base64Encode,SP2.4,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.SecurityProvider:decryptMessage,SP2.5,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.SecurityProvider:encryptMessage,SP2.6,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.SecurityProvider:loadKey,SP2.7,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.Service:decryptMessageCached,SP2.8,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.Service:encryptMessageCached,SP2.9,true,"true",false,1
+AcmeSecurityHelper,SP2,Pipeline Save Restore,AcmeSecurityHelper.Test:testEncryption,SP2.10,true,"true",false,1
+AcmeSecurityHelper,FQ1,Pipeline Services,AcmeSecurityHelper.Pub:decryptMessage,FQ1.1,true,"No matching services",false,1
+AcmeSecurityHelper,FQ1,Pipeline Services,AcmeSecurityHelper.Pub:encryptMessage,FQ1.2,true,"No matching services",false,1
+AcmeSecurityHelper,FQ1,Pipeline Services,AcmeSecurityHelper.Service:decryptMessageCached,FQ1.3,true,"No matching services",false,1
+AcmeSecurityHelper,FQ1,Pipeline Services,AcmeSecurityHelper.Service:encryptMessageCached,FQ1.4,true,"No matching services",false,1
+AcmeSecurityHelper,FQ1,Pipeline Services,AcmeSecurityHelper.Test:testEncryption,FQ1.5,true,"No matching services",false,1
+AcmeSecurityHelper,FQ3_v9,Deprecated Services (v9),AcmeSecurityHelper.Pub:decryptMessage,FQ3_v9.1,true,"No matching services",false,1
+AcmeSecurityHelper,FQ3_v9,Deprecated Services (v9),AcmeSecurityHelper.Pub:encryptMessage,FQ3_v9.2,true,"No matching services",false,1
+AcmeSecurityHelper,FQ3_v9,Deprecated Services (v9),AcmeSecurityHelper.Service:decryptMessageCached,FQ3_v9.3,true,"No matching services",false,1
+AcmeSecurityHelper,FQ3_v9,Deprecated Services (v9),AcmeSecurityHelper.Service:encryptMessageCached,FQ3_v9.4,true,"No matching services",false,1
+AcmeSecurityHelper,FQ3_v9,Deprecated Services (v9),AcmeSecurityHelper.Test:testEncryption,FQ3_v9.5,true,"No matching services",false,1
+AcmeSecurityHelper,FQ4,Disabled Services,AcmeSecurityHelper.Pub:decryptMessage,FQ4.1,true,"count(//*[@DISABLED='true'])=0",false,1
+AcmeSecurityHelper,FQ4,Disabled Services,AcmeSecurityHelper.Pub:encryptMessage,FQ4.2,true,"count(//*[@DISABLED='true'])=0",false,1
+AcmeSecurityHelper,FQ4,Disabled Services,AcmeSecurityHelper.Service:decryptMessageCached,FQ4.3,true,"count(//*[@DISABLED='true'])=0",false,1
+AcmeSecurityHelper,FQ4,Disabled Services,AcmeSecurityHelper.Service:encryptMessageCached,FQ4.4,true,"count(//*[@DISABLED='true'])=0",false,1
+AcmeSecurityHelper,FQ4,Disabled Services,AcmeSecurityHelper.Test:testEncryption,FQ4.5,true,"count(//*[@DISABLED='true'])=0",false,1
+AcmeSecurityHelper,FQ5,Use of Pub.Storage,AcmeSecurityHelper.Pub:decryptMessage,FQ5.1,true,"pub.storage.*",false,1
+AcmeSecurityHelper,FQ5,Use of Pub.Storage,AcmeSecurityHelper.Pub:encryptMessage,FQ5.2,true,"pub.storage.*",false,1
+AcmeSecurityHelper,FQ5,Use of Pub.Storage,AcmeSecurityHelper.Service:decryptMessageCached,FQ5.3,true,"pub.storage.*",false,1
+AcmeSecurityHelper,FQ5,Use of Pub.Storage,AcmeSecurityHelper.Service:encryptMessageCached,FQ5.4,true,"pub.storage.*",false,1
+AcmeSecurityHelper,FQ5,Use of Pub.Storage,AcmeSecurityHelper.Test:testEncryption,FQ5.5,true,"pub.storage.*",false,1
+AcmeSecurityHelper,FQ6,Debug Log,AcmeSecurityHelper.Pub:decryptMessage,FQ6.1,true,"pub.flow:debugLog",false,1
+AcmeSecurityHelper,FQ6,Debug Log,AcmeSecurityHelper.Pub:encryptMessage,FQ6.2,true,"pub.flow:debugLog",false,1
+AcmeSecurityHelper,FQ6,Debug Log,AcmeSecurityHelper.Service:decryptMessageCached,FQ6.3,true,"pub.flow:debugLog",false,1
+AcmeSecurityHelper,FQ6,Debug Log,AcmeSecurityHelper.Service:encryptMessageCached,FQ6.4,true,"pub.flow:debugLog",false,1
+AcmeSecurityHelper,FQ6,Debug Log,AcmeSecurityHelper.Test:testEncryption,FQ6.5,true,"pub.flow:debugLog",false,1
+AcmeSecurityHelper,FQ8,Connections Package,Connections,FQ8.1,true,"No connections exist in package",false,1
+AcmeSecurityHelper,FQ9,FTP Timeout,AcmeSecurityHelper.Pub:decryptMessage,FQ9.1,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+AcmeSecurityHelper,FQ9,FTP Timeout,AcmeSecurityHelper.Pub:encryptMessage,FQ9.2,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+AcmeSecurityHelper,FQ9,FTP Timeout,AcmeSecurityHelper.Service:decryptMessageCached,FQ9.3,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+AcmeSecurityHelper,FQ9,FTP Timeout,AcmeSecurityHelper.Service:encryptMessageCached,FQ9.4,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+AcmeSecurityHelper,FQ9,FTP Timeout,AcmeSecurityHelper.Test:testEncryption,FQ9.5,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.Pub:decryptMessage,FQ12.1,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.Pub:encryptMessage,FQ12.2,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.SecurityProvider:base64Decode,FQ12.3,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.SecurityProvider:base64Encode,FQ12.4,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.SecurityProvider:decryptMessage,FQ12.5,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.SecurityProvider:encryptMessage,FQ12.6,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.SecurityProvider:loadKey,FQ12.7,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.Service:decryptMessageCached,FQ12.8,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.Service:encryptMessageCached,FQ12.9,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ12,Unauthorised Access/Orphaned,AcmeSecurityHelper.Test:testEncryption,FQ12.10,false,"No invocations Found",true,0
+AcmeSecurityHelper,FQ13,Branch without switch or evaluate labels,AcmeSecurityHelper.Pub:decryptMessage,FQ13.1,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+AcmeSecurityHelper,FQ13,Branch without switch or evaluate labels,AcmeSecurityHelper.Pub:encryptMessage,FQ13.2,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+AcmeSecurityHelper,FQ13,Branch without switch or evaluate labels,AcmeSecurityHelper.Service:decryptMessageCached,FQ13.3,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+AcmeSecurityHelper,FQ13,Branch without switch or evaluate labels,AcmeSecurityHelper.Service:encryptMessageCached,FQ13.4,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+AcmeSecurityHelper,FQ13,Branch without switch or evaluate labels,AcmeSecurityHelper.Test:testEncryption,FQ13.5,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+AcmeSecurityHelper,FQ14,Branch on expression when child step is without specified label or $null,AcmeSecurityHelper.Pub:decryptMessage,FQ14.1,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+AcmeSecurityHelper,FQ14,Branch on expression when child step is without specified label or $null,AcmeSecurityHelper.Pub:encryptMessage,FQ14.2,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+AcmeSecurityHelper,FQ14,Branch on expression when child step is without specified label or $null,AcmeSecurityHelper.Service:decryptMessageCached,FQ14.3,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+AcmeSecurityHelper,FQ14,Branch on expression when child step is without specified label or $null,AcmeSecurityHelper.Service:encryptMessageCached,FQ14.4,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+AcmeSecurityHelper,FQ14,Branch on expression when child step is without specified label or $null,AcmeSecurityHelper.Test:testEncryption,FQ14.5,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+AcmeSecurityHelper,FQ15,Exit Node From Specification,AcmeSecurityHelper.Pub:decryptMessage,FQ15.1,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+AcmeSecurityHelper,FQ15,Exit Node From Specification,AcmeSecurityHelper.Pub:encryptMessage,FQ15.2,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+AcmeSecurityHelper,FQ15,Exit Node From Specification,AcmeSecurityHelper.Service:decryptMessageCached,FQ15.3,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+AcmeSecurityHelper,FQ15,Exit Node From Specification,AcmeSecurityHelper.Service:encryptMessageCached,FQ15.4,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+AcmeSecurityHelper,FQ15,Exit Node From Specification,AcmeSecurityHelper.Test:testEncryption,FQ15.5,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+AcmeSecurityHelper,FQ16,Branch step must have child nodes,AcmeSecurityHelper.Pub:decryptMessage,FQ16.1,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ16,Branch step must have child nodes,AcmeSecurityHelper.Pub:encryptMessage,FQ16.2,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ16,Branch step must have child nodes,AcmeSecurityHelper.Service:decryptMessageCached,FQ16.3,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ16,Branch step must have child nodes,AcmeSecurityHelper.Service:encryptMessageCached,FQ16.4,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ16,Branch step must have child nodes,AcmeSecurityHelper.Test:testEncryption,FQ16.5,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ17,Loop step must have child nodes,AcmeSecurityHelper.Pub:decryptMessage,FQ17.1,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ17,Loop step must have child nodes,AcmeSecurityHelper.Pub:encryptMessage,FQ17.2,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ17,Loop step must have child nodes,AcmeSecurityHelper.Service:decryptMessageCached,FQ17.3,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ17,Loop step must have child nodes,AcmeSecurityHelper.Service:encryptMessageCached,FQ17.4,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ17,Loop step must have child nodes,AcmeSecurityHelper.Test:testEncryption,FQ17.5,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ18,Repeat step must have child nodes,AcmeSecurityHelper.Pub:decryptMessage,FQ18.1,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ18,Repeat step must have child nodes,AcmeSecurityHelper.Pub:encryptMessage,FQ18.2,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ18,Repeat step must have child nodes,AcmeSecurityHelper.Service:decryptMessageCached,FQ18.3,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ18,Repeat step must have child nodes,AcmeSecurityHelper.Service:encryptMessageCached,FQ18.4,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ18,Repeat step must have child nodes,AcmeSecurityHelper.Test:testEncryption,FQ18.5,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+AcmeSecurityHelper,FQ21,Loop must have an input array provided,AcmeSecurityHelper.Pub:decryptMessage,FQ21.1,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+AcmeSecurityHelper,FQ21,Loop must have an input array provided,AcmeSecurityHelper.Pub:encryptMessage,FQ21.2,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+AcmeSecurityHelper,FQ21,Loop must have an input array provided,AcmeSecurityHelper.Service:decryptMessageCached,FQ21.3,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+AcmeSecurityHelper,FQ21,Loop must have an input array provided,AcmeSecurityHelper.Service:encryptMessageCached,FQ21.4,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+AcmeSecurityHelper,FQ21,Loop must have an input array provided,AcmeSecurityHelper.Test:testEncryption,FQ21.5,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+AcmeSecurityHelper,FQ22,Flow service should not be empty,AcmeSecurityHelper.Pub:decryptMessage,FQ22.1,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+AcmeSecurityHelper,FQ22,Flow service should not be empty,AcmeSecurityHelper.Pub:encryptMessage,FQ22.2,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+AcmeSecurityHelper,FQ22,Flow service should not be empty,AcmeSecurityHelper.Service:decryptMessageCached,FQ22.3,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+AcmeSecurityHelper,FQ22,Flow service should not be empty,AcmeSecurityHelper.Service:encryptMessageCached,FQ22.4,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+AcmeSecurityHelper,FQ22,Flow service should not be empty,AcmeSecurityHelper.Test:testEncryption,FQ22.5,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+AcmeSecurityHelper,NS1,Root Folder Name,AcmeSecurityHelper,NS1.1,false,"AcmeSecurityHelper",false,-1
+AcmeSecurityHelper,NS2,Folder Name,AcmeSecurityHelper,NS2.1,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+AcmeSecurityHelper,NS2,Folder Name,AcmeSecurityHelper.Pub,NS2.2,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+AcmeSecurityHelper,NS2,Folder Name,AcmeSecurityHelper.SecurityProvider,NS2.3,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+AcmeSecurityHelper,NS2,Folder Name,AcmeSecurityHelper.Service,NS2.4,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+AcmeSecurityHelper,NS2,Folder Name,AcmeSecurityHelper.Test,NS2.5,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+AcmeSecurityHelper,NS4,Package Name,AcmeSecurityHelper,NS4.1,true,"startsWith('Acme')",false,1
+AcmeSecurityHelper,NS4,Package Name,AcmeSecurityHelper,NS4.2,true,"startsWith('Wm')",false,1
+AcmeSecurityHelper,NS4,Package Name,AcmeSecurityHelper,NS4.3,true,"endsWith('pkg')",false,1
+AcmeSecurityHelper,NS4,Package Name,AcmeSecurityHelper,NS4.4,true,"endsWith('package')",false,1
+AcmeSecurityHelper,NS4,Package Name,AcmeSecurityHelper,NS4.5,true,"[A-Z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.Pub:decryptMessage,NS5.1,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.Pub:encryptMessage,NS5.2,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.SecurityProvider:base64Decode,NS5.3,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.SecurityProvider:base64Encode,NS5.4,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.SecurityProvider:decryptMessage,NS5.5,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.SecurityProvider:encryptMessage,NS5.6,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.SecurityProvider:loadKey,NS5.7,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.Service:decryptMessageCached,NS5.8,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.Service:encryptMessageCached,NS5.9,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS5,Service Name,AcmeSecurityHelper.Test:testEncryption,NS5.10,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:decryptMessage;packageName,NS16.1,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:decryptMessage;keyName,NS16.2,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:decryptMessage;encryptedMessageBase64,NS16.3,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:decryptMessage;encryptedMessage,NS16.4,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:decryptMessage;message,NS16.5,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:encryptMessage;message,NS16.6,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:encryptMessage;packageName,NS16.7,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:encryptMessage;keyName,NS16.8,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:encryptMessage;encryptedMessageBase64,NS16.9,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Pub:encryptMessage;encryptedMessage,NS16.10,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Decode;base64DecodeInput,NS16.11,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Decode;messageBase64,NS16.12,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Decode;base64DecodeOutput,NS16.13,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Decode;message,NS16.14,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Encode;base64EncodeInput,NS16.15,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Encode;message,NS16.16,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Encode;base64EncodeOutput,NS16.17,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:base64Encode;messageBase64,NS16.18,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:decryptMessage;decryptMessageInput,NS16.19,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:decryptMessage;publicKey,NS16.20,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:decryptMessage;encryptedMessageBase64,NS16.21,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:decryptMessage;encryptedMessage,NS16.22,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:decryptMessage;decryptMessageOutput,NS16.23,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:decryptMessage;decryptedMessage,NS16.24,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:encryptMessage;encryptMessageInput,NS16.25,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:encryptMessage;message,NS16.26,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:encryptMessage;privateKey,NS16.27,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:encryptMessage;encryptMessageOutput,NS16.28,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:encryptMessage;encryptedMessageBase64,NS16.29,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:encryptMessage;encryptedMessage,NS16.30,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:loadKey;loadKeyInput,NS16.31,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:loadKey;keyType,NS16.32,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:loadKey;keyName,NS16.33,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:loadKey;packageName,NS16.34,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:loadKey;loadKeyOutput,NS16.35,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.SecurityProvider:loadKey;key,NS16.36,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:decryptMessageCached;packageName,NS16.37,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:decryptMessageCached;keyName,NS16.38,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:decryptMessageCached;encryptedMessageBase64,NS16.39,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:decryptMessageCached;encryptedMessage,NS16.40,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:decryptMessageCached;message,NS16.41,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:encryptMessageCached;message,NS16.42,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:encryptMessageCached;packageName,NS16.43,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:encryptMessageCached;keyName,NS16.44,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:encryptMessageCached;encryptedMessageBase64,NS16.45,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Service:encryptMessageCached;encryptedMessage,NS16.46,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Test:testEncryption;message,NS16.47,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Test:testEncryption;message,NS16.48,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Test:testEncryption;decryptedMessageBase64,NS16.49,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Test:testEncryption;decryptedMessageByteArray,NS16.50,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Test:testEncryption;encryptedMessageBase64,NS16.51,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,NS16,Service Signature Name,AcmeSecurityHelper.Test:testEncryption;encryptedMessage,NS16.52,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+AcmeSecurityHelper,MS1,Non-Production Service Package Suffixes,AcmeSecurityHelper,MS1.1,true,"not endsWith('_TEST')",false,1
+AcmeSecurityHelper,MS1,Non-Production Service Package Suffixes,AcmeSecurityHelper,MS1.2,true,"not endsWith('_STUB')",false,1
+AcmeSecurityHelper,MS1,Non-Production Service Package Suffixes,AcmeSecurityHelper,MS1.3,true,"not endsWith('_DEV')",false,1
+AcmeSecurityHelper,SEN1.1,totals,null,Flow Services,N/A,"5",FALSE,1
+AcmeSecurityHelper,SEN1.2,totals,null,Java Services,N/A,"5",FALSE,1
+AcmeSecurityHelper,SEN1.3,totals,null,Documents,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.4,totals,null,Schemas,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.5,totals,null,FF Dictionaries,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.6,totals,null,FF Schemas,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.7,totals,null,Blaze,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.8,totals,null,Xsl,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.9,totals,null,Adapters,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.10,totals,null,Triggers,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.11,totals,null,WSDs,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.12,totals,null,Connections,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.13,totals,null,Map Services,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.14,totals,null,OData Services,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.15,totals,null,Rest Resources,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.16,totals,null,Rest Descriptors,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN1.17,totals,null,Folders,N/A,"5",FALSE,1
+AcmeSecurityHelper,SEN1.18,totals,null,TotalChecks,N/A,"36",FALSE,1
+AcmeSecurityHelper,SEN1.19,totals,null,TotalWarning,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN1.20,totals,null,TotalFailed,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN1.21,totals,null,TotalPassed,N/A,"34",FALSE,1
+AcmeSecurityHelper,SEN1.1.1,SummaryTotals/totals,null,overallQualityPct,N/A,"96",FALSE,1
+AcmeSecurityHelper,SEN2.1,CodeLines,AcmeSecurityHelper.SecurityProvider:base64Decode,Lines,N/A,"10",FALSE,1
+AcmeSecurityHelper,SEN2.2,CodeLines,AcmeSecurityHelper.SecurityProvider:base64Encode,Lines,N/A,"10",FALSE,1
+AcmeSecurityHelper,SEN2.3,CodeLines,AcmeSecurityHelper.SecurityProvider:decryptMessage,Lines,N/A,"35",FALSE,1
+AcmeSecurityHelper,SEN2.4,CodeLines,AcmeSecurityHelper.SecurityProvider:encryptMessage,Lines,N/A,"29",FALSE,1
+AcmeSecurityHelper,SEN2.5,CodeLines,AcmeSecurityHelper.SecurityProvider:loadKey,Lines,N/A,"26",FALSE,1
+AcmeSecurityHelper,SEN2.6,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noMap,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.7,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noMapCopies,N/A,"5",FALSE,1
+AcmeSecurityHelper,SEN2.8,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noBranch,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.9,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noLoop,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.10,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noRetry,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.11,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noSeq,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.12,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noExit,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.13,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noInvoke,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.14,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,noDisabled,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.15,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Loop-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.16,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Loop-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.17,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Loop-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.18,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Branch-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.19,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Branch-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.20,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Branch-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.21,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Repeat-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.22,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Repeat-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.23,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,Repeat-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.24,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noMap,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.25,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noMapCopies,N/A,"5",FALSE,1
+AcmeSecurityHelper,SEN2.26,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noBranch,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.27,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noLoop,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.28,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noRetry,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.29,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noSeq,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.30,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noExit,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.31,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noInvoke,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.32,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,noDisabled,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.33,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Loop-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.34,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Loop-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.35,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Loop-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.36,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Branch-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.37,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Branch-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.38,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Branch-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.39,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Repeat-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.40,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Repeat-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.41,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,Repeat-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.42,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noMap,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.43,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noMapCopies,N/A,"7",FALSE,1
+AcmeSecurityHelper,SEN2.44,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noBranch,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.45,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noLoop,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.46,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noRetry,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.47,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noSeq,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.48,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noExit,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.49,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noInvoke,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.50,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,noDisabled,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.51,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Loop-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.52,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Loop-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.53,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Loop-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.54,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Branch-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.55,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Branch-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.56,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Branch-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.57,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Repeat-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.58,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Repeat-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.59,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,Repeat-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.60,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noMap,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.61,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noMapCopies,N/A,"7",FALSE,1
+AcmeSecurityHelper,SEN2.62,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noBranch,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.63,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noLoop,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.64,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noRetry,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.65,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noSeq,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.66,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noExit,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.67,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noInvoke,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.68,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,noDisabled,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.69,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Loop-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.70,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Loop-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.71,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Loop-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.72,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Branch-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.73,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Branch-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.74,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Branch-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.75,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Repeat-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.76,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Repeat-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.77,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,Repeat-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.78,CodeLines,AcmeSecurityHelper.Test:testEncryption,noMap,N/A,"2",FALSE,1
+AcmeSecurityHelper,SEN2.79,CodeLines,AcmeSecurityHelper.Test:testEncryption,noMapCopies,N/A,"17",FALSE,1
+AcmeSecurityHelper,SEN2.80,CodeLines,AcmeSecurityHelper.Test:testEncryption,noBranch,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.81,CodeLines,AcmeSecurityHelper.Test:testEncryption,noLoop,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.82,CodeLines,AcmeSecurityHelper.Test:testEncryption,noRetry,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.83,CodeLines,AcmeSecurityHelper.Test:testEncryption,noSeq,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.84,CodeLines,AcmeSecurityHelper.Test:testEncryption,noExit,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.85,CodeLines,AcmeSecurityHelper.Test:testEncryption,noInvoke,N/A,"3",FALSE,1
+AcmeSecurityHelper,SEN2.86,CodeLines,AcmeSecurityHelper.Test:testEncryption,noDisabled,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.87,CodeLines,AcmeSecurityHelper.Test:testEncryption,Loop-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.88,CodeLines,AcmeSecurityHelper.Test:testEncryption,Loop-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.89,CodeLines,AcmeSecurityHelper.Test:testEncryption,Loop-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.90,CodeLines,AcmeSecurityHelper.Test:testEncryption,Branch-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.91,CodeLines,AcmeSecurityHelper.Test:testEncryption,Branch-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.92,CodeLines,AcmeSecurityHelper.Test:testEncryption,Branch-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.93,CodeLines,AcmeSecurityHelper.Test:testEncryption,Repeat-n3,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.94,CodeLines,AcmeSecurityHelper.Test:testEncryption,Repeat-n2,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.95,CodeLines,AcmeSecurityHelper.Test:testEncryption,Repeat-n1,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.96,CodeLines,AcmeSecurityHelper.SecurityProvider:base64Encode,complexityFactor-java,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.97,CodeLines,AcmeSecurityHelper.SecurityProvider:encryptMessage,complexityFactor-java,N/A,"2",FALSE,1
+AcmeSecurityHelper,SEN2.98,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,complexityFactor-flow,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.99,CodeLines,AcmeSecurityHelper.SecurityProvider:loadKey,complexityFactor-java,N/A,"2",FALSE,1
+AcmeSecurityHelper,SEN2.100,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,complexityFactor-flow,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.101,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,complexityFactor-flow,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.102,CodeLines,AcmeSecurityHelper.SecurityProvider:base64Decode,complexityFactor-java,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.103,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,complexityFactor-flow,N/A,"1",FALSE,1
+AcmeSecurityHelper,SEN2.104,CodeLines,AcmeSecurityHelper.SecurityProvider:decryptMessage,complexityFactor-java,N/A,"3",FALSE,1
+AcmeSecurityHelper,SEN2.105,CodeLines,AcmeSecurityHelper.Test:testEncryption,complexityFactor-flow,N/A,"3",FALSE,1
+AcmeSecurityHelper,SEN2.106,CodeLines,AcmeSecurityHelper.SecurityProvider:base64Encode,totalLines,N/A,"10",FALSE,1
+AcmeSecurityHelper,SEN2.107,CodeLines,AcmeSecurityHelper.SecurityProvider:encryptMessage,totalLines,N/A,"29",FALSE,1
+AcmeSecurityHelper,SEN2.108,CodeLines,AcmeSecurityHelper.Service:decryptMessageCached,totalLines,N/A,"9",FALSE,1
+AcmeSecurityHelper,SEN2.109,CodeLines,AcmeSecurityHelper.SecurityProvider:loadKey,totalLines,N/A,"26",FALSE,1
+AcmeSecurityHelper,SEN2.110,CodeLines,AcmeSecurityHelper.Pub:encryptMessage,totalLines,N/A,"6",FALSE,1
+AcmeSecurityHelper,SEN2.111,CodeLines,AcmeSecurityHelper.Pub:decryptMessage,totalLines,N/A,"6",FALSE,1
+AcmeSecurityHelper,SEN2.112,CodeLines,AcmeSecurityHelper.SecurityProvider:base64Decode,totalLines,N/A,"10",FALSE,1
+AcmeSecurityHelper,SEN2.113,CodeLines,AcmeSecurityHelper.Service:encryptMessageCached,totalLines,N/A,"9",FALSE,1
+AcmeSecurityHelper,SEN2.114,CodeLines,AcmeSecurityHelper.SecurityProvider:decryptMessage,totalLines,N/A,"35",FALSE,1
+AcmeSecurityHelper,SEN2.115,CodeLines,AcmeSecurityHelper.Test:testEncryption,totalLines,N/A,"22",FALSE,1
+AcmeSecurityHelper,SEN2.1.1,FlowCodeTotals/CodeLines,Services,CodeLines,N/A,"162",FALSE,1
+AcmeSecurityHelper,SEN2.1.2,FlowCodeTotals/CodeLines,Java,CodeLines,N/A,"110",FALSE,1
+AcmeSecurityHelper,SEN2.1.3,FlowCodeTotals/CodeLines,Flow,CodeLines,N/A,"52",FALSE,1
+AcmeSecurityHelper,SEN2.1.4,FlowCodeTotals/CodeLines,Branch,Flow-breakdown,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.1.5,FlowCodeTotals/CodeLines,Loop,Flow-breakdown,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.1.6,FlowCodeTotals/CodeLines,Repeat,Flow-breakdown,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.1.7,FlowCodeTotals/CodeLines,Sequence,Flow-breakdown,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.1.8,FlowCodeTotals/CodeLines,Exit,Flow-breakdown,N/A,"0",FALSE,1
+AcmeSecurityHelper,SEN2.1.9,FlowCodeTotals/CodeLines,Invoke,Flow-breakdown,N/A,"5",FALSE,1
+AcmeSecurityHelper,SEN2.1.10,FlowCodeTotals/CodeLines,Map,Flow-breakdown,N/A,"6",FALSE,1
+AcmeSecurityHelper,SEN2.1.11,FlowCodeTotals/CodeLines,Map-copy,Flow-breakdown,N/A,"41",FALSE,1
