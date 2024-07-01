@@ -29,12 +29,15 @@ function getBuildSummaries() {
     }
     );
     files.forEach((file: string) => {
-
-        // read the buildSummary.json file from the project directory and convert to BuildSummary type
-        const data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
-        const buildSummary = JSON.parse(data);
-        // convert jsonFile to a BuildSummary object
-        buildSummaries.push(buildSummary);
+        try {
+            // read the buildSummary.json file from the project directory and convert to BuildSummary type
+            const data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
+            const buildSummary = JSON.parse(data);
+            // convert jsonFile to a BuildSummary object
+            buildSummaries.push(buildSummary);
+        } catch (err) {
+            console.error('Failed to read buildSummary.json file: ', err);
+        }
     });
     return buildSummaries;
 }
@@ -326,7 +329,7 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
             soapUITestSummaryStatus = "Warn";
         }
 
-       // create codeReviewSummary, unitTestSummary, and soapUITestSummary
+        // create codeReviewSummary, unitTestSummary, and soapUITestSummary
 
         // sum the tests, failures, and warnings for each test suite
         const codeReviewTestCount = codeReviewResult.result.reduce((acc, r) => acc + r.tests, 0);
@@ -360,7 +363,7 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
             ['Failed', soapUIFailureCount],
             ['Errors', soapUIErrorCount],
         ], soapUITestSummaryStatus);
-  
+
         const buildSummary: BuildSummary = new BuildSummary(
             buildInfo,
             codeReviewSummaryItem,
