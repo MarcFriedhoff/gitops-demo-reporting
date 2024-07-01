@@ -8,6 +8,7 @@ const fs = require('fs');
 const { Project, Result, RootResult } = require('../models/types');
 const multer = require('multer');
 const extract = require('extract-zip');
+const archiver = require('archiver');
 const yaml = require('js-yaml');
 const xml2js = require('xml2js');
 const globSync = require('glob').sync;
@@ -391,6 +392,35 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
         res.status(500).send('Failed to extract file');
     }
 });
+
+// create a zip file of the build directory and return it
+app.get('/projects/:project/:build/download', (req: any, res: any) => {
+    const project = req.params.project;
+    const build = req.params.build;
+    const projectDir = path.join(config.projectDirectory, project, build);
+    const zipFile = path.join(config.projectDirectory, project, `${build}.zip`);
+
+    if (!fs.existsSync(projectDir)) {
+        res.status(404).send('Not found');
+        return;
+    }
+
+    const output = fs.createWriteStream(zipFile);
+    const archive = archiver('zip', { zlib: { level: 9 } });
+
+    output.on('close', () => {
+        res.download(zipFile);
+    });
+
+    archive.on('error', (err: any) => {
+        res.status(500).send('Server error');
+    });
+
+    archive.pipe(output);
+    archive.directory(projectDir, false);
+    archive.finalize();
+}   );
+
 
 app.get('/api/files/*', (req: { params: any[]; }, res: { status: (arg0: number) => { (): any; new(): any; send: { (arg0: string): void; new(): any; }; }; json: (arg0: any) => void; download: (arg0: any) => void; }) => {
     const filePath = path.join(config.projectDirectory, req.params[0]);

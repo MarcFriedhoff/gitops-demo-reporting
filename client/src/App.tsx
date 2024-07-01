@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/projects/:project/:build" element={<Build />} />
           <Route path="/projects/:project" element={<BuildList />} />
           <Route path="/files/*" element={<ReportBrowser />} />
-          <Route path="/" element={<Projects />} />
+          <Route path="/" element={<Projects />} />  
         </Routes>
       </Container>
     </Router >

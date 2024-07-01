@@ -1,11 +1,11 @@
-import { Breadcrumb, Nav, Offcanvas, Tab, Tabs } from "react-bootstrap";
+import { Breadcrumb, Nav, Offcanvas, OverlayTrigger, Stack, Tab, Tabs, Tooltip } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { ReportResultSummaryCard } from "./ReportResultSummaryCard";
 import { useEffect, useState } from "react";
 import { BuildSummary } from "../../models/types";
 import { BuildSummaryCard } from "./BuildSummaryCard";
 import FileBrowser from "./ReportBrowser";
-import { FaFile } from "react-icons/fa";
+import { FaDownload, FaFile } from "react-icons/fa";
 import { ReportResultsTable } from "./ReportResultsTable";
 
 
@@ -41,7 +41,7 @@ export const Build = () => {
                     <Offcanvas.Title>Reports</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <FileBrowser rootPath={`${project}/${build}`}/>
+                    <FileBrowser rootPath={`${project}/${build}`} />
                 </Offcanvas.Body>
             </Offcanvas>
             <Container>
@@ -51,37 +51,63 @@ export const Build = () => {
                         <Breadcrumb.Item href={`/projects/${project}`}>{project}</Breadcrumb.Item>
                         <Breadcrumb.Item active>{build}</Breadcrumb.Item>
                     </Breadcrumb>
-                    <Nav.Item>
-                        <Nav.Link onClick={() => setShowFileBrowser(true)}>
-                            <FaFile size={"1.2rem"} />
-                        </Nav.Link>
-                    </Nav.Item>
+                    <Stack direction="horizontal" gap={0}>
+                        <Nav.Item>
+                            <OverlayTrigger
+                                placement="top"
+                                overlay={
+                                    <Tooltip id={`tt-filebrowser`}>
+                                        Browse reports
+                                    </Tooltip>
+                                }
+                            >
+                                <Nav.Link onClick={() => setShowFileBrowser(true)} style={{ padding: '0.5rem' }} >
+                                    <FaFile size={"1.2rem"} />
+                                </Nav.Link>
+                            </OverlayTrigger>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <OverlayTrigger
+                                placement="top"
+                                overlay={
+                                    <Tooltip id={`tt-downloadreports`}>
+                                        Downdload Reports
+                                    </Tooltip>
+                                }
+                            >
+                                <Nav.Link onClick={() => window.location.href = `/projects/${project}/${build}/download`} style={{ padding: '0.5rem' }}>
+                                    <FaDownload size={"1.2rem"} />
+                                </Nav.Link>
+                            </OverlayTrigger>
+                        </Nav.Item>
+                    </Stack>
+
                 </Nav>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <div onClick={() => window.location.href = `/projects/${buildSummary?.buildInfo.project}/${buildSummary?.buildInfo.build}`} style={{ textDecoration: 'none' }}>
-                            <BuildSummaryCard buildSummary={buildSummary as BuildSummary | undefined} />
-                        </div>
-                        <div onClick={() => setActiveTab("code_review")} style={{ textDecoration: 'none' }}>
-                            <ReportResultSummaryCard data={buildSummary?.codeReviewSummary?.data || []} title="Code Review" status={buildSummary?.codeReviewSummary?.status}/>
-                        </div>
-                        <div onClick={() => setActiveTab("unit_test")} style={{ textDecoration: 'none' }}>
-                            <ReportResultSummaryCard data={buildSummary?.unitTestSummary?.data || []} title="Unit Tests" status={buildSummary?.unitTestSummary?.status}/>
-                        </div>
-                        <div onClick={() => setActiveTab("soap_ui_test")} style={{ textDecoration: 'none' }}>
-                            <ReportResultSummaryCard data={buildSummary?.soapUiTestSummary?.data || []} title="Soap UI Tests" status={buildSummary?.soapUiTestSummary?.status}/>
-                        </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div onClick={() => window.location.href = `/projects/${buildSummary?.buildInfo.project}/${buildSummary?.buildInfo.build}`} style={{ textDecoration: 'none' }}>
+                        <BuildSummaryCard buildSummary={buildSummary as BuildSummary | undefined} />
                     </div>
-                    <Tabs activeKey={activeTab || "code_review"} defaultActiveKey="code_review" id="uncontrolled-tab-example" onSelect={(k) => setActiveTab(k)}>
-                        <Tab eventKey="code_review" title="Code Review">
-                            <ReportResultsTable report="codereview" />
-                        </Tab>
-                        <Tab eventKey="unit_test" title="Unit Tests">
-                            <ReportResultsTable report="unit-tests" />
-                        </Tab>
-                        <Tab eventKey="soap_ui_test" title="Soap UI">
-                            <ReportResultsTable report="soapui" />
-                        </Tab>
-                    </Tabs>
+                    <div onClick={() => setActiveTab("code_review")} style={{ textDecoration: 'none' }}>
+                        <ReportResultSummaryCard data={buildSummary?.codeReviewSummary?.data || []} title="Code Review" status={buildSummary?.codeReviewSummary?.status} />
+                    </div>
+                    <div onClick={() => setActiveTab("unit_test")} style={{ textDecoration: 'none' }}>
+                        <ReportResultSummaryCard data={buildSummary?.unitTestSummary?.data || []} title="Unit Tests" status={buildSummary?.unitTestSummary?.status} />
+                    </div>
+                    <div onClick={() => setActiveTab("soap_ui_test")} style={{ textDecoration: 'none' }}>
+                        <ReportResultSummaryCard data={buildSummary?.soapUiTestSummary?.data || []} title="Soap UI Tests" status={buildSummary?.soapUiTestSummary?.status} />
+                    </div>
+                </div>
+                <Tabs activeKey={activeTab || "code_review"} defaultActiveKey="code_review" id="uncontrolled-tab-example" onSelect={(k) => setActiveTab(k)}>
+                    <Tab eventKey="code_review" title="Code Review">
+                        <ReportResultsTable report="codereview" />
+                    </Tab>
+                    <Tab eventKey="unit_test" title="Unit Tests">
+                        <ReportResultsTable report="unit-tests" />
+                    </Tab>
+                    <Tab eventKey="soap_ui_test" title="Soap UI">
+                        <ReportResultsTable report="soapui" />
+                    </Tab>
+                </Tabs>
             </Container>
         </>
     );
