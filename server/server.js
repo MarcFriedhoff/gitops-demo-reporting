@@ -18,6 +18,7 @@ const fs = require('fs');
 const { Project, Result, RootResult } = require('../models/types');
 const multer = require('multer');
 const extract = require('extract-zip');
+const archiver = require('archiver');
 const yaml = require('js-yaml');
 const xml2js = require('xml2js');
 const globSync = require('glob').sync;
@@ -34,11 +35,16 @@ function getBuildSummaries() {
         return !f.startsWith('.') && fs.statSync(fullPath).isDirectory();
     });
     files.forEach((file) => {
-        // read the buildSummary.json file from the project directory and convert to BuildSummary type
-        const data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
-        const buildSummary = JSON.parse(data);
-        // convert jsonFile to a BuildSummary object
-        buildSummaries.push(buildSummary);
+        try {
+            // read the buildSummary.json file from the project directory and convert to BuildSummary type
+            const data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
+            const buildSummary = JSON.parse(data);
+            // convert jsonFile to a BuildSummary object
+            buildSummaries.push(buildSummary);
+        }
+        catch (err) {
+            console.error('Failed to read buildSummary.json file: ', err);
+        }
     });
     return buildSummaries;
 }
@@ -349,6 +355,28 @@ app.post('/api/projects/:project/build', upload.single('file'), (req, res) => __
         res.status(500).send('Failed to extract file');
     }
 }));
+// create a zip file of the build directory and return it
+app.get('/projects/:project/:build/download', (req, res) => {
+    const project = req.params.project;
+    const build = req.params.build;
+    const projectDir = path.join(config.projectDirectory, project, build);
+    const zipFile = path.join(config.projectDirectory, project, `${build}.zip`);
+    if (!fs.existsSync(projectDir)) {
+        res.status(404).send('Not found');
+        return;
+    }
+    const output = fs.createWriteStream(zipFile);
+    const archive = archiver('zip', { zlib: { level: 9 } });
+    output.on('close', () => {
+        res.download(zipFile);
+    });
+    archive.on('error', (err) => {
+        res.status(500).send('Server error');
+    });
+    archive.pipe(output);
+    archive.directory(projectDir, false);
+    archive.finalize();
+});
 app.get('/api/files/*', (req, res) => {
     const filePath = path.join(config.projectDirectory, req.params[0]);
     // ensure that filePath is a subdirectory of projectDirectory
