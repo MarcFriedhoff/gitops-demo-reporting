@@ -1,0 +1,61 @@
+Status: FAILED
+Time Taken: 359
+Size: 679
+Timestamp: Thu Mar 07 09:05:12 GMT 2024
+TestStep: 01 ping - success
+
+----------------- Messages ------------------------------
+[Contains] Missing token [<status>SUCCESS</status>] in Response
+
+----------------- Properties ------------------------------
+Endpoint: http://uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws/uniqa.integration.contract.v2.ws.provider:ContractService/ContractServiceSOAP
+Username: uesbpegacrm
+domain: 
+Encoding: UTF-8
+Password: RVU6j4gw
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://uniqa.at/schema/integration/service/ContractService/v2/ping"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 868
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://uniqa.at/schema/common/service/header/v1" xmlns:v2="http://uniqa.at/schema/integration/service/ContractService/v2" xmlns:v11="http://uniqa.at/schema/integration/service/ContractService/v1">
+   <soapenv:Header>
+      <v1:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>65465465465465465</contextId>
+            <messageId>12112112121299999</messageId>
+            <timestamp>2020-05-30T09:30:10Z</timestamp>
+         </messageIdentity>
+         <consumer>
+            <applicationName>Test-ContractService</applicationName>
+         </consumer>
+      </v1:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v2:PingRequest>
+         <in>ping</in>
+      </v2:PingRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 500 [ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'uniqa.integration.contract.v2.pub:ping' invoking unknown service 'uniqa.logging.pub.common:setTrackingId' at 'Invoke for uniqa.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>[ISS.0088.9112] An Exception was thrown in the server:[ISC.0049.9010] Service 'uniqa.integration.contract.v2.pub:ping' invoking unknown service 'uniqa.logging.pub.common:setTrackingId' at 'Invoke for uniqa.logging.pub.common:setTrackingId'. The service may have been renamed, moved or disabled.</faultstring>
+         <faultactor>http://uniqa-esb-ctr-contract-services-microservicesruntime.uits-esb-poc-deve.svc.cluster.local:5555/ws</faultactor>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>

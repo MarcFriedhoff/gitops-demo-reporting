@@ -27,10 +27,10 @@ export const ReportResultsTable: React.FC<ReportResultsTableProps> = ({report}) 
                     <tr>
                         <th>Package Name</th>
                         <th>Test Name</th>
-                        <th>Total Checks</th>
-                        <th>Total Failed</th>
-                        <th>Total Passed</th>
-                        <th>Total Warnings</th>
+                        <th>Checks</th>
+                        <th>Failed</th>
+                        <th>Passed</th>
+                        <th>Warnings</th>
                     </tr>
                 </thead>
                 <tbody>
