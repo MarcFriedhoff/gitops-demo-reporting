@@ -22,7 +22,7 @@ export const ReportResultsTable: React.FC<ReportResultsTableProps> = ({report}) 
 
     return reportResults && (
         <div>
-            <table>
+            <table className='table table-hover'>
                 <thead>
                     <tr>
                         <th>Package Name</th>

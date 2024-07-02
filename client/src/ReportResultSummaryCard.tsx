@@ -1,7 +1,7 @@
 
 import { Chart } from "react-google-charts";
 
-import { FaRegCheckCircle, FaRegTimesCircle } from "react-icons/fa";
+import { FaRegCheckCircle, FaRegTimesCircle, FaRegCircle } from "react-icons/fa";
 import { Card } from "react-bootstrap";
 import { MdOutlineErrorOutline } from "react-icons/md";
 
@@ -40,13 +40,16 @@ export const ReportResultSummaryCard: React.FC<ReportResultSummaryCardProps> = (
                             <FaRegCheckCircle size={"1.8rem"} color="green" />
                         ) : status === "Failed" ? (
                             <FaRegTimesCircle size={"1.8rem"} color="red" />
-                        ) : (
+                        ) : status === "Undefined" ? (
+                            <FaRegCircle size={"1.8rem"} color="gray" />
+                        ) :
+                        (
                             <MdOutlineErrorOutline size={"1.8rem"} color="yellow" />
                         )}
                     </div>
                 </Card.Title>
                 <Card.Text>
-                    {data && (
+                    {data && status != "Undefined" && (
                         <Chart
                             chartType="PieChart"
                             width="100%"
@@ -55,6 +58,10 @@ export const ReportResultSummaryCard: React.FC<ReportResultSummaryCardProps> = (
                             options={options}
                         />
                     )}
+                    {status === "Undefined" && (
+                        <p><strong>No Tests</strong></p>
+                    )}
+
                 </Card.Text>
             </Card.Body>
         </Card>

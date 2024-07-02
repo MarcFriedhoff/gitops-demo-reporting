@@ -27,17 +27,27 @@ const configFile = process.env.CONFIG_FILE || path.join(__dirname, '../server/co
 const config = yaml.load(fs.readFileSync(configFile, 'utf8'));
 const upload = multer({ dest: config.uploadDirectory }); // Set the destination for uploaded files
 app.use(express.static(path.join(__dirname, '../client/build')));
-function getBuildSummaries() {
+function getBuildSummaries(project) {
     // read the files from the resources directory and return them as projects
     let buildSummaries = [];
-    const files = fs.readdirSync(config.projectDirectory).filter((f) => {
-        const fullPath = path.join(config.projectDirectory, f);
+    const projectDir = project ? path.join(config.projectDirectory, project) : config.projectDirectory;
+    const files = fs.readdirSync(projectDir).filter((f) => {
+        const fullPath = path.join(projectDir, f);
         return !f.startsWith('.') && fs.statSync(fullPath).isDirectory();
     });
     files.forEach((file) => {
         try {
             // read the buildSummary.json file from the project directory and convert to BuildSummary type
-            const data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
+            let data;
+            if (project) {
+                if (file === 'latest') {
+                    return;
+                }
+                data = fs.readFileSync(path.join(projectDir, file, 'buildSummary.json'), 'utf8');
+            }
+            else {
+                data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
+            }
             const buildSummary = JSON.parse(data);
             // convert jsonFile to a BuildSummary object
             buildSummaries.push(buildSummary);
@@ -82,13 +92,13 @@ function parseCodeReviewXML(reportDir, reportFile) {
                     const a = node.$;
                     const item = new types_1.ReportResultItem({
                         name: a.name,
-                        packageName: '', // Add the missing property
+                        packageName: a.packageName, // Add the missing property
                         hostname: '', // Add the missing property
-                        tests: 0, // Add the missing property
-                        errors: parseInt(a.errors),
-                        failures: 0, // Add the missing property
+                        tests: parseInt(a.totalChecks), // Add the missing property
+                        errors: 0,
+                        failures: parseInt(a.totalFailed), // Add the missing property
                         skipped: 0,
-                        warnings: parseInt(a.warnings),
+                        warnings: parseInt(a.totalWarnings),
                         time: 0, // Add the missing property
                         timestamp: new Date(a.timestamp) // Add the missing property
                     });
@@ -113,7 +123,7 @@ function parseTestSuiteXML(reportDir, testSuiteFile, rootNode) {
                 console.error('Failed to parse xml file: ', err);
             }
             else {
-                let node = rootNode ? result.testsuites.testsuite : result.testsuite.$;
+                let node = rootNode ? result.testsuites.testsuite : result.testsuite;
                 if (Array.isArray(node)) {
                     node.forEach((n) => {
                         let a = n.$;
@@ -133,15 +143,16 @@ function parseTestSuiteXML(reportDir, testSuiteFile, rootNode) {
                     });
                 }
                 else {
+                    let a = node.$;
                     const item = new types_1.ReportResultItem({
-                        name: node.name,
+                        name: a.name,
                         packageName: fileName, // Add the missing property
-                        hostname: '',
-                        tests: parseInt(node.tests),
-                        failures: parseInt(node.failures),
-                        errors: parseInt(node.errors),
-                        skipped: 0,
-                        warnings: 0,
+                        hostname: a.hostname,
+                        tests: parseInt(a.tests),
+                        failures: parseInt(a.failures),
+                        errors: parseInt(a.errors),
+                        skipped: parseInt(a.skipped),
+                        warnings: parseInt(a.warnings),
                         time: parseFloat(node.time),
                         timestamp: file.mtime
                     });
@@ -195,6 +206,21 @@ function createTeamsMessageCard(buildSummary) {
             }]
     };
 }
+app.get('/api/version', (req, res) => {
+    // check if version file exists
+    if (!fs.existsSync('version.json')) {
+        // create a version file from date and return the version
+        const version = { version: new Date().toISOString() };
+        fs.writeFileSync('version.json', JSON.stringify(version));
+        res.json(version);
+    }
+    else {
+        // read the version file and return the version
+        const data = fs.readFileSync('version.json', 'utf8');
+        const jsonFile = JSON.parse(data);
+        res.json(jsonFile);
+    }
+});
 app.get('/api/projects/:project/:build/:report', (req, res) => {
     const project = req.params.project;
     const build = req.params.build;
@@ -212,7 +238,7 @@ app.get('/api/projects', (req, res) => {
 app.get('/api/projects/:project', (req, res) => {
     const project = req.params.project;
     const projectDir = path.join(config.projectDirectory, project);
-    const buildSummaries = getBuildSummaries();
+    const buildSummaries = getBuildSummaries(project);
     res.json(buildSummaries);
 });
 app.get('/api/projects/:project/:build', (req, res) => {
@@ -272,7 +298,7 @@ app.post('/api/projects/:project/build', upload.single('file'), (req, res) => __
             soapUITestDirs.forEach((dir) => {
                 const fullDir = path.join(soapUITestDir, dir);
                 if (fs.statSync(fullDir).isDirectory()) {
-                    soapUIReportResult = parseTestSuiteXML(fullDir, 'TEST-*SOAP_TestSuite.xml');
+                    soapUIReportResult = parseTestSuiteXML(fullDir, 'TEST-*.xml');
                     fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
                 }
             });
@@ -292,6 +318,9 @@ app.post('/api/projects/:project/build', upload.single('file'), (req, res) => __
         else if (codeReviewResult.result.some((r) => r.warnings > 0)) {
             codeReviewSummaryStatus = "Warn";
         }
+        else if (codeReviewResult.result.length === 0) {
+            codeReviewSummaryStatus = "Undefined";
+        }
         // set unitTestSummaryStatus to "Failed" if there are any failures, "Warn" if there are warnings, otherwise set to "Passed"
         if (junitReportResult.result.some((r) => r.failures > 0)) {
             unitTestSummaryStatus = "Failed";
@@ -299,12 +328,18 @@ app.post('/api/projects/:project/build', upload.single('file'), (req, res) => __
         else if (junitReportResult.result.some((r) => r.warnings > 0)) {
             unitTestSummaryStatus = "Warn";
         }
+        else if (junitReportResult.result.length === 0) {
+            unitTestSummaryStatus = "Undefined";
+        }
         // set soapUITestSummaryStatus to "Failed" if there are any failures, "Warn" if there are warnings, otherwise set to "Passed"
         if (soapUIReportResult.result.some((r) => r.failures > 0)) {
             soapUITestSummaryStatus = "Failed";
         }
         else if (soapUIReportResult.result.some((r) => r.warnings > 0)) {
             soapUITestSummaryStatus = "Warn";
+        }
+        else if (soapUIReportResult.result.length === 0) {
+            soapUITestSummaryStatus = "Undefined";
         }
         // create codeReviewSummary, unitTestSummary, and soapUITestSummary
         // sum the tests, failures, and warnings for each test suite
@@ -337,6 +372,7 @@ app.post('/api/projects/:project/build', upload.single('file'), (req, res) => __
             ['Failed', soapUIFailureCount],
             ['Errors', soapUIErrorCount],
         ], soapUITestSummaryStatus);
+        buildInfo.buildSuccess = codeReviewSummaryStatus === "Passed" && unitTestSummaryStatus === "Passed" && soapUITestSummaryStatus === "Passed";
         const buildSummary = new types_1.BuildSummary(buildInfo, codeReviewSummaryItem, junitSummaryItem, soapUISummaryItem);
         fs.writeFileSync(path.join(buildDir, 'buildSummary.json'), JSON.stringify(buildSummary));
         fs.symlinkSync(path.join(buildDir), latestBuildDir, 'dir');
