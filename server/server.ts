@@ -16,7 +16,7 @@ const axios = require('axios');
 const configFile = process.env.CONFIG_FILE || path.join(__dirname, '../server/config.yaml');
 const config: AppConfig = yaml.load(fs.readFileSync(configFile, 'utf8'));
 const upload = multer({ dest: config.uploadDirectory }); // Set the destination for uploaded files
-
+const versionFile = path.join(__dirname, '../server/version.json');
 
 app.use(express.static(path.join(__dirname, '../client/build')));
 
@@ -217,11 +217,11 @@ app.get('/api/version', (req: any, res: any) => {
     if (!fs.existsSync('version.json')) {
         // create a version file from date and return the version
         const version = { version: new Date().toISOString() };
-        fs.writeFileSync('version.json', JSON.stringify(version));
+        fs.writeFileSync(versionFile, JSON.stringify(version));
         res.json(version);
     } else {
         // read the version file and return the version
-        const data = fs.readFileSync('version.json', 'utf8');
+        const data = fs.readFileSync(versionFile, 'utf8');
         const jsonFile = JSON.parse(data);
         res.json(jsonFile);
 
