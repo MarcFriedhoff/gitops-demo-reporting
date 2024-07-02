@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
@@ -12,10 +12,18 @@ import BuildList from './BuildList';
 
 const App = () => {
 
+  const [version, setVersion] = useState<string | null>(null);
+  
+  useEffect(() => {
+    fetch('/api/version')
+      .then((res) => res.json())
+      .then((data) => setVersion(data.version));
+  }, []);
+
   return (
 
     <Router>
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="primary" data-bs-theme="dark" expand="lg">
 
         <Container>
           <Navbar.Brand>Build Dashboard</Navbar.Brand>
@@ -27,6 +35,12 @@ const App = () => {
             <Navbar.Brand>Browse Reports</Navbar.Brand>
           </LinkContainer>
           </Nav>
+          <Nav className='ml-auto'>
+          <Nav.Item>
+              Build: {version}
+          </Nav.Item>
+          </Nav>
+
         </Container>
       </Navbar>
       <Container fluid data-bs-theme="dark">

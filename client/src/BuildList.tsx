@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BuildSummary } from '../../models/types';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Breadcrumb, Container, Nav, Row } from 'react-bootstrap';
-
+import { FaRegCheckCircle, FaRegTimesCircle } from 'react-icons/fa';
 
 const BuildList = () => {
 
@@ -37,9 +37,10 @@ const BuildList = () => {
         </Breadcrumb>
 
       </Nav>
-        <table>
+        <table className='table table-hover'>
           <thead>
             <tr>
+              <th></th>
               <th>Project</th>
               <th>Build</th>
               <th>Repository</th>
@@ -53,6 +54,11 @@ const BuildList = () => {
             {data?.map((buildSummary, index) => (
               <tr key={index} onClick={() => navigate(`/projects/${buildSummary.buildInfo.project}/${buildSummary.buildInfo.build}`)} className="build-card" style={{ textDecoration: 'none' }}
               >
+                <td>{buildSummary.buildInfo.buildSuccess ? (
+                  <div><FaRegCheckCircle size={"1.8rem"} color="green" /></div>
+                ) : (
+                  <div><FaRegTimesCircle size={"1.8rem"} color="red" /></div>
+                )}</td>
                 <td>{buildSummary.buildInfo.project}</td>
                 <td>{buildSummary.buildInfo.build}</td>
                 <td>{buildSummary.buildInfo.repository}</td>

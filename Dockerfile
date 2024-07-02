@@ -15,6 +15,8 @@ COPY server/ server/
 COPY models/ models/
 RUN cd server && npm install && npx tsc
 COPY --from=build /app/build ./client/build
+# create a version.json file from current date to store the version of the app
+RUN echo "{\"version\": \"$(date)\"}" > /app/server/version.json
 
 EXPOSE 3001
 CMD ["node", "server/server.js"]

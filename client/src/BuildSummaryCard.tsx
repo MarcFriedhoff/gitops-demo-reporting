@@ -27,7 +27,7 @@ export const BuildSummaryCard: React.FC<BuildSummaryProps> = ({ buildSummary }) 
                         {buildSummary?.buildInfo.buildSuccess ? (
                             <p className="font-weight-bold text-success"><strong>SUCCESS</strong></p>
                         ) : (
-                            <p className="font-weight-bold text-warning"><strong>FAIL</strong></p>
+                            <p className="font-weight-bold text-danger"><strong>FAIL</strong></p>
                         )}
                         <div style={{ width: '15rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={buildSummary?.buildInfo.repository}>
                             <Link to={`${buildSummary?.buildInfo.repository}`}>
