@@ -109,7 +109,7 @@ function parseCodeReviewXML(reportDir: any, reportFile: string) {
 }
 
 function parseTestSuiteXML(reportDir: any, testSuiteFile: string, rootNode?: string) {
-    const reportFiles: any[] = globSync(`${reportDir}/${testSuiteFile}`);
+    const reportFiles: any[] = globSync(`${reportDir}/**/${testSuiteFile}`);
     const reportResultItems: ReportResultItem[] = [];
     reportFiles.forEach((file: any) => {
         const fileName = path.basename(file);
@@ -313,15 +313,11 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
         let soapUITestDir = path.join(buildDir, 'soapui');
         let soapUIReportResult = new ReportResult(soapUITestDir, []);
         if (fs.existsSync(soapUITestDir)) {
-            //iterate over the directories in soapUITestDir
-            const soapUITestDirs = fs.readdirSync(soapUITestDir);
-            soapUITestDirs.forEach((dir: string) => {
-                const fullDir = path.join(soapUITestDir, dir);
-                if (fs.statSync(fullDir).isDirectory()) {
-                    soapUIReportResult = parseTestSuiteXML(fullDir, 'TEST-*.xml');
-                    fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
-                }
-            });
+
+            soapUIReportResult = parseTestSuiteXML(soapUITestDir, 'TEST-*.xml');
+            fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
+
+            
 
         }
 
@@ -412,7 +408,7 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
 
         const messageCard = createTeamsMessageCard(buildSummary);
         console.log('Message card: ', messageCard);
-
+        
         const webhookUrl = config.teamsWebhookUrl;
         axios.post(webhookUrl, messageCard).then((response: any) => {
             console.log('Message card posted to Teams');

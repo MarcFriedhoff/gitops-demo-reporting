@@ -40,7 +40,7 @@ export const ReportResultsTable: React.FC<ReportResultsTableProps> = ({report}) 
                                 <td>{result.packageName}</td>
                                 <td>{result.name}</td>
                                 <td>{result.tests}</td>
-                                <td>{result.failures}</td>
+                                <td>{(result.failures + result.errors)}</td>
                                 <td>{result.tests - (result.failures + result.errors)}</td>
                                 <td>{result.warnings}</td>
                             </tr>
