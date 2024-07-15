@@ -1,0 +1,98 @@
+Status: OK
+Time Taken: 103
+Size: 1753
+Timestamp: Mon Jul 01 12:37:15 GMT 2024
+TestStep: 02b getFundRate - Negative Stichtag missing
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: http://msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555/ws/uniqa.integration.fund.management.service.v1.ws.provider:FundManagementServiceV1/FundManagementServiceV1SOAP
+Username: SRV_ESB_PREP_SOAPUI
+Encoding: UTF-8
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://www.uniqagroup.com/integration/services/FundManagementService/v1/getFundRate"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 1238
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://www.uniqagroup.com/integration/services/common/header/v2" xmlns:v1="http://www.uniqagroup.com/integration/services/FundManagementService/v1" xmlns:all="http://www.uniqagroup.com/uidm/v3/allgemein">
+   <soapenv:Header>
+      <v2:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>c8579bf6-5123-4275-b6c2-4e6e88c0fcdc</contextId>
+            <messageId>fea1ad5c-8d21-4336-9326-1295fb57d0c9</messageId>
+            <timestamp>2024-07-01T12:37:15</timestamp>
+            <correlationId>10f3dcb0-4456-4723-aa0b-ef9c78685494</correlationId>
+         </messageIdentity>
+         <consumer>
+            <applicationName>Test-Consumer</applicationName>
+         </consumer>
+      </v2:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:getFundRateRequest>
+         <FondIdentifier>
+            <!--Optional:-->
+            <FondId>4007</FondId>
+         </FondIdentifier>
+         <KursArt>
+            <all:Typ/>
+            <all:Wert>MARKET_RATE</all:Wert>
+         </KursArt>
+      </v1:getFundRateRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 500 [ISS.0088.9256] Fault returned by invoked service
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <tns:ServiceResponseHeader SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" xmlns:tns="http://www.uniqagroup.com/integration/services/common/header/v2" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+         <messageIdentity>
+            <type>RESPONSE</type>
+            <contextId>c8579bf6-5123-4275-b6c2-4e6e88c0fcdc</contextId>
+            <messageId>64427ef7-c279-42f4-ab7a-ea7958e8561f</messageId>
+            <timestamp>2024-07-01T14:37:15</timestamp>
+            <repeatCount>0</repeatCount>
+            <correlationId>fea1ad5c-8d21-4336-9326-1295fb57d0c9</correlationId>
+         </messageIdentity>
+         <provider>
+            <applicationName>FundManagementServiceV1</applicationName>
+            <stage>DEVE</stage>
+            <componentName>FundManagementServiceV1</componentName>
+            <tenant>UNIQA</tenant>
+            <version>uniqa-esb-fund-management-service_1.3.0.0-rc1</version>
+         </provider>
+         <result>
+            <status>FAILED</status>
+         </result>
+      </tns:ServiceResponseHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Client</faultcode>
+         <faultstring>[COMS.E.12504] Request validation failed for /tns:getFundRateRequest/Stichtag: Field is absent, field must exist</faultstring>
+         <faultactor>http://msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555/ws</faultactor>
+         <detail>
+            <hdr:UniqaIntegrationFault xmlns:hdr="http://www.uniqagroup.com/integration/services/common/header/v2">
+               <BusinessException>
+                  <code>COMS.E.12504</code>
+                  <reason>Request validation failed for /tns:getFundRateRequest/Stichtag: Field is absent, field must exist</reason>
+                  <timestamp>2024-07-01T14:37:15</timestamp>
+               </BusinessException>
+            </hdr:UniqaIntegrationFault>
+         </detail>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>

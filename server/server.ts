@@ -37,7 +37,7 @@ function getBuildSummaries(project?: string) {
             if (project) {
                 if (file === 'latest') {
                     return;
-                }  
+                }
                 data = fs.readFileSync(path.join(projectDir, file, 'buildSummary.json'), 'utf8');
             } else {
                 data = fs.readFileSync(path.join(config.projectDirectory, file, "latest", 'buildSummary.json'), 'utf8');
@@ -213,17 +213,22 @@ function createTeamsMessageCard(buildSummary: BuildSummary) {
 }
 
 app.get('/api/version', (req: any, res: any) => {
-    // check if version file exists
-    if (!fs.existsSync('version.json')) {
-        // create a version file from date and return the version
-        const version = { version: new Date().toISOString() };
-        fs.writeFileSync(versionFile, JSON.stringify(version));
-        res.json(version);
-    } else {
-        // read the version file and return the version
-        const data = fs.readFileSync(versionFile, 'utf8');
-        const jsonFile = JSON.parse(data);
-        res.json(jsonFile);
+    try {
+        // check if version file exists
+        if (!fs.existsSync(versionFile)) {
+            // create a version file from date and return the version
+            const version = { version: new Date().toISOString() };
+            fs.writeFileSync(versionFile, JSON.stringify(version));
+            res.json(version);
+        } else {
+            // read the version file and return the version
+            const data = fs.readFileSync(versionFile, 'utf8');
+            const jsonFile = JSON.parse(data);
+            res.json(jsonFile);
+
+        }
+    } catch (error) {
+        console.error('Failed to read version file: ', error);
 
     }
 });
@@ -453,7 +458,7 @@ app.get('/projects/:project/:build/download', (req: any, res: any) => {
     archive.pipe(output);
     archive.directory(projectDir, false);
     archive.finalize();
-}   );
+});
 
 
 app.get('/api/files/*', (req: { params: any[]; }, res: { status: (arg0: number) => { (): any; new(): any; send: { (arg0: string): void; new(): any; }; }; json: (arg0: any) => void; download: (arg0: any) => void; }) => {

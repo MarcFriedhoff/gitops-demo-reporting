@@ -1,0 +1,100 @@
+Status: OK
+Time Taken: 80
+Size: 1879
+Timestamp: Mon Jul 01 12:37:15 GMT 2024
+TestStep: 03 getFundRate - Negative - unknown fundRateType
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: http://msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555/ws/uniqa.integration.fund.management.service.v1.ws.provider:FundManagementServiceV1/FundManagementServiceV1SOAP
+Username: SRV_ESB_PREP_SOAPUI
+Encoding: UTF-8
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://www.uniqagroup.com/integration/services/FundManagementService/v1/getFundRate"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 1273
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://www.uniqagroup.com/integration/services/common/header/v2" xmlns:v1="http://www.uniqagroup.com/integration/services/FundManagementService/v1" xmlns:all="http://www.uniqagroup.com/uidm/v3/allgemein">
+   <soapenv:Header>
+      <v2:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>bbd944cb-f253-43c8-82a6-5628c986b7e2</contextId>
+            <messageId>0c9d5b59-2ab0-413b-bf2d-d1902875d2f3</messageId>
+            <timestamp>2024-07-01T12:37:15</timestamp>
+            <correlationId>b100e4ce-9b0c-48b6-9ec5-dab17322ce31</correlationId>
+         </messageIdentity>
+         <consumer>
+            <applicationName>Test-Consumer</applicationName>
+         </consumer>
+      </v2:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:getFundRateRequest>
+         <FondIdentifier>
+            <!--Optional:-->
+            <FondId>4007</FondId>
+         </FondIdentifier>
+         <Stichtag>2022-02-01</Stichtag>
+         <KursArt>
+            <all:Typ/>
+            <all:Wert>asdf</all:Wert>
+         </KursArt>
+      </v1:getFundRateRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 500 [ISS.0088.9256] Fault returned by invoked service
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <tns:ServiceResponseHeader SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" xmlns:tns="http://www.uniqagroup.com/integration/services/common/header/v2" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+         <messageIdentity>
+            <type>RESPONSE</type>
+            <contextId>bbd944cb-f253-43c8-82a6-5628c986b7e2</contextId>
+            <messageId>6f0f0799-f797-44f4-b552-91f78ae527a6</messageId>
+            <timestamp>2024-07-01T14:37:15</timestamp>
+            <repeatCount>0</repeatCount>
+            <correlationId>0c9d5b59-2ab0-413b-bf2d-d1902875d2f3</correlationId>
+         </messageIdentity>
+         <provider>
+            <applicationName>FundManagementServiceV1</applicationName>
+            <stage>DEVE</stage>
+            <componentName>FundManagementServiceV1</componentName>
+            <tenant>UNIQA</tenant>
+            <version>uniqa-esb-fund-management-service_1.3.0.0-rc1</version>
+         </provider>
+         <result>
+            <status>FAILED</status>
+         </result>
+      </tns:ServiceResponseHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Client</faultcode>
+         <faultstring>[COMS.E.12506] Input parameter "tns:fundRateType" does not conform to targetInputSignature: No matching enumeration value</faultstring>
+         <faultactor>http://msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555/ws</faultactor>
+         <detail>
+            <hdr:UniqaIntegrationFault xmlns:hdr="http://www.uniqagroup.com/integration/services/common/header/v2">
+               <BusinessException>
+                  <code>COMS.E.12506</code>
+                  <reason>Input parameter "tns:fundRateType" does not conform to targetInputSignature: No matching enumeration value</reason>
+                  <timestamp>2024-07-01T14:37:15</timestamp>
+                  <additionalInfo>Path: /tns:soInfoFundRateGetByTypeAndFundIdentifierRequest/tns:fundRateType</additionalInfo>
+               </BusinessException>
+            </hdr:UniqaIntegrationFault>
+         </detail>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>
