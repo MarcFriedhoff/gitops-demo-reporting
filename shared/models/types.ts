@@ -23,6 +23,9 @@ export class AppConfig {
   codeReviewConfig: CodeReviewConfig = new CodeReviewConfig();
   messageCardTemplate: string = "";
   frontEndUrl: string = "";
+  proxyProtocol: string = "http";
+  proxyHost: string = "";
+  proxyPort: number = 8080;
 
   constructor(projectDirectory: string) {
     this.projectDirectory = projectDirectory;

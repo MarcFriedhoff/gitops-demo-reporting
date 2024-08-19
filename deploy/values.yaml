@@ -5,4 +5,5 @@ imagePullSecrets:
 image:
   repository: default-route-openshift-image-registry.apps.uniqa-tst.pcap.at/uits-integration-toolbox/build-dashboard
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
+

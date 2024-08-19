@@ -3,6 +3,10 @@ uploadDirectory: /tmp/upload
 teamsWebhookUrl: http://localhost:3000/api/messagecard
 teamsActivityImage: https://adaptivecards.io/content/cats/3.png
 frontEndUrl: http://localhost:3000
+proxyHost: 
+proxyProtocol: http
+proxyPort: 8080
+
 codeReviewConfig:
   failedChecksAllowed: 600
 

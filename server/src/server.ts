@@ -528,7 +528,18 @@ app.post('/api/projects/:project/:build/rebuild', (req: any, res: any) => {
             const messageCard = createTeamsMessageCard(JSON.parse(fs.readFileSync(path.join(projectDir, 'buildSummary.json'), 'utf8')));            
             console.log('messageCard: ', messageCard);   
             try {
-                axios.post(webhookUrl, messageCard); 
+
+                if (config.proxyHost) {
+                    axios.post(webhookUrl, messageCard, {
+                        proxy: {
+                            protocol: config.proxyProtocol,
+                            host: config.proxyHost,
+                            port: config.proxyPort
+                        }
+                    });
+                } else  {
+                    axios.post(webhookUrl, messageCard);
+                }
                 console.log('Message card posted to Teams');
                 sendReportSuccess = true;
             } catch (error) {

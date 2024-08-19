@@ -16,4 +16,30 @@ route:
 config:
   projectDirectory: /projects
   uploadDirectory: /upload
-  teamsWebhookUrl: https://xxx
+  teamsWebhookUrl: https://uniqagroup.webhook.office.com/webhookb2/9c122505-1948-4d4b-a639-98c534ff4f4a@bd9f112b-82b0-45f6-b02e-1175bb945e33/IncomingWebhook/3d2066c8ffe5449c89ed1c2870dc63b3/c3ccc29a-1b2b-46c1-af9d-db1f9cdb8ed6
+  teamsActivityImage: https://adaptivecards.io/content/cats/3.png
+  frontEndUrl: http://build-dashboard-integration.testcloud.uniqa.at
+  proxyHost: proxy.r-services.at
+  proxyProtocol: http
+  proxyPort: 57146
+  codeReviewConfig:
+    failedChecksAllowed: 600
+
+  messageCardTemplate: |
+    '@type': 'MessageCard'
+    '@context': 'http://schema.org/extensions'
+    themeColor: '{{.color}}'
+    summary: 'Build {{ .buildSummary.buildInfo.build }}'
+    title: 'Project: {{  .buildSummary.buildInfo.project }} Build {{  .buildSummary.buildInfo.build }}'
+    sections:
+      - activityTitle: 'Repo: {{  .buildSummary.buildInfo.repository }} \n\nRevision: {{  .buildSummary.buildInfo.revision }} \n\nTags: {{  .buildSummary.buildInfo.tags }} \n\nDate: {{  .buildSummary.buildInfo.date }} \n\nTime: {{  .buildSummary.buildInfo.time }}'
+        activitySubtitle: '**Status: {{  if .buildSummary.buildInfo.buildSuccess }}Success{{ else }}Failed{{ end }} **'
+        activityImage: '{{ .activityImage }}'
+        text: '**Code Review:** {{ .buildSummary.codeReviewSummary.status }}\n\n **Unit Tests:** {{ .buildSummary.unitTestSummary.status }}\n\n**Soap UI Tests:** {{ .buildSummary.soapUiTestSummary.status }}'
+        markdown: 'true'
+    potentialAction:
+      - '@type': 'OpenUri'
+        name: 'View Details'
+        targets:
+          - os: 'default'
+            uri: '{{ .deepLink }}'
