@@ -2,7 +2,7 @@
 // display them in cards
 
 import React, { useEffect, useState } from "react";
-import { BuildSummary, Project } from "../../models/types";
+import { BuildSummary, Project } from "../../shared/models/types";
 import { Button, ButtonGroup, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Row } from "react-bootstrap";

@@ -25,4 +25,4 @@ EOF
 echo "buildInfo: $buildInfo"
 unzip -t $1.zip
 
-curl -k -X POST -H "Content-Type: multipart/form-data" -F "file=@$1.zip" -F "buildInfo=$buildInfo" "http://localhost:3001/api/projects/$1/build"
+curl -k -X POST -H "Content-Type: multipart/form-data" -F "file=@$1.zip" -F "buildInfo=$buildInfo" "http://localhost:3000/api/projects/$1/build"

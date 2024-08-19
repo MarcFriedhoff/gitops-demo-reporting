@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites name="Integration Server Code Review" disabled="16" failures="0" tests="456" time="3.17" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-SP1.1" failures="0" tests="22" time="0.113" name="SP1: Stateless">
+        <properties/>
+        <testcase time="0.007" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Stateless"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Stateless"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Stateless"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Stateless"/>
+        <testcase time="0.022" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Stateless"/>
+        <testcase time="0.021" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Stateless"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-SP2.1" failures="0" tests="22" time="0.121" name="SP2: Pipeline Save Restore">
+        <properties/>
+        <testcase time="0.005" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="UniqaDoWfStartService.v1.ping:_get" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Pipeline Save Restore"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Pipeline Save Restore"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Pipeline Save Restore"/>
+        <testcase time="0.019" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Pipeline Save Restore"/>
+        <testcase time="0.019" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Pipeline Save Restore"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ1.1" failures="0" tests="22" time="0.519" name="FQ1: Pipeline Services">
+        <properties/>
+        <testcase time="0.028" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Pipeline Services"/>
+        <testcase time="0.013" classname="UniqaDoWfStartService.v1.ping:_get" name="Pipeline Services"/>
+        <testcase time="0.051" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Pipeline Services"/>
+        <testcase time="0.052" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Pipeline Services"/>
+        <testcase time="0.036" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Pipeline Services"/>
+        <testcase time="0.12" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Pipeline Services"/>
+        <testcase time="0.023" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Pipeline Services"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Pipeline Services"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Pipeline Services"/>
+        <testcase time="0.073" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Pipeline Services"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Pipeline Services"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Pipeline Services"/>
+        <testcase time="0.059" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Pipeline Services"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Pipeline Services"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Pipeline Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Pipeline Services"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Pipeline Services"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Pipeline Services"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ3_v9.1" failures="0" tests="22" time="0.296" name="FQ3_v9: Deprecated Services (v9)">
+        <properties/>
+        <testcase time="0.007" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Deprecated Services (v9)"/>
+        <testcase time="0.006" classname="UniqaDoWfStartService.v1.ping:_get" name="Deprecated Services (v9)"/>
+        <testcase time="0.027" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Deprecated Services (v9)"/>
+        <testcase time="0.032" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Deprecated Services (v9)"/>
+        <testcase time="0.019" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Deprecated Services (v9)"/>
+        <testcase time="0.07" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Deprecated Services (v9)"/>
+        <testcase time="0.012" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Deprecated Services (v9)"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Deprecated Services (v9)"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Deprecated Services (v9)"/>
+        <testcase time="0.041" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Deprecated Services (v9)"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Deprecated Services (v9)"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Deprecated Services (v9)"/>
+        <testcase time="0.036" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Deprecated Services (v9)"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Deprecated Services (v9)"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Deprecated Services (v9)"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ4.1" failures="0" tests="22" time="0.237" name="FQ4: Disabled Services">
+        <properties/>
+        <testcase time="0.023" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Disabled Services"/>
+        <testcase time="0.008" classname="UniqaDoWfStartService.v1.ping:_get" name="Disabled Services"/>
+        <testcase time="0.024" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Disabled Services"/>
+        <testcase time="0.022" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Disabled Services"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Disabled Services"/>
+        <testcase time="0.048" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Disabled Services"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Disabled Services"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Disabled Services"/>
+        <testcase time="0.029" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Disabled Services"/>
+        <testcase time="0.025" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Disabled Services"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Disabled Services"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ5.1" failures="0" tests="22" time="0.143" name="FQ5: Use of Pub.Storage">
+        <properties/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Use of Pub.Storage"/>
+        <testcase time="0.004" classname="UniqaDoWfStartService.v1.ping:_get" name="Use of Pub.Storage"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Use of Pub.Storage"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Use of Pub.Storage"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Use of Pub.Storage"/>
+        <testcase time="0.027" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Use of Pub.Storage"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Use of Pub.Storage"/>
+        <testcase time="0.021" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Use of Pub.Storage"/>
+        <testcase time="0.021" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Use of Pub.Storage"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Use of Pub.Storage"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Use of Pub.Storage"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ6.1" failures="0" tests="22" time="0.141" name="FQ6: Debug Log">
+        <properties/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Debug Log"/>
+        <testcase time="0.004" classname="UniqaDoWfStartService.v1.ping:_get" name="Debug Log"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Debug Log"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Debug Log"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Debug Log"/>
+        <testcase time="0.026" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Debug Log"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Debug Log"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Debug Log"/>
+        <testcase time="0.025" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Debug Log"/>
+        <testcase time="0.018" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Debug Log"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Debug Log"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Debug Log"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ7.1" failures="0" tests="2" time="0.033" name="FQ7: Public Services Try/Catch">
+        <properties/>
+        <testcase time="0.013" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Public Services Try/Catch"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Public Services Try/Catch"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ8.1" failures="0" tests="1" time="0.002" name="FQ8: Connections Package">
+        <properties/>
+        <testcase time="0" classname="Connections" name="Connections Package"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ9.1" failures="0" tests="22" time="0.263" name="FQ9: FTP Timeout">
+        <properties/>
+        <testcase time="0.006" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="FTP Timeout"/>
+        <testcase time="0.005" classname="UniqaDoWfStartService.v1.ping:_get" name="FTP Timeout"/>
+        <testcase time="0.02" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="FTP Timeout"/>
+        <testcase time="0.021" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="FTP Timeout"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="FTP Timeout"/>
+        <testcase time="0.061" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="FTP Timeout"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="FTP Timeout"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="FTP Timeout"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="FTP Timeout"/>
+        <testcase time="0.04" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="FTP Timeout"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="FTP Timeout"/>
+        <testcase time="0.037" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="FTP Timeout"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="FTP Timeout"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="FTP Timeout"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="FTP Timeout"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="FTP Timeout"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="FTP Timeout"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="FTP Timeout"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="FTP Timeout"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ12.1" failures="0" tests="4" time="0.196" name="FQ12: Unauthorised Access/Orphaned">
+        <properties/>
+        <testcase time="0.192" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Unauthorised Access/Orphaned"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Unauthorised Access/Orphaned"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ13.1" failures="0" tests="22" time="0.12" name="FQ13: Branch without switch or evaluate labels">
+        <properties/>
+        <testcase time="0.002" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="UniqaDoWfStartService.v1.ping:_get" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.026" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.017" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.016" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Branch without switch or evaluate labels"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ14.1" failures="0" tests="22" time="0.146" name="FQ14: Branch on expression when child step is without specified label or $null">
+        <properties/>
+        <testcase time="0.004" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.035" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.02" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.019" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Branch on expression when child step is without specified label or $null"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ15.1" failures="0" tests="22" time="0.141" name="FQ15: Exit Node From Specification">
+        <properties/>
+        <testcase time="0.004" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="UniqaDoWfStartService.v1.ping:_get" name="Exit Node From Specification"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Exit Node From Specification"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Exit Node From Specification"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Exit Node From Specification"/>
+        <testcase time="0.029" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Exit Node From Specification"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Exit Node From Specification"/>
+        <testcase time="0.02" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Exit Node From Specification"/>
+        <testcase time="0.02" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Exit Node From Specification"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Exit Node From Specification"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ16.1" failures="0" tests="22" time="0.12" name="FQ16: Branch step must have child nodes">
+        <properties/>
+        <testcase time="0.002" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Branch step must have child nodes"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Branch step must have child nodes"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Branch step must have child nodes"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Branch step must have child nodes"/>
+        <testcase time="0.023" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Branch step must have child nodes"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Branch step must have child nodes"/>
+        <testcase time="0.017" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Branch step must have child nodes"/>
+        <testcase time="0.016" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Branch step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Branch step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Branch step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Branch step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Branch step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ17.1" failures="0" tests="22" time="0.115" name="FQ17: Loop step must have child nodes">
+        <properties/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Loop step must have child nodes"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Loop step must have child nodes"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Loop step must have child nodes"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Loop step must have child nodes"/>
+        <testcase time="0.024" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Loop step must have child nodes"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Loop step must have child nodes"/>
+        <testcase time="0.016" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Loop step must have child nodes"/>
+        <testcase time="0.016" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Loop step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ18.1" failures="0" tests="22" time="0.133" name="FQ18: Repeat step must have child nodes">
+        <properties/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Repeat step must have child nodes"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Repeat step must have child nodes"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Repeat step must have child nodes"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Repeat step must have child nodes"/>
+        <testcase time="0.026" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Repeat step must have child nodes"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Repeat step must have child nodes"/>
+        <testcase time="0.023" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Repeat step must have child nodes"/>
+        <testcase time="0.018" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Repeat step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ21.1" failures="0" tests="22" time="0.126" name="FQ21: Loop must have an input array provided">
+        <properties/>
+        <testcase time="0.002" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Loop must have an input array provided"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Loop must have an input array provided"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Loop must have an input array provided"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Loop must have an input array provided"/>
+        <testcase time="0.026" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Loop must have an input array provided"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Loop must have an input array provided"/>
+        <testcase time="0.017" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Loop must have an input array provided"/>
+        <testcase time="0.017" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response" name="Loop must have an input array provided"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-FQ22.1" failures="0" tests="19" time="0.139" name="FQ22: Flow service should not be empty">
+        <properties/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="UniqaDoWfStartService.v1.ping:_get" name="Flow service should not be empty"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Flow service should not be empty"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Flow service should not be empty"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Flow service should not be empty"/>
+        <testcase time="0.031" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Flow service should not be empty"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Flow service should not be empty"/>
+        <testcase time="0.02" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Flow service should not be empty"/>
+        <testcase time="0.019" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Flow service should not be empty"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Flow service should not be empty"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS1.1" failures="0" tests="1" time="0.002" name="NS1: Root Folder Name">
+        <properties/>
+        <testcase time="0" classname="UniqaDoWfStartService" name="Root Folder Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS2.1" failures="0" tests="25" time="0.003" name="NS2: Folder Name">
+        <properties/>
+        <testcase time="0.001" classname="UniqaDoWfStartService" name="Folder Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1" name="Folder Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.documentWorkflow" name="Folder Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.ping" name="Folder Name"/>
+        <testcase time="0" classname="uniqa" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf" name="Folder Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.pub" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.rs" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.validation" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.shutdown" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.startup" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.util" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.util.config" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.ws" name="Folder Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS4.1" failures="0" tests="5" time="0.001" name="NS4: Package Name">
+        <properties/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Package Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS5.1" failures="0" tests="19" time="0.013" name="NS5: Service Name">
+        <properties/>
+        <testcase time="0.001" classname="UniqaDoWfStartService.v1.documentWorkflow:_post" name="Service Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.ping:_get" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:deinit" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:init" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.startup:initACLs" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration" name="Service Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS6.1" failures="0" tests="3" time="0.001" name="NS6: Document Name">
+        <properties/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile" name="Document Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:Configuration" name="Document Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService" name="Document Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS7.1" failures="0" tests="1" time="0.001" name="NS7: Schema Name">
+        <properties/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.docTypes:schema_UniqaDocumentWFWS" name="Schema Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS13.1" failures="0" tests="1" time="0.001" name="NS13: WSD Name">
+        <properties/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.ws.consumer:UniqaDocumentWFWS" name="WSD Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS15.1" failures="0" tests="9" time="0.007" name="NS15: Document variable name">
+        <properties/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile;name" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile;type" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile;content" name="Document variable name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:Configuration;applicationInfo" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:Configuration;UniqaDoWService" name="Document variable name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;endpoint" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;username" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;password" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;timeout" name="Document variable name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-NS16.1" failures="0" tests="37" time="0.031" name="NS16: Service Signature Name">
+        <properties/>
+        <testcase time="0.002" classname="UniqaDoWfStartService.v1.documentWorkflow:_post;$resourceID" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.documentWorkflow:_post;$path" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.documentWorkflow:_post;startDocumentWorkflow" name="Service Signature Name"/>
+        <testcase time="0.001" classname="UniqaDoWfStartService.v1.documentWorkflow:_post;StartDocumentWorkflowData" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.documentWorkflow:_post;contentStream" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.documentWorkflow:_post;responseString" name="Service Signature Name"/>
+        <testcase time="0.001" classname="UniqaDoWfStartService.v1.ping:_get;$resourceID" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.ping:_get;$path" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.ping:_get;pingRequest" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaDoWfStartService.v1.ping:_get;pingResponse" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingRequest" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingRequest" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingResponse" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingResponse" name="Service Signature Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow;StartDocumentWorkflowData" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow;responseString" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow;contentStream" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow;responseString" name="Service Signature Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData;tns:StartDocumentWorkflowData" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData;tns:ServiceResponse" name="Service Signature Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData;tns:ServiceResponse" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension;contentDisposition" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension;fileName" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension;fileExtenstion" name="Service Signature Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData;inputStream" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData;StartDocumentWorkflowData" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest;contentStream" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest;StartDocumentWorkflowData" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow;tns:ServiceResponse" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow;responseCode" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow;StartDocumentWorkflowData" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow;responseCode" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;callId" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;location" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;provider" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;StartDocumentWorkflowProperties" name="Service Signature Name"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration;configuration" name="Service Signature Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:50+0000" package="UniqaAtBpmsStartServiceDoWF" id="UniqaAtBpmsStartServiceDoWF-MS1.1" failures="0" tests="3" time="0.001" name="MS1: Non-Production Service Package Suffixes">
+        <properties/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Non-Production Service Package Suffixes"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Non-Production Service Package Suffixes"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceDoWF" name="Non-Production Service Package Suffixes"/>
+    </testsuite>
+</testsuites>

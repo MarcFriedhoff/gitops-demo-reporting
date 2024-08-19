@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results buildName="Current build" totalChecks="849" totalFailed="0" totalPassed="844" totalWarnings="5">
+        
+    <result date="2024-07-03T06:49:50+0000" packageName="UniqaAtBpmsStartServiceDoWF" totalChecks="460" totalFailed="0" totalPassed="456" totalWarnings="4"/>
+    
+    <result date="2024-07-03T06:49:59+0000" packageName="UniqaAtBpmsStartServiceEBF" totalChecks="389" totalFailed="0" totalPassed="388" totalWarnings="1"/>
+</results>

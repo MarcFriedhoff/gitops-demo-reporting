@@ -1,0 +1,47 @@
+Status: OK
+Time Taken: 944
+Size: 263
+Timestamp: Wed Jul 03 06:53:38 GMT 2024
+TestStep: 07 Failed - ErrorHandling - DUPLICATE_ERROR
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Username: SRV_ESB_PREP_SOAPUI
+Method: POST
+StatusCode: 400
+URL: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaDoWfStartService/v1/documentWorkflow
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/16.0.2)]
+Host: [msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [33144]
+Content-Type: [multipart/related]
+
+POST http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaDoWfStartService/v1/documentWorkflow HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: multipart/related
+Content-Length: 33144
+Host: msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.2)
+
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [263]
+Content-Type: [application/json]
+
+{
+  "BusinessException" : {
+    "code" : "DUPLICATE_ERROR",
+    "reason" : "Duplicate document found with correlationID => newDocument_123563_Notes_Notes. \r\nYour package was allready processed by DocumentWorkflow.",
+    "timestamp" : "2024-07-03T08:53:38"
+  }
+}

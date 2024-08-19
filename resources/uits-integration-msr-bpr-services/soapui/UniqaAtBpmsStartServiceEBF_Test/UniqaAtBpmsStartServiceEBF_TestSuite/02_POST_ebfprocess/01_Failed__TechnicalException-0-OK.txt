@@ -1,0 +1,48 @@
+Status: OK
+Time Taken: 53
+Size: 448
+Timestamp: Wed Jul 03 06:53:50 GMT 2024
+TestStep: 01 Failed - TechnicalException
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Username: SRV_ESB_PREP_SOAPUI
+Method: POST
+StatusCode: 500
+URL: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaEbfStartService/v1/ebfprocess
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/16.0.2)]
+Host: [msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [736]
+Content-Type: [application/json]
+
+POST http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaEbfStartService/v1/ebfprocess HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 736
+Host: msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.2)
+
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 500 Internal Server Error]
+Content-Length: [448]
+Content-Type: [application/json]
+
+{
+  "BusinessException" : {
+    "code" : "COMS.E.12506",
+    "reason" : "Input parameter \"scanDate\" does not conform to targetInputSignature: Value does not match pattern(s)\n\n\terrorCode=DT-001\n\tpathName=/tns:StartEBFProcess/documentDetails/dateOfBirth\n\terrorMessage=[ISC.0082.9469] Value does not match pattern(s)",
+    "timestamp" : "2024-07-03T08:53:50",
+    "additionalInfo" : [ "Path: /tns:StartEBFProcess/scanDetails/scanDate" ]
+  }
+}

@@ -1,0 +1,38 @@
+Status: OK
+Time Taken: 67
+Size: 29
+Timestamp: Wed Jul 03 06:53:50 GMT 2024
+TestStep: 01 Success
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Username: SRV_ESB_PREP_SOAPUI
+Method: GET
+StatusCode: 200
+URL: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaEbfStartService/v1/ping?pingRequest=test
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/16.0.2)]
+Host: [msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555]
+Accept-Encoding: [gzip,deflate]
+
+GET http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaEbfStartService/v1/ping?pingRequest=test HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.2)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [29]
+Content-Type: [application/json; charset=UTF-8]
+
+{
+  "pingResponse" : "test"
+}

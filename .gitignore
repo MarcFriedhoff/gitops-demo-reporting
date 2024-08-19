@@ -3,3 +3,5 @@
 resources/.DS_Store
 version.json
 **/*.zip
+shared/**/*.js
+server/**/*.js

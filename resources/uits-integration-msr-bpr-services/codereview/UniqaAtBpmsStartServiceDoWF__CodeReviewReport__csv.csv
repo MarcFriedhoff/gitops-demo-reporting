@@ -1,0 +1,934 @@
+PACKAGE,ID,NAME,SERVICE,CHECKID,TEST_PASSED,"VALUE",IGNORE_FAILURE,RAGSTATUS
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,UniqaDoWfStartService.v1.documentWorkflow:_post,SP1.1,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,UniqaDoWfStartService.v1.ping:_get,SP1.2,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.pub:getPing,SP1.3,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,SP1.4,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,SP1.5,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,SP1.6,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,SP1.7,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,SP1.8,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,SP1.9,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,SP1.10,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,SP1.11,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,SP1.12,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,SP1.13,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,SP1.14,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,SP1.15,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.startup:init,SP1.16,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,SP1.17,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,SP1.18,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,SP1.19,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,SP1.20,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,SP1.21,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP1,Stateless,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,SP1.22,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,UniqaDoWfStartService.v1.documentWorkflow:_post,SP2.1,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,UniqaDoWfStartService.v1.ping:_get,SP2.2,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.pub:getPing,SP2.3,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,SP2.4,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,SP2.5,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,SP2.6,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,SP2.7,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,SP2.8,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,SP2.9,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,SP2.10,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,SP2.11,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,SP2.12,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,SP2.13,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,SP2.14,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,SP2.15,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.startup:init,SP2.16,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,SP2.17,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,SP2.18,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,SP2.19,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,SP2.20,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,SP2.21,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,SP2.22,true,"true",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ1.1,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,UniqaDoWfStartService.v1.ping:_get,FQ1.2,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ1.3,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ1.4,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ1.5,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ1.6,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ1.7,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ1.8,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ1.9,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ1.10,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ1.11,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ1.12,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ1.13,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ1.14,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ1.15,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ1.16,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ1.17,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ1.18,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ1.19,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ1.20,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ1.21,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ1,Pipeline Services,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ1.22,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),UniqaDoWfStartService.v1.documentWorkflow:_post,FQ3_v9.1,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),UniqaDoWfStartService.v1.ping:_get,FQ3_v9.2,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ3_v9.3,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ3_v9.4,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ3_v9.5,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ3_v9.6,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ3_v9.7,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ3_v9.8,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ3_v9.9,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ3_v9.10,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ3_v9.11,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ3_v9.12,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ3_v9.13,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ3_v9.14,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ3_v9.15,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.startup:init,FQ3_v9.16,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ3_v9.17,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ3_v9.18,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ3_v9.19,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ3_v9.20,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ3_v9.21,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ3_v9.22,true,"No matching services",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ4.1,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,UniqaDoWfStartService.v1.ping:_get,FQ4.2,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ4.3,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ4.4,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ4.5,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ4.6,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ4.7,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ4.8,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ4.9,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ4.10,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ4.11,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ4.12,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ4.13,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ4.14,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ4.15,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ4.16,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ4.17,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ4.18,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ4.19,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ4.20,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ4.21,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ4,Disabled Services,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ4.22,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ5.1,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,UniqaDoWfStartService.v1.ping:_get,FQ5.2,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ5.3,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ5.4,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ5.5,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ5.6,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ5.7,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ5.8,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ5.9,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ5.10,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ5.11,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ5.12,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ5.13,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ5.14,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ5.15,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ5.16,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ5.17,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ5.18,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ5.19,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ5.20,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ5.21,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ5.22,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ6.1,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,UniqaDoWfStartService.v1.ping:_get,FQ6.2,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ6.3,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ6.4,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ6.5,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ6.6,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ6.7,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ6.8,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ6.9,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ6.10,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ6.11,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ6.12,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ6.13,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ6.14,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ6.15,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ6.16,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ6.17,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ6.18,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ6.19,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ6.20,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ6.21,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ6,Debug Log,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ6.22,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceDoWF,FQ7,Public Services Try/Catch,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ7.1,true,"count(//SEQUENCE[@FORM="TRY" and not(@DISABLED='true') and //SEQUENCE[@FORM="CATCH" and not(@DISABLED='true')]]) + count(//SEQUENCE[@EXIT-ON='SUCCESS' and SEQUENCE[@EXIT-ON='FAILURE'] and SEQUENCE[@EXIT-ON='DONE']]) > 0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ7,Public Services Try/Catch,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ7.2,true,"count(//SEQUENCE[@FORM="TRY" and not(@DISABLED='true') and //SEQUENCE[@FORM="CATCH" and not(@DISABLED='true')]]) + count(//SEQUENCE[@EXIT-ON='SUCCESS' and SEQUENCE[@EXIT-ON='FAILURE'] and SEQUENCE[@EXIT-ON='DONE']]) > 0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ8,Connections Package,Connections,FQ8.1,true,"No connections exist in package",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ9.1,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,UniqaDoWfStartService.v1.ping:_get,FQ9.2,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ9.3,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ9.4,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ9.5,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ9.6,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ9.7,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ9.8,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ9.9,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ9.10,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ9.11,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ9.12,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ9.13,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ9.14,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ9.15,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ9.16,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ9.17,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ9.18,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ9.19,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ9.20,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ9.21,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ9,FTP Timeout,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ9.22,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ12,Unauthorised Access/Orphaned,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ12.1,false,"No invocations Found",true,0
+UniqaAtBpmsStartServiceDoWF,FQ12,Unauthorised Access/Orphaned,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ12.2,false,"No invocations Found",true,0
+UniqaAtBpmsStartServiceDoWF,FQ12,Unauthorised Access/Orphaned,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ12.3,false,"No invocations Found",true,0
+UniqaAtBpmsStartServiceDoWF,FQ12,Unauthorised Access/Orphaned,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ12.4,false,"No invocations Found",true,0
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ13.1,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,UniqaDoWfStartService.v1.ping:_get,FQ13.2,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ13.3,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ13.4,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ13.5,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ13.6,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ13.7,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ13.8,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ13.9,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ13.10,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ13.11,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ13.12,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ13.13,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ13.14,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ13.15,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ13.16,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ13.17,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ13.18,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ13.19,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ13.20,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ13.21,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ13.22,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ14.1,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,UniqaDoWfStartService.v1.ping:_get,FQ14.2,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ14.3,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ14.4,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ14.5,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ14.6,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ14.7,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ14.8,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ14.9,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ14.10,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ14.11,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ14.12,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ14.13,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ14.14,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ14.15,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ14.16,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ14.17,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ14.18,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ14.19,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ14.20,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ14.21,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ14.22,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ15.1,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,UniqaDoWfStartService.v1.ping:_get,FQ15.2,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ15.3,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ15.4,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ15.5,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ15.6,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ15.7,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ15.8,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ15.9,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ15.10,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ15.11,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ15.12,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ15.13,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ15.14,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ15.15,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ15.16,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ15.17,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ15.18,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ15.19,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ15.20,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ15.21,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ15.22,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ16.1,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,UniqaDoWfStartService.v1.ping:_get,FQ16.2,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ16.3,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ16.4,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ16.5,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ16.6,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ16.7,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ16.8,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ16.9,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ16.10,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ16.11,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ16.12,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ16.13,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ16.14,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ16.15,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ16.16,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ16.17,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ16.18,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ16.19,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ16.20,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ16.21,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ16.22,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ17.1,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,UniqaDoWfStartService.v1.ping:_get,FQ17.2,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ17.3,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ17.4,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ17.5,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ17.6,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ17.7,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ17.8,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ17.9,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ17.10,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ17.11,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ17.12,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ17.13,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ17.14,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ17.15,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ17.16,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ17.17,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ17.18,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ17.19,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ17.20,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ17.21,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ17.22,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ18.1,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,UniqaDoWfStartService.v1.ping:_get,FQ18.2,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ18.3,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ18.4,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ18.5,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ18.6,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ18.7,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ18.8,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ18.9,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ18.10,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ18.11,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ18.12,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ18.13,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ18.14,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ18.15,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ18.16,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ18.17,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ18.18,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ18.19,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ18.20,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ18.21,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ18.22,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ21.1,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,UniqaDoWfStartService.v1.ping:_get,FQ21.2,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ21.3,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ21.4,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ21.5,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ21.6,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ21.7,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ21.8,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ21.9,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ21.10,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ21.11,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ21.12,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ21.13,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ21.14,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ21.15,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ21.16,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ21.17,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ21.18,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ21.19,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,FQ21.20,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,FQ21.21,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,FQ21.22,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,UniqaDoWfStartService.v1.documentWorkflow:_post,FQ22.1,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,UniqaDoWfStartService.v1.ping:_get,FQ22.2,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.pub:getPing,FQ22.3,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,FQ22.4,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,FQ22.5,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,FQ22.6,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,FQ22.7,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,FQ22.8,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,FQ22.9,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,FQ22.10,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,FQ22.11,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,FQ22.12,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,FQ22.13,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,FQ22.14,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,FQ22.15,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.startup:init,FQ22.16,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,FQ22.17,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,FQ22.18,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,FQ22.19,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceDoWF,NS1,Root Folder Name,UniqaDoWfStartService,NS1.1,true,"UniqaAtBpmsStartServiceDoWF",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,UniqaDoWfStartService,NS2.1,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,UniqaDoWfStartService.v1,NS2.2,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,UniqaDoWfStartService.v1.documentWorkflow,NS2.3,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,UniqaDoWfStartService.v1.ping,NS2.4,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa,NS2.5,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration,NS2.6,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms,NS2.7,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start,NS2.8,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf,NS2.9,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1,NS2.10,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.doc,NS2.11,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.doc.config,NS2.12,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.pub,NS2.13,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.rs,NS2.14,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.service,NS2.15,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.service.adapter,NS2.16,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.service.errorHandling,NS2.17,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService,NS2.18,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM,NS2.19,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.service.validation,NS2.20,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.shutdown,NS2.21,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.startup,NS2.22,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.util,NS2.23,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.util.config,NS2.24,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS2,Folder Name,uniqa.integration.bpms.start.dowf.v1.ws,NS2.25,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS4,Package Name,UniqaAtBpmsStartServiceDoWF,NS4.1,true,"startsWith('Uniqa')",false,1
+UniqaAtBpmsStartServiceDoWF,NS4,Package Name,UniqaAtBpmsStartServiceDoWF,NS4.2,true,"startsWith('Wm')",false,1
+UniqaAtBpmsStartServiceDoWF,NS4,Package Name,UniqaAtBpmsStartServiceDoWF,NS4.3,true,"endsWith('pkg')",false,1
+UniqaAtBpmsStartServiceDoWF,NS4,Package Name,UniqaAtBpmsStartServiceDoWF,NS4.4,true,"endsWith('package')",false,1
+UniqaAtBpmsStartServiceDoWF,NS4,Package Name,UniqaAtBpmsStartServiceDoWF,NS4.5,true,"[A-Z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,UniqaDoWfStartService.v1.documentWorkflow:_post,NS5.1,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,UniqaDoWfStartService.v1.ping:_get,NS5.2,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.pub:getPing,NS5.3,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,NS5.4,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,NS5.5,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,NS5.6,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,NS5.7,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,NS5.8,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,NS5.9,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,NS5.10,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,NS5.11,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,NS5.12,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,NS5.13,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,NS5.14,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,NS5.15,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.startup:init,NS5.16,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,NS5.17,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,NS5.18,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS5,Service Name,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,NS5.19,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS6,Document Name,uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile,NS6.1,true,"[A-Z]{1}[a-zA-Z0-9_]*|docTypeRef_[a-zA-Z0-9\-]+[_a-zA-Z0-9_\-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS6,Document Name,uniqa.integration.bpms.start.dowf.v1.doc.config:Configuration,NS6.2,true,"[A-Z]{1}[a-zA-Z0-9_]*|docTypeRef_[a-zA-Z0-9\-]+[_a-zA-Z0-9_\-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS6,Document Name,uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService,NS6.3,true,"[A-Z]{1}[a-zA-Z0-9_]*|docTypeRef_[a-zA-Z0-9\-]+[_a-zA-Z0-9_\-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS7,Schema Name,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.docTypes:schema_UniqaDocumentWFWS,NS7.1,true,"schema_[A-Za-z]{1}[a-zA-Z0-9_]*|[A-Z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS13,WSD Name,uniqa.integration.bpms.start.dowf.v1.ws.consumer:UniqaDocumentWFWS,NS13.1,true,"[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile;name,NS15.1,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile;type,NS15.2,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc:AttachedFile;content,NS15.3,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc.config:Configuration;applicationInfo,NS15.4,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc.config:Configuration;UniqaDoWService,NS15.5,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;endpoint,NS15.6,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;username,NS15.7,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;password,NS15.8,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS15,Document variable name,uniqa.integration.bpms.start.dowf.v1.doc.config:UniqaDoWService;timeout,NS15.9,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.documentWorkflow:_post;$resourceID,NS16.1,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.documentWorkflow:_post;$path,NS16.2,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.documentWorkflow:_post;startDocumentWorkflow,NS16.3,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.documentWorkflow:_post;StartDocumentWorkflowData,NS16.4,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.documentWorkflow:_post;contentStream,NS16.5,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.documentWorkflow:_post;responseString,NS16.6,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.ping:_get;$resourceID,NS16.7,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.ping:_get;$path,NS16.8,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.ping:_get;pingRequest,NS16.9,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,UniqaDoWfStartService.v1.ping:_get;pingResponse,NS16.10,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingRequest,NS16.11,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingRequest,NS16.12,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingResponse,NS16.13,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.pub:getPing;pingResponse,NS16.14,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow;StartDocumentWorkflowData,NS16.15,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow;responseString,NS16.16,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow;contentStream,NS16.17,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow;responseString,NS16.18,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData;tns:StartDocumentWorkflowData,NS16.19,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData;tns:ServiceResponse,NS16.20,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData;tns:ServiceResponse,NS16.21,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension;contentDisposition,NS16.22,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension;fileName,NS16.23,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension;fileExtenstion,NS16.24,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData;inputStream,NS16.25,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData;StartDocumentWorkflowData,NS16.26,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest;contentStream,NS16.27,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest;StartDocumentWorkflowData,NS16.28,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow;tns:ServiceResponse,NS16.29,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow;responseCode,NS16.30,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow;StartDocumentWorkflowData,NS16.31,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow;responseCode,NS16.32,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;callId,NS16.33,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;location,NS16.34,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;provider,NS16.35,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput;StartDocumentWorkflowProperties,NS16.36,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,NS16,Service Signature Name,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration;configuration,NS16.37,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceDoWF,MS1,Non-Production Service Package Suffixes,UniqaAtBpmsStartServiceDoWF,MS1.1,true,"not endsWith('_TEST')",false,1
+UniqaAtBpmsStartServiceDoWF,MS1,Non-Production Service Package Suffixes,UniqaAtBpmsStartServiceDoWF,MS1.2,true,"not endsWith('_STUB')",false,1
+UniqaAtBpmsStartServiceDoWF,MS1,Non-Production Service Package Suffixes,UniqaAtBpmsStartServiceDoWF,MS1.3,true,"not endsWith('_DEV')",false,1
+UniqaAtBpmsStartServiceDoWF,SEN1.1,totals,null,Flow Services,N/A,"22",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.2,totals,null,Java Services,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.3,totals,null,Documents,N/A,"14",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.4,totals,null,Schemas,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.5,totals,null,FF Dictionaries,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.6,totals,null,FF Schemas,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.7,totals,null,Blaze,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.8,totals,null,Xsl,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.9,totals,null,Adapters,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.10,totals,null,Triggers,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.11,totals,null,WSDs,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.12,totals,null,Connections,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.13,totals,null,Map Services,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.14,totals,null,OData Services,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.15,totals,null,Rest Resources,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.16,totals,null,Rest Descriptors,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.17,totals,null,Folders,N/A,"30",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.18,totals,null,TotalChecks,N/A,"36",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.19,totals,null,TotalWarning,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.20,totals,null,TotalFailed,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.21,totals,null,TotalPassed,N/A,"35",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN1.1.1,SummaryTotals/totals,null,overallQualityPct,N/A,"99",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.2,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noMapCopies,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.3,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.4,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.5,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.6,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.7,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.8,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.9,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.10,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.11,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.12,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.13,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.14,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.15,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.16,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.17,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.18,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.19,CodeLines,UniqaDoWfStartService.v1.ping:_get,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.20,CodeLines,UniqaDoWfStartService.v1.ping:_get,noMapCopies,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.21,CodeLines,UniqaDoWfStartService.v1.ping:_get,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.22,CodeLines,UniqaDoWfStartService.v1.ping:_get,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.23,CodeLines,UniqaDoWfStartService.v1.ping:_get,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.24,CodeLines,UniqaDoWfStartService.v1.ping:_get,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.25,CodeLines,UniqaDoWfStartService.v1.ping:_get,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.26,CodeLines,UniqaDoWfStartService.v1.ping:_get,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.27,CodeLines,UniqaDoWfStartService.v1.ping:_get,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.28,CodeLines,UniqaDoWfStartService.v1.ping:_get,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.29,CodeLines,UniqaDoWfStartService.v1.ping:_get,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.30,CodeLines,UniqaDoWfStartService.v1.ping:_get,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.31,CodeLines,UniqaDoWfStartService.v1.ping:_get,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.32,CodeLines,UniqaDoWfStartService.v1.ping:_get,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.33,CodeLines,UniqaDoWfStartService.v1.ping:_get,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.34,CodeLines,UniqaDoWfStartService.v1.ping:_get,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.35,CodeLines,UniqaDoWfStartService.v1.ping:_get,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.36,CodeLines,UniqaDoWfStartService.v1.ping:_get,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.37,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noMap,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.38,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noMapCopies,N/A,"18",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.39,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.40,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.41,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.42,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noSeq,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.43,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.44,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noInvoke,N/A,"10",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.45,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.46,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.47,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.48,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.49,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.50,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.51,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.52,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.53,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.54,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.55,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noMap,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.56,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noMapCopies,N/A,"18",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.57,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.58,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.59,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.60,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noSeq,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.61,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.62,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noInvoke,N/A,"13",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.63,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.64,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.65,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.66,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.67,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.68,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.69,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.70,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.71,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.72,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.73,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noMap,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.74,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noMapCopies,N/A,"11",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.75,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.76,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.77,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.78,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noSeq,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.79,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.80,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noInvoke,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.81,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.82,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.83,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.84,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.85,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.86,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.87,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.88,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.89,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.90,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.91,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.92,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noMapCopies,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.93,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.94,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.95,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.96,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.97,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.98,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noInvoke,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.99,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.100,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.101,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.102,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.103,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.104,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.105,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.106,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.107,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.108,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.109,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noMap,N/A,"9",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.110,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noMapCopies,N/A,"16",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.111,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noBranch,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.112,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.113,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.114,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noSeq,N/A,"7",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.115,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noExit,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.116,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.117,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.118,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.119,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.120,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.121,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.122,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.123,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.124,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.125,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.126,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.127,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noMap,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.128,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noMapCopies,N/A,"7",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.129,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noBranch,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.130,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.131,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.132,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noSeq,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.133,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.134,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.135,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.136,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.137,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.138,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.139,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.140,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.141,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Branch-n1,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.142,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.143,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.144,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.145,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noMap,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.146,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noMapCopies,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.147,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.148,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.149,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.150,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.151,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.152,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.153,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.154,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.155,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.156,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.157,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.158,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.159,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.160,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.161,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.162,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.163,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noMap,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.164,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noMapCopies,N/A,"32",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.165,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noBranch,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.166,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.167,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noRetry,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.168,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noSeq,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.169,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.170,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noInvoke,N/A,"12",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.171,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.172,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.173,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.174,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.175,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.176,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.177,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.178,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.179,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.180,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,Repeat-n1,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.181,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noMap,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.182,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.183,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noBranch,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.184,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.185,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.186,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noSeq,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.187,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.188,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.189,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.190,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.191,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.192,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.193,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.194,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.195,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Branch-n1,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.196,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.197,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.198,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.199,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noMap,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.200,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noMapCopies,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.201,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.202,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.203,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.204,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.205,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.206,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.207,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.208,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.209,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.210,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.211,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.212,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.213,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.214,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.215,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.216,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.217,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noMap,N/A,"17",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.218,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noMapCopies,N/A,"12",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.219,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noBranch,N/A,"6",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.220,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.221,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.222,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noSeq,N/A,"18",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.223,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noExit,N/A,"6",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.224,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noInvoke,N/A,"7",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.225,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.226,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.227,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.228,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.229,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.230,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.231,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.232,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.233,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.234,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.235,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.236,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.237,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.238,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.239,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.240,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.241,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.242,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.243,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.244,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.245,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.246,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.247,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.248,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.249,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.250,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.251,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.252,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.253,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.254,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.255,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.256,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.257,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.258,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.259,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.260,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.261,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.262,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.263,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.264,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.265,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.266,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.267,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.268,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.269,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.270,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.271,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.272,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.273,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.274,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.275,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.276,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.277,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.278,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noInvoke,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.279,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.280,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.281,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.282,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.283,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.284,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.285,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.286,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.287,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.288,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.289,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.290,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.291,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.292,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.293,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.294,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.295,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.296,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noInvoke,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.297,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.298,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.299,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.300,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.301,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.302,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.303,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.304,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.305,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.306,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.307,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.308,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.309,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.310,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.311,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.312,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.313,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.314,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.315,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.316,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.317,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.318,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.319,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.320,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.321,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.322,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.323,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.324,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.325,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noMap,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.326,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noMapCopies,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.327,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.328,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.329,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.330,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.331,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.332,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.333,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.334,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.335,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.336,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.337,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.338,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.339,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.340,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.341,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.342,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.343,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noMap,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.344,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noMapCopies,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.345,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noBranch,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.346,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.347,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.348,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noSeq,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.349,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.350,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.351,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.352,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.353,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.354,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.355,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.356,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.357,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.358,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.359,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.360,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.361,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.362,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.363,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.364,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.365,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.366,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.367,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.368,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.369,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.370,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.371,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.372,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.373,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.374,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.375,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.376,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.377,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.378,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.379,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.380,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.381,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.382,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.383,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.384,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.385,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.386,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.387,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.388,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.389,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.390,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.391,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.392,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.393,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.394,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.395,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.396,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.397,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.398,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.399,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,complexityFactor-flow,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.400,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,complexityFactor-flow,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.401,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,complexityFactor-flow,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.402,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,complexityFactor-flow,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.403,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.404,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,complexityFactor-flow,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.405,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.406,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.407,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,complexityFactor-flow,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.408,CodeLines,UniqaDoWfStartService.v1.ping:_get,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.409,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,complexityFactor-flow,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.410,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,complexityFactor-flow,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.411,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.412,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.413,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.414,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.415,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.416,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.417,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.418,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.419,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:unregisterWebservice,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.420,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowData,totalLines,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.421,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:postDocumentWorkflow,totalLines,N/A,"37",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.422,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:extractFileNameExtension,totalLines,N/A,"15",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.423,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapIDMToUniqaWFWSService:streamToStartDocumentWorkflowRequest,totalLines,N/A,"56",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.424,CodeLines,uniqa.integration.bpms.start.dowf.v1.pub:getPing,totalLines,N/A,"35",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.425,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:StartDocumentWorkflow_PortType_startDocumentWorkflow_Response,totalLines,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.426,CodeLines,uniqa.integration.bpms.start.dowf.v1.rs:callDocumentWorkflow,totalLines,N/A,"24",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.427,CodeLines,uniqa.integration.bpms.start.dowf.v1.util.config:getConfiguration,totalLines,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.428,CodeLines,uniqa.integration.bpms.start.dowf.v1.service:postDocumentWorkflow,totalLines,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.429,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.connectors:StartDocumentWorkflow_PortType_startDocumentWorkflow,totalLines,N/A,"25",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.430,CodeLines,UniqaDoWfStartService.v1.ping:_get,totalLines,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.431,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.errorHandling:checkCallStartDocumentWorkflowData,totalLines,N/A,"37",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.432,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.validation:validatePostDocumentWorkflowRestInput,totalLines,N/A,"66",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.433,CodeLines,uniqa.integration.bpms.start.dowf.v1.shutdown:deinit,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.434,CodeLines,uniqa.integration.bpms.start.dowf.v1.ws.consumer.UniqaDocumentWFWS_.responseServices:genericFault_Response,totalLines,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.435,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:init,totalLines,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.436,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:initACLs,totalLines,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.437,CodeLines,UniqaDoWfStartService.v1.documentWorkflow:_post,totalLines,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.438,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.adapter:callStartDocumentWorkflowData,totalLines,N/A,"9",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.439,CodeLines,uniqa.integration.bpms.start.dowf.v1.service.mapUniqaWFWSServiceToIDM:mapToDocumentWorkflow,totalLines,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.440,CodeLines,uniqa.integration.bpms.start.dowf.v1.startup:registerWebservice,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.1,FlowCodeTotals/CodeLines,Services,CodeLines,N/A,"334",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.2,FlowCodeTotals/CodeLines,Java,CodeLines,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.3,FlowCodeTotals/CodeLines,Flow,CodeLines,N/A,"334",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.4,FlowCodeTotals/CodeLines,Branch,Flow-breakdown,N/A,"17",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.5,FlowCodeTotals/CodeLines,Loop,Flow-breakdown,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.6,FlowCodeTotals/CodeLines,Repeat,Flow-breakdown,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.7,FlowCodeTotals/CodeLines,Sequence,Flow-breakdown,N/A,"48",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.8,FlowCodeTotals/CodeLines,Exit,Flow-breakdown,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.9,FlowCodeTotals/CodeLines,Invoke,Flow-breakdown,N/A,"67",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.10,FlowCodeTotals/CodeLines,Map,Flow-breakdown,N/A,"56",FALSE,1
+UniqaAtBpmsStartServiceDoWF,SEN2.1.11,FlowCodeTotals/CodeLines,Map-copy,Flow-breakdown,N/A,"137",FALSE,1

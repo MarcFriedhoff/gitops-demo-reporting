@@ -11,10 +11,18 @@ export class Project {
   }
 }
 
+export class CodeReviewConfig {
+  failedChecksAllowed: number = 0;
+}
+
 export class AppConfig {
   projectDirectory: string = "";
   teamsWebhookUrl: any;
+  teamsActivityImage: string = "";
   uploadDirectory: string = "";
+  codeReviewConfig: CodeReviewConfig = new CodeReviewConfig();
+  messageCardTemplate: string = "";
+  frontEndUrl: string = "";
 
   constructor(projectDirectory: string) {
     this.projectDirectory = projectDirectory;
