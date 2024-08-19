@@ -17,9 +17,9 @@ RUN cd /app/server && npm install && npx tsc
 
 FROM node:18 as final
 WORKDIR /app
-COPY --from=server /app/server/out/server/src /app/server/src
+COPY --from=server /app/server/src /app/server/src
 COPY --from=server /app/server/tsconfig.json /app/server
-COPY --from=server /app/server/out/shared/models /app/shared/models
+COPY --from=server /app/shared/models /app/shared/models
 COPY --from=server /app/server/node_modules /app/node_modules
 COPY --from=client /app/client/build ./client/build
 COPY server/config.yaml /app/server/config.yaml
