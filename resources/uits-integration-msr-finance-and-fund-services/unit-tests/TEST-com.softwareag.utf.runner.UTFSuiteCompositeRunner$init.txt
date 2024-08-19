@@ -1,0 +1,18 @@
+Testsuite: com.softwareag.utf.runner.UTFSuiteCompositeRunner$init
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec
+------------- Standard Error -----------------
+com.wm.lang.flow.FlowException:Mandatory input parameter(s) missingcom.wm.lang.flow.FlowException:exceptionTestcom.wm.lang.flow.FlowException:Invalid or insufficient input parameter(s)com.wm.lang.flow.FlowException:Mandatory input parameter(s) missingcom.wm.lang.flow.FlowException:An Error happened in MSG.FD: defaultError------------- ---------------- ---------------
+
+Testcase: 0.0 TC01.01 - services - ping - success took 0.102 sec
+Testcase: 0.1 TC01.02 - services - getFundRate - success took 0.024 sec
+Testcase: 0.2 TC02.01 - pub - ping - success took 0.034 sec
+Testcase: 0.3 TC02.02 - pub - getFundRate - success took 0.065 sec
+Testcase: 0.4 TC03.01 - service - mapToBackend - getFundRate - mapGetFundRateRequest - elements took 0.011 sec
+Testcase: 0.5 TC04.01 - service - adapter- callSoInfoFundRateGetByTypeAndFundIdentifier - success took 0.044 sec
+Testcase: 0.6 TC04.02 - service - adapter- callSoInfoFundRateGetByTypeAndFundIdentifier - BE - Invalid or insufficient input parameter(s) took 0.139 sec
+Testcase: 0.7 TC05.01 - service - mapToMSG - mapToGetSoInfoFundRateGetByTypeAndFundIdentifierResponse - elements took 0.013 sec
+Testcase: 0.8 TC06.01 - service - errorHandling - checkSoInfoFundRateGetByTypeAndFundIdentifierResponse - SUCCESS took 0.01 sec
+Testcase: 0.9 TC06.02 - service - errorHandling - checkSoInfoFundRateGetByTypeAndFundIdentifierResponse - TE took 0.015 sec
+Testcase: 0.10 TC06.03 - service - errorHandling - checkSoInfoFundRateGetByTypeAndFundIdentifierResponse - BE Funds took 0.015 sec
+Testcase: 0.11 TC06.04 - service - errorHandling - checkSoInfoFundRateGetByTypeAndFundIdentifierResponse - BE Parameter took 0.014 sec
+Testcase: 0.12 TC06.05 - service - errorHandling - checkSoInfoFundRateGetByTypeAndFundIdentifierResponse - BE default took 0.015 sec

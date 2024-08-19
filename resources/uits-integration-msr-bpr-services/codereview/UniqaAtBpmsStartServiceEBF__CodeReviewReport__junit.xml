@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites name="Integration Server Code Review" disabled="16" failures="0" tests="388" time="2.298" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-SP1.1" failures="0" tests="19" time="0.114" name="SP1: Stateless">
+        <properties/>
+        <testcase time="0.007" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Stateless"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Stateless"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Stateless"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Stateless"/>
+        <testcase time="0.033" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Stateless"/>
+        <testcase time="0.022" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Stateless"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-SP2.1" failures="0" tests="19" time="0.113" name="SP2: Pipeline Save Restore">
+        <properties/>
+        <testcase time="0.005" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="UniqaEbfStartService.v1.ping:_get" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Pipeline Save Restore"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:init" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Pipeline Save Restore"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Pipeline Save Restore"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Pipeline Save Restore"/>
+        <testcase time="0.021" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Pipeline Save Restore"/>
+        <testcase time="0.021" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Pipeline Save Restore"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ1.1" failures="0" tests="19" time="0.37" name="FQ1: Pipeline Services">
+        <properties/>
+        <testcase time="0.018" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Pipeline Services"/>
+        <testcase time="0.016" classname="UniqaEbfStartService.v1.ping:_get" name="Pipeline Services"/>
+        <testcase time="0.058" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Pipeline Services"/>
+        <testcase time="0.052" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Pipeline Services"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Pipeline Services"/>
+        <testcase time="0.14" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Pipeline Services"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Pipeline Services"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Pipeline Services"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Pipeline Services"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Pipeline Services"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Pipeline Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:init" name="Pipeline Services"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Pipeline Services"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Pipeline Services"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Pipeline Services"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Pipeline Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Pipeline Services"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ3_v9.1" failures="0" tests="19" time="0.235" name="FQ3_v9: Deprecated Services (v9)">
+        <properties/>
+        <testcase time="0.004" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Deprecated Services (v9)"/>
+        <testcase time="0.007" classname="UniqaEbfStartService.v1.ping:_get" name="Deprecated Services (v9)"/>
+        <testcase time="0.029" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Deprecated Services (v9)"/>
+        <testcase time="0.045" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Deprecated Services (v9)"/>
+        <testcase time="0.085" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Deprecated Services (v9)"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Deprecated Services (v9)"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Deprecated Services (v9)"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Deprecated Services (v9)"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Deprecated Services (v9)"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Deprecated Services (v9)"/>
+        <testcase time="0.006" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Deprecated Services (v9)"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Deprecated Services (v9)"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Deprecated Services (v9)"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Deprecated Services (v9)"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ4.1" failures="0" tests="19" time="0.143" name="FQ4: Disabled Services">
+        <properties/>
+        <testcase time="0.015" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Disabled Services"/>
+        <testcase time="0.007" classname="UniqaEbfStartService.v1.ping:_get" name="Disabled Services"/>
+        <testcase time="0.023" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Disabled Services"/>
+        <testcase time="0.022" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Disabled Services"/>
+        <testcase time="0.038" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Disabled Services"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Disabled Services"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Disabled Services"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Disabled Services"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Disabled Services"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ5.1" failures="0" tests="19" time="0.108" name="FQ5: Use of Pub.Storage">
+        <properties/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Use of Pub.Storage"/>
+        <testcase time="0.013" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Use of Pub.Storage"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Use of Pub.Storage"/>
+        <testcase time="0.037" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Use of Pub.Storage"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Use of Pub.Storage"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.startup:init" name="Use of Pub.Storage"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Use of Pub.Storage"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Use of Pub.Storage"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Use of Pub.Storage"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Use of Pub.Storage"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ6.1" failures="0" tests="19" time="0.105" name="FQ6: Debug Log">
+        <properties/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Debug Log"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Debug Log"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Debug Log"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Debug Log"/>
+        <testcase time="0.031" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Debug Log"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Debug Log"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Debug Log"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Debug Log"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Debug Log"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Debug Log"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Debug Log"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Debug Log"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Debug Log"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Debug Log"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ7.1" failures="0" tests="2" time="0.038" name="FQ7: Public Services Try/Catch">
+        <properties/>
+        <testcase time="0.016" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Public Services Try/Catch"/>
+        <testcase time="0.014" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Public Services Try/Catch"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ8.1" failures="0" tests="1" time="0.002" name="FQ8: Connections Package">
+        <properties/>
+        <testcase time="0" classname="Connections" name="Connections Package"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ9.1" failures="0" tests="19" time="0.163" name="FQ9: FTP Timeout">
+        <properties/>
+        <testcase time="0.004" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="FTP Timeout"/>
+        <testcase time="0.006" classname="UniqaEbfStartService.v1.ping:_get" name="FTP Timeout"/>
+        <testcase time="0.019" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="FTP Timeout"/>
+        <testcase time="0.02" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="FTP Timeout"/>
+        <testcase time="0.062" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="FTP Timeout"/>
+        <testcase time="0.007" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="FTP Timeout"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="FTP Timeout"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="FTP Timeout"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="FTP Timeout"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="FTP Timeout"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="FTP Timeout"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="FTP Timeout"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="FTP Timeout"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="FTP Timeout"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="FTP Timeout"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="FTP Timeout"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ12.1" failures="0" tests="1" time="0.175" name="FQ12: Unauthorised Access/Orphaned">
+        <properties/>
+        <testcase time="0.172" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Unauthorised Access/Orphaned"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ13.1" failures="0" tests="19" time="0.087" name="FQ13: Branch without switch or evaluate labels">
+        <properties/>
+        <testcase time="0.009" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.026" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.startup:init" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Branch without switch or evaluate labels"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Branch without switch or evaluate labels"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ14.1" failures="0" tests="19" time="0.093" name="FQ14: Branch on expression when child step is without specified label or $null">
+        <properties/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.011" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.032" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Branch on expression when child step is without specified label or $null"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Branch on expression when child step is without specified label or $null"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ15.1" failures="0" tests="19" time="0.087" name="FQ15: Exit Node From Specification">
+        <properties/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Exit Node From Specification"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Exit Node From Specification"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Exit Node From Specification"/>
+        <testcase time="0.029" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Exit Node From Specification"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Exit Node From Specification"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Exit Node From Specification"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Exit Node From Specification"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Exit Node From Specification"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Exit Node From Specification"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Exit Node From Specification"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ16.1" failures="0" tests="19" time="0.08" name="FQ16: Branch step must have child nodes">
+        <properties/>
+        <testcase time="0.002" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Branch step must have child nodes"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Branch step must have child nodes"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Branch step must have child nodes"/>
+        <testcase time="0.024" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Branch step must have child nodes"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Branch step must have child nodes"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Branch step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Branch step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Branch step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Branch step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ17.1" failures="0" tests="19" time="0.077" name="FQ17: Loop step must have child nodes">
+        <properties/>
+        <testcase time="0.002" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Loop step must have child nodes"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Loop step must have child nodes"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Loop step must have child nodes"/>
+        <testcase time="0.024" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.startup:init" name="Loop step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Loop step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Loop step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Loop step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ18.1" failures="0" tests="19" time="0.078" name="FQ18: Repeat step must have child nodes">
+        <properties/>
+        <testcase time="0.002" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Repeat step must have child nodes"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Repeat step must have child nodes"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Repeat step must have child nodes"/>
+        <testcase time="0.025" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Repeat step must have child nodes"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.startup:init" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Repeat step must have child nodes"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Repeat step must have child nodes"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Repeat step must have child nodes"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Repeat step must have child nodes"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ21.1" failures="0" tests="19" time="0.075" name="FQ21: Loop must have an input array provided">
+        <properties/>
+        <testcase time="0.002" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Loop must have an input array provided"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Loop must have an input array provided"/>
+        <testcase time="0.008" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Loop must have an input array provided"/>
+        <testcase time="0.025" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Loop must have an input array provided"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Loop must have an input array provided"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response" name="Loop must have an input array provided"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response" name="Loop must have an input array provided"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-FQ22.1" failures="0" tests="16" time="0.089" name="FQ22: Flow service should not be empty">
+        <properties/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ping:_get" name="Flow service should not be empty"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Flow service should not be empty"/>
+        <testcase time="0.01" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Flow service should not be empty"/>
+        <testcase time="0.029" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Flow service should not be empty"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:init" name="Flow service should not be empty"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Flow service should not be empty"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Flow service should not be empty"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Flow service should not be empty"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS1.1" failures="0" tests="1" time="0.002" name="NS1: Root Folder Name">
+        <properties/>
+        <testcase time="0" classname="UniqaEbfStartService" name="Root Folder Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS2.1" failures="0" tests="23" time="0.003" name="NS2: Folder Name">
+        <properties/>
+        <testcase time="0.001" classname="UniqaEbfStartService" name="Folder Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1" name="Folder Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ebfprocess" name="Folder Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ping" name="Folder Name"/>
+        <testcase time="0" classname="uniqa" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms" name="Folder Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.pub" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.rs" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.adapter" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.errorHandling" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.shutdown" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.startup" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.util" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.util.config" name="Folder Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.ws" name="Folder Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS4.1" failures="0" tests="5" time="0.001" name="NS4: Package Name">
+        <properties/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Package Name"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Package Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS5.1" failures="0" tests="16" time="0.009" name="NS5: Service Name">
+        <properties/>
+        <testcase time="0.001" classname="UniqaEbfStartService.v1.ebfprocess:_post" name="Service Name"/>
+        <testcase time="0.001" classname="UniqaEbfStartService.v1.ping:_get" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.pub:getPing" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.shutdown:deinit" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.startup:init" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.startup:initACLs" name="Service Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.startup:registerWebservices" name="Service Name"/>
+        <testcase time="0.001" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration" name="Service Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS6.1" failures="0" tests="2" time="0.001" name="NS6: Document Name">
+        <properties/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config:Configuration" name="Document Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService" name="Document Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS7.1" failures="0" tests="1" time="0.001" name="NS7: Schema Name">
+        <properties/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.docTypes:schema_UniqaEBFUniqaEBFService" name="Schema Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS13.1" failures="0" tests="1" time="0.001" name="NS13: WSD Name">
+        <properties/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.ws.consumer:UniqaEBFUniqaEBFService" name="WSD Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS15.1" failures="0" tests="6" time="0.006" name="NS15: Document variable name">
+        <properties/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.doc.config:Configuration;applicationInfo" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config:Configuration;UniqaEBFService" name="Document variable name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;endpoint" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;username" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;password" name="Document variable name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;timeout" name="Document variable name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-NS16.1" failures="0" tests="26" time="0.037" name="NS16: Service Signature Name">
+        <properties/>
+        <testcase time="0.003" classname="UniqaEbfStartService.v1.ebfprocess:_post;$resourceID" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ebfprocess:_post;$path" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ebfprocess:_post;StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ebfprocess:_post;responseString" name="Service Signature Name"/>
+        <testcase time="0.002" classname="UniqaEbfStartService.v1.ping:_get;$resourceID" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ping:_get;$path" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ping:_get;pingRequest" name="Service Signature Name"/>
+        <testcase time="0" classname="UniqaEbfStartService.v1.ping:_get;pingResponse" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.pub:getPing;pingRequest" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.pub:getPing;pingRequest" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.pub:getPing;pingResponse" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.pub:getPing;pingResponse" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess;StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.pub:postEbfprocess;responseString" name="Service Signature Name"/>
+        <testcase time="0.005" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess;StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.rs:callPostEbfprocess;responseString" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse;tns:StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse;tns:StartEBFProcessResponse" name="Service Signature Name"/>
+        <testcase time="0.003" classname="uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse;tns:StartEBFProcessResponse" name="Service Signature Name"/>
+        <testcase time="0.004" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService;StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService;tns:StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse;tns:StartEBFProcessResponse" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse;StartEBFProcessResponse" name="Service Signature Name"/>
+        <testcase time="0.002" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess;StartEBFProcess" name="Service Signature Name"/>
+        <testcase time="0" classname="uniqa.integration.bpms.start.v1.service:postEbfprocess;StartEBFProcessResponse" name="Service Signature Name"/>
+        <testcase time="0.009" classname="uniqa.integration.bpms.start.v1.util.config:getConfiguration;configuration" name="Service Signature Name"/>
+    </testsuite>
+    <testsuite errors="0" hostname="localhost" timestamp="2024-07-03T06:49:59+0000" package="UniqaAtBpmsStartServiceEBF" id="UniqaAtBpmsStartServiceEBF-MS1.1" failures="0" tests="3" time="0.001" name="MS1: Non-Production Service Package Suffixes">
+        <properties/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Non-Production Service Package Suffixes"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Non-Production Service Package Suffixes"/>
+        <testcase time="0" classname="UniqaAtBpmsStartServiceEBF" name="Non-Production Service Package Suffixes"/>
+    </testsuite>
+</testsuites>

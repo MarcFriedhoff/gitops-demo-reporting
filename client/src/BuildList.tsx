@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BuildSummary } from '../../models/types';
+import { BuildSummary } from '../../shared/models/types';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Breadcrumb, Container, Nav, Row } from 'react-bootstrap';
 import { FaRegCheckCircle, FaRegTimesCircle } from 'react-icons/fa';

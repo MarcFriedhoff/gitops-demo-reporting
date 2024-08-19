@@ -1,3 +1,26 @@
 projectDirectory: /tmp/projects
 uploadDirectory: /tmp/upload
-teamsWebhookUrl: https://xxx
+teamsWebhookUrl: http://localhost:3000/api/messagecard
+teamsActivityImage: https://adaptivecards.io/content/cats/3.png
+frontEndUrl: http://localhost:3000
+codeReviewConfig:
+  failedChecksAllowed: 600
+
+messageCardTemplate: |
+  '@type': 'MessageCard'
+  '@context': 'http://schema.org/extensions'
+  themeColor: '{{.color}}'
+  summary: 'Build {{ .buildSummary.buildInfo.build }}'
+  title: 'Project: {{  .buildSummary.buildInfo.project }} Build {{  .buildSummary.buildInfo.build }}'
+  sections:
+    - activityTitle: 'Repo: {{  .buildSummary.buildInfo.repository }} \n\nRevision: {{  .buildSummary.buildInfo.revision }} \n\nTags: {{  .buildSummary.buildInfo.tags }} \n\nDate: {{  .buildSummary.buildInfo.date }} \n\nTime: {{  .buildSummary.buildInfo.time }}'
+      activitySubtitle: '**Status: {{  if .buildSummary.buildInfo.buildSuccess }}Success{{ else }}Failed{{ end }} **'
+      activityImage: '{{ .activityImage }}'
+      text: '**Code Review:** {{ .buildSummary.codeReviewSummary.status }}\n\n **Unit Tests:** {{ .buildSummary.unitTestSummary.status }}\n\n**Soap UI Tests:** {{ .buildSummary.soapUiTestSummary.status }}'
+      markdown: 'true'
+  potentialAction:
+    - '@type': 'OpenUri'
+      name: 'View Details'
+      targets:
+        - os: 'default'
+          uri: '{{ .deepLink }}'

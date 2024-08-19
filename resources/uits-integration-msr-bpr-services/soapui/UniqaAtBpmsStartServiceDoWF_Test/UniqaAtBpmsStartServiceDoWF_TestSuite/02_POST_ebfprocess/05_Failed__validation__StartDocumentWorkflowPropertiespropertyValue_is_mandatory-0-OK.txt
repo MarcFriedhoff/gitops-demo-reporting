@@ -1,0 +1,47 @@
+Status: OK
+Time Taken: 40
+Size: 179
+Timestamp: Wed Jul 03 06:53:38 GMT 2024
+TestStep: 05 Failed - validation - StartDocumentWorkflowProperties/propertyValue is mandatory
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Username: SRV_ESB_PREP_SOAPUI
+Method: POST
+StatusCode: 400
+URL: http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaDoWfStartService/v1/documentWorkflow
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/16.0.2)]
+Host: [msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [33135]
+Content-Type: [multipart/related]
+
+POST http://msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555/rest/UniqaDoWfStartService/v1/documentWorkflow HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: multipart/related
+Content-Length: 33135
+Host: msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local:5555
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.2)
+
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [179]
+Content-Type: [application/json]
+
+{
+  "BusinessException" : {
+    "code" : "CLOS.E.13240",
+    "reason" : "StartDocumentWorkflowProperties/propertyValue is mandatory",
+    "timestamp" : "2024-07-03T08:53:37"
+  }
+}

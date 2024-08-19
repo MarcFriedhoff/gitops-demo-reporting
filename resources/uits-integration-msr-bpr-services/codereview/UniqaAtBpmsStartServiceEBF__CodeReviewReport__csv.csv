@@ -1,0 +1,803 @@
+PACKAGE,ID,NAME,SERVICE,CHECKID,TEST_PASSED,"VALUE",IGNORE_FAILURE,RAGSTATUS
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,UniqaEbfStartService.v1.ebfprocess:_post,SP1.1,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,UniqaEbfStartService.v1.ping:_get,SP1.2,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.pub:getPing,SP1.3,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.pub:postEbfprocess,SP1.4,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,SP1.5,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,SP1.6,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,SP1.7,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,SP1.8,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,SP1.9,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.service:postEbfprocess,SP1.10,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.shutdown:deinit,SP1.11,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,SP1.12,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.startup:init,SP1.13,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.startup:initACLs,SP1.14,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.startup:registerWebservices,SP1.15,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.util.config:getConfiguration,SP1.16,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,SP1.17,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,SP1.18,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP1,Stateless,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,SP1.19,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,UniqaEbfStartService.v1.ebfprocess:_post,SP2.1,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,UniqaEbfStartService.v1.ping:_get,SP2.2,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.pub:getPing,SP2.3,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.pub:postEbfprocess,SP2.4,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,SP2.5,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,SP2.6,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,SP2.7,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,SP2.8,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,SP2.9,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.service:postEbfprocess,SP2.10,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.shutdown:deinit,SP2.11,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,SP2.12,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.startup:init,SP2.13,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.startup:initACLs,SP2.14,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.startup:registerWebservices,SP2.15,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.util.config:getConfiguration,SP2.16,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,SP2.17,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,SP2.18,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,SP2,Pipeline Save Restore,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,SP2.19,true,"true",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,UniqaEbfStartService.v1.ebfprocess:_post,FQ1.1,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,UniqaEbfStartService.v1.ping:_get,FQ1.2,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.pub:getPing,FQ1.3,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ1.4,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ1.5,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ1.6,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ1.7,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ1.8,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ1.9,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ1.10,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ1.11,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ1.12,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.startup:init,FQ1.13,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.startup:initACLs,FQ1.14,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ1.15,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ1.16,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ1.17,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ1.18,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ1,Pipeline Services,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ1.19,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),UniqaEbfStartService.v1.ebfprocess:_post,FQ3_v9.1,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),UniqaEbfStartService.v1.ping:_get,FQ3_v9.2,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.pub:getPing,FQ3_v9.3,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ3_v9.4,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ3_v9.5,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ3_v9.6,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ3_v9.7,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ3_v9.8,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ3_v9.9,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ3_v9.10,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.shutdown:deinit,FQ3_v9.11,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ3_v9.12,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.startup:init,FQ3_v9.13,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.startup:initACLs,FQ3_v9.14,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ3_v9.15,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ3_v9.16,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ3_v9.17,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ3_v9.18,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ3_v9,Deprecated Services (v9),uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ3_v9.19,true,"No matching services",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,UniqaEbfStartService.v1.ebfprocess:_post,FQ4.1,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,UniqaEbfStartService.v1.ping:_get,FQ4.2,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.pub:getPing,FQ4.3,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ4.4,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ4.5,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ4.6,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ4.7,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ4.8,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ4.9,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ4.10,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ4.11,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ4.12,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.startup:init,FQ4.13,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.startup:initACLs,FQ4.14,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ4.15,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ4.16,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ4.17,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ4.18,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ4,Disabled Services,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ4.19,true,"count(//*[@DISABLED='true'])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,UniqaEbfStartService.v1.ebfprocess:_post,FQ5.1,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,UniqaEbfStartService.v1.ping:_get,FQ5.2,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.pub:getPing,FQ5.3,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ5.4,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ5.5,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ5.6,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ5.7,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ5.8,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ5.9,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ5.10,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ5.11,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ5.12,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.startup:init,FQ5.13,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.startup:initACLs,FQ5.14,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ5.15,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ5.16,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ5.17,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ5.18,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ5,Use of Pub.Storage,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ5.19,true,"pub.storage.*",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,UniqaEbfStartService.v1.ebfprocess:_post,FQ6.1,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,UniqaEbfStartService.v1.ping:_get,FQ6.2,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.pub:getPing,FQ6.3,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ6.4,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ6.5,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ6.6,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ6.7,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ6.8,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ6.9,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ6.10,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ6.11,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ6.12,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.startup:init,FQ6.13,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.startup:initACLs,FQ6.14,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ6.15,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ6.16,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ6.17,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ6.18,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ6,Debug Log,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ6.19,true,"pub.flow:debugLog",false,1
+UniqaAtBpmsStartServiceEBF,FQ7,Public Services Try/Catch,uniqa.integration.bpms.start.v1.pub:getPing,FQ7.1,true,"count(//SEQUENCE[@FORM="TRY" and not(@DISABLED='true') and //SEQUENCE[@FORM="CATCH" and not(@DISABLED='true')]]) + count(//SEQUENCE[@EXIT-ON='SUCCESS' and SEQUENCE[@EXIT-ON='FAILURE'] and SEQUENCE[@EXIT-ON='DONE']]) > 0",false,1
+UniqaAtBpmsStartServiceEBF,FQ7,Public Services Try/Catch,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ7.2,true,"count(//SEQUENCE[@FORM="TRY" and not(@DISABLED='true') and //SEQUENCE[@FORM="CATCH" and not(@DISABLED='true')]]) + count(//SEQUENCE[@EXIT-ON='SUCCESS' and SEQUENCE[@EXIT-ON='FAILURE'] and SEQUENCE[@EXIT-ON='DONE']]) > 0",false,1
+UniqaAtBpmsStartServiceEBF,FQ8,Connections Package,Connections,FQ8.1,true,"No connections exist in package",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,UniqaEbfStartService.v1.ebfprocess:_post,FQ9.1,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,UniqaEbfStartService.v1.ping:_get,FQ9.2,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.pub:getPing,FQ9.3,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ9.4,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ9.5,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ9.6,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ9.7,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ9.8,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ9.9,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ9.10,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ9.11,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ9.12,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.startup:init,FQ9.13,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.startup:initACLs,FQ9.14,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ9.15,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ9.16,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ9.17,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ9.18,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ9,FTP Timeout,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ9.19,true,"count(//MAPINVOKE[@SERVICE='pub.client.ftp:login' and not(//@FIELD='/timeout;1;0')])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ12,Unauthorised Access/Orphaned,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ12.1,false,"No invocations Found",true,0
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,UniqaEbfStartService.v1.ebfprocess:_post,FQ13.1,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,UniqaEbfStartService.v1.ping:_get,FQ13.2,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.pub:getPing,FQ13.3,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ13.4,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ13.5,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ13.6,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ13.7,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ13.8,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ13.9,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ13.10,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ13.11,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ13.12,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.startup:init,FQ13.13,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.startup:initACLs,FQ13.14,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ13.15,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ13.16,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ13.17,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ13.18,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ13,Branch without switch or evaluate labels,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ13.19,true,"count(//BRANCH[not(@DISABLED)][not(@LABELEXPRESSIONS)][not(@SWITCH)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,UniqaEbfStartService.v1.ebfprocess:_post,FQ14.1,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,UniqaEbfStartService.v1.ping:_get,FQ14.2,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.pub:getPing,FQ14.3,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ14.4,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ14.5,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ14.6,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ14.7,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ14.8,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ14.9,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ14.10,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ14.11,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ14.12,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.startup:init,FQ14.13,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.startup:initACLs,FQ14.14,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ14.15,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ14.16,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ14.17,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ14.18,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ14,Branch on expression when child step is without specified label or $null,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ14.19,true,"count(//BRANCH[not(@DISABLED) and @LABELEXPRESSIONS="true"]/*[not(@DISABLED) and ((not(@NAME) or @NAME='$null') and (not(local-name()='COMMENT')))])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,UniqaEbfStartService.v1.ebfprocess:_post,FQ15.1,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,UniqaEbfStartService.v1.ping:_get,FQ15.2,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.pub:getPing,FQ15.3,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ15.4,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ15.5,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ15.6,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ15.7,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ15.8,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ15.9,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ15.10,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ15.11,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ15.12,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.startup:init,FQ15.13,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.startup:initACLs,FQ15.14,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ15.15,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ15.16,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ15.17,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ15.18,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ15,Exit Node From Specification,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ15.19,true,"count( //EXIT[not(@FROM) or (FROM and @FROM!='')][not(@DISABLED)] )=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,UniqaEbfStartService.v1.ebfprocess:_post,FQ16.1,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,UniqaEbfStartService.v1.ping:_get,FQ16.2,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.pub:getPing,FQ16.3,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ16.4,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ16.5,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ16.6,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ16.7,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ16.8,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ16.9,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ16.10,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ16.11,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ16.12,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.startup:init,FQ16.13,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.startup:initACLs,FQ16.14,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ16.15,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ16.16,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ16.17,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ16.18,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ16,Branch step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ16.19,true,"count(//BRANCH[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,UniqaEbfStartService.v1.ebfprocess:_post,FQ17.1,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,UniqaEbfStartService.v1.ping:_get,FQ17.2,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.pub:getPing,FQ17.3,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ17.4,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ17.5,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ17.6,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ17.7,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ17.8,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ17.9,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ17.10,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ17.11,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ17.12,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.startup:init,FQ17.13,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.startup:initACLs,FQ17.14,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ17.15,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ17.16,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ17.17,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ17.18,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ17,Loop step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ17.19,true,"count(//LOOP[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,UniqaEbfStartService.v1.ebfprocess:_post,FQ18.1,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,UniqaEbfStartService.v1.ping:_get,FQ18.2,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.pub:getPing,FQ18.3,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ18.4,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ18.5,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ18.6,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ18.7,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ18.8,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ18.9,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ18.10,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ18.11,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ18.12,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.startup:init,FQ18.13,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.startup:initACLs,FQ18.14,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ18.15,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ18.16,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ18.17,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ18.18,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ18,Repeat step must have child nodes,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ18.19,true,"count(//RETRY[count(./*[local-name()!='COMMENT'])=0])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,UniqaEbfStartService.v1.ebfprocess:_post,FQ21.1,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,UniqaEbfStartService.v1.ping:_get,FQ21.2,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.pub:getPing,FQ21.3,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ21.4,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ21.5,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ21.6,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ21.7,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ21.8,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ21.9,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ21.10,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ21.11,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ21.12,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.startup:init,FQ21.13,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.startup:initACLs,FQ21.14,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ21.15,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ21.16,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,FQ21.17,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,FQ21.18,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ21,Loop must have an input array provided,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,FQ21.19,true,"count(//LOOP[not(@IN-ARRAY)][not(@DISABLED)])=0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,UniqaEbfStartService.v1.ebfprocess:_post,FQ22.1,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,UniqaEbfStartService.v1.ping:_get,FQ22.2,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.pub:getPing,FQ22.3,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.pub:postEbfprocess,FQ22.4,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,FQ22.5,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,FQ22.6,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,FQ22.7,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,FQ22.8,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,FQ22.9,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.service:postEbfprocess,FQ22.10,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.shutdown:deinit,FQ22.11,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,FQ22.12,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.startup:init,FQ22.13,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.startup:initACLs,FQ22.14,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.startup:registerWebservices,FQ22.15,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,FQ22,Flow service should not be empty,uniqa.integration.bpms.start.v1.util.config:getConfiguration,FQ22.16,true,"count(//FLOW/*[local-name()!='COMMENT' and not(@DISABLED='true')])>0",false,1
+UniqaAtBpmsStartServiceEBF,NS1,Root Folder Name,UniqaEbfStartService,NS1.1,true,"UniqaAtBpmsStartServiceEBF",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,UniqaEbfStartService,NS2.1,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,UniqaEbfStartService.v1,NS2.2,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,UniqaEbfStartService.v1.ebfprocess,NS2.3,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,UniqaEbfStartService.v1.ping,NS2.4,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa,NS2.5,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration,NS2.6,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms,NS2.7,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start,NS2.8,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1,NS2.9,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.doc,NS2.10,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.doc.config,NS2.11,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.pub,NS2.12,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.rs,NS2.13,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.service,NS2.14,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.service.adapter,NS2.15,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.service.errorHandling,NS2.16,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService,NS2.17,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM,NS2.18,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.shutdown,NS2.19,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.startup,NS2.20,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.util,NS2.21,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.util.config,NS2.22,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS2,Folder Name,uniqa.integration.bpms.start.v1.ws,NS2.23,true,"[a-zA-Z]{1}[a-z0-9A-Z_]*|_{1}[a-z0-9A-Z_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS4,Package Name,UniqaAtBpmsStartServiceEBF,NS4.1,true,"startsWith('Uniqa')",false,1
+UniqaAtBpmsStartServiceEBF,NS4,Package Name,UniqaAtBpmsStartServiceEBF,NS4.2,true,"startsWith('Wm')",false,1
+UniqaAtBpmsStartServiceEBF,NS4,Package Name,UniqaAtBpmsStartServiceEBF,NS4.3,true,"endsWith('pkg')",false,1
+UniqaAtBpmsStartServiceEBF,NS4,Package Name,UniqaAtBpmsStartServiceEBF,NS4.4,true,"endsWith('package')",false,1
+UniqaAtBpmsStartServiceEBF,NS4,Package Name,UniqaAtBpmsStartServiceEBF,NS4.5,true,"[A-Z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,UniqaEbfStartService.v1.ebfprocess:_post,NS5.1,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,UniqaEbfStartService.v1.ping:_get,NS5.2,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.pub:getPing,NS5.3,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.pub:postEbfprocess,NS5.4,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,NS5.5,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,NS5.6,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,NS5.7,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,NS5.8,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,NS5.9,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.service:postEbfprocess,NS5.10,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.shutdown:deinit,NS5.11,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,NS5.12,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.startup:init,NS5.13,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.startup:initACLs,NS5.14,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.startup:registerWebservices,NS5.15,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS5,Service Name,uniqa.integration.bpms.start.v1.util.config:getConfiguration,NS5.16,true,"_get|_post|_delete|_put|_head|_default|_insert|_retrieve|_update|[a-z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS6,Document Name,uniqa.integration.bpms.start.v1.doc.config:Configuration,NS6.1,true,"[A-Z]{1}[a-zA-Z0-9_]*|docTypeRef_[a-zA-Z0-9\-]+[_a-zA-Z0-9_\-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS6,Document Name,uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService,NS6.2,true,"[A-Z]{1}[a-zA-Z0-9_]*|docTypeRef_[a-zA-Z0-9\-]+[_a-zA-Z0-9_\-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS7,Schema Name,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.docTypes:schema_UniqaEBFUniqaEBFService,NS7.1,true,"schema_[A-Za-z]{1}[a-zA-Z0-9_]*|[A-Z]{1}[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS13,WSD Name,uniqa.integration.bpms.start.v1.ws.consumer:UniqaEBFUniqaEBFService,NS13.1,true,"[a-zA-Z0-9_]*",false,1
+UniqaAtBpmsStartServiceEBF,NS15,Document variable name,uniqa.integration.bpms.start.v1.doc.config:Configuration;applicationInfo,NS15.1,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceEBF,NS15,Document variable name,uniqa.integration.bpms.start.v1.doc.config:Configuration;UniqaEBFService,NS15.2,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceEBF,NS15,Document variable name,uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;endpoint,NS15.3,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceEBF,NS15,Document variable name,uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;username,NS15.4,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceEBF,NS15,Document variable name,uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;password,NS15.5,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceEBF,NS15,Document variable name,uniqa.integration.bpms.start.v1.doc.config:UniqaEBFService;timeout,NS15.6,true,"[a-zA-Z]{1}[a-zA-Z0-9]*|\@[a-z]{1}[a-zA-Z0-9:]*|[a-zA-Z0-9\-]*\:[a-zA-Z]{1}[a-zA-Z0-9_\-]*|_env|\*doctype|\*body",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ebfprocess:_post;$resourceID,NS16.1,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ebfprocess:_post;$path,NS16.2,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ebfprocess:_post;StartEBFProcess,NS16.3,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ebfprocess:_post;responseString,NS16.4,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ping:_get;$resourceID,NS16.5,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ping:_get;$path,NS16.6,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ping:_get;pingRequest,NS16.7,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,UniqaEbfStartService.v1.ping:_get;pingResponse,NS16.8,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.pub:getPing;pingRequest,NS16.9,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.pub:getPing;pingRequest,NS16.10,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.pub:getPing;pingResponse,NS16.11,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.pub:getPing;pingResponse,NS16.12,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.pub:postEbfprocess;StartEBFProcess,NS16.13,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.pub:postEbfprocess;responseString,NS16.14,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess;StartEBFProcess,NS16.15,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess;responseString,NS16.16,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse;tns:StartEBFProcess,NS16.17,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse;tns:StartEBFProcessResponse,NS16.18,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse;tns:StartEBFProcessResponse,NS16.19,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService;StartEBFProcess,NS16.20,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService;tns:StartEBFProcess,NS16.21,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse;tns:StartEBFProcessResponse,NS16.22,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse;StartEBFProcessResponse,NS16.23,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service:postEbfprocess;StartEBFProcess,NS16.24,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.service:postEbfprocess;StartEBFProcessResponse,NS16.25,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,NS16,Service Signature Name,uniqa.integration.bpms.start.v1.util.config:getConfiguration;configuration,NS16.26,true,"\$filter|\$select|\$top|\$skip|\$count|\$orderby|\$inlinecount|\$resourceID|\$path|\$httpMethod|flow.inputs|flow.outputs|ProcessData|TaskData|TaskCompletionInfo|TaskQueueInfo|JMSMessage|JMSType|ActionEvent|ChallengeEvent|[a-zA-Z]{1}[a-zA-Z0-9_:\.-]*",false,1
+UniqaAtBpmsStartServiceEBF,MS1,Non-Production Service Package Suffixes,UniqaAtBpmsStartServiceEBF,MS1.1,true,"not endsWith('_TEST')",false,1
+UniqaAtBpmsStartServiceEBF,MS1,Non-Production Service Package Suffixes,UniqaAtBpmsStartServiceEBF,MS1.2,true,"not endsWith('_STUB')",false,1
+UniqaAtBpmsStartServiceEBF,MS1,Non-Production Service Package Suffixes,UniqaAtBpmsStartServiceEBF,MS1.3,true,"not endsWith('_DEV')",false,1
+UniqaAtBpmsStartServiceEBF,SEN1.1,totals,null,Flow Services,N/A,"19",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.2,totals,null,Java Services,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.3,totals,null,Documents,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.4,totals,null,Schemas,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.5,totals,null,FF Dictionaries,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.6,totals,null,FF Schemas,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.7,totals,null,Blaze,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.8,totals,null,Xsl,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.9,totals,null,Adapters,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.10,totals,null,Triggers,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.11,totals,null,WSDs,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.12,totals,null,Connections,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.13,totals,null,Map Services,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.14,totals,null,OData Services,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.15,totals,null,Rest Resources,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.16,totals,null,Rest Descriptors,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.17,totals,null,Folders,N/A,"28",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.18,totals,null,TotalChecks,N/A,"36",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.19,totals,null,TotalWarning,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.20,totals,null,TotalFailed,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.21,totals,null,TotalPassed,N/A,"35",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN1.1.1,SummaryTotals/totals,null,overallQualityPct,N/A,"99",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.2,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.3,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.4,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.5,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.6,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.7,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.8,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.9,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.10,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.11,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.12,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.13,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.14,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.15,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.16,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.17,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.18,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.19,CodeLines,UniqaEbfStartService.v1.ping:_get,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.20,CodeLines,UniqaEbfStartService.v1.ping:_get,noMapCopies,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.21,CodeLines,UniqaEbfStartService.v1.ping:_get,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.22,CodeLines,UniqaEbfStartService.v1.ping:_get,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.23,CodeLines,UniqaEbfStartService.v1.ping:_get,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.24,CodeLines,UniqaEbfStartService.v1.ping:_get,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.25,CodeLines,UniqaEbfStartService.v1.ping:_get,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.26,CodeLines,UniqaEbfStartService.v1.ping:_get,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.27,CodeLines,UniqaEbfStartService.v1.ping:_get,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.28,CodeLines,UniqaEbfStartService.v1.ping:_get,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.29,CodeLines,UniqaEbfStartService.v1.ping:_get,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.30,CodeLines,UniqaEbfStartService.v1.ping:_get,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.31,CodeLines,UniqaEbfStartService.v1.ping:_get,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.32,CodeLines,UniqaEbfStartService.v1.ping:_get,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.33,CodeLines,UniqaEbfStartService.v1.ping:_get,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.34,CodeLines,UniqaEbfStartService.v1.ping:_get,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.35,CodeLines,UniqaEbfStartService.v1.ping:_get,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.36,CodeLines,UniqaEbfStartService.v1.ping:_get,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.37,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noMap,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.38,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noMapCopies,N/A,"18",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.39,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.40,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.41,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.42,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noSeq,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.43,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.44,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noInvoke,N/A,"10",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.45,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.46,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.47,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.48,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.49,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.50,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.51,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.52,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.53,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.54,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.55,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noMap,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.56,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noMapCopies,N/A,"18",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.57,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.58,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.59,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.60,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noSeq,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.61,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.62,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noInvoke,N/A,"11",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.63,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.64,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.65,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.66,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.67,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.68,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.69,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.70,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.71,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.72,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.73,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.74,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.75,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.76,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.77,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.78,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.79,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.80,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.81,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.82,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.83,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.84,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.85,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.86,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.87,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.88,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.89,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.90,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.91,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.92,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noMapCopies,N/A,"5",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.93,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.94,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.95,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.96,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.97,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.98,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noInvoke,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.99,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.100,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.101,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.102,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.103,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.104,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.105,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.106,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.107,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.108,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.109,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noMap,N/A,"6",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.110,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noMapCopies,N/A,"7",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.111,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noBranch,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.112,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.113,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.114,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noSeq,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.115,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noExit,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.116,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.117,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.118,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.119,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.120,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.121,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.122,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.123,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.124,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.125,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.126,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.127,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noMap,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.128,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noMapCopies,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.129,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noBranch,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.130,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.131,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.132,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noSeq,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.133,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.134,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.135,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.136,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.137,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.138,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.139,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.140,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.141,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Branch-n1,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.142,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.143,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.144,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.145,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noMap,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.146,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noMapCopies,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.147,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.148,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.149,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.150,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.151,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.152,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.153,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.154,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.155,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.156,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.157,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.158,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.159,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.160,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.161,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.162,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.163,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noMap,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.164,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noMapCopies,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.165,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.166,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.167,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.168,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.169,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.170,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.171,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.172,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.173,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.174,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.175,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.176,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.177,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.178,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.179,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.180,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.181,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.182,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.183,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.184,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.185,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.186,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.187,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.188,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.189,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.190,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.191,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.192,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.193,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.194,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.195,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.196,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.197,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.198,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.199,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.200,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.201,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.202,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.203,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.204,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.205,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.206,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.207,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.208,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.209,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.210,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.211,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.212,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.213,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.214,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.215,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.216,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.217,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.218,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.219,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.220,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.221,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.222,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.223,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.224,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noInvoke,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.225,CodeLines,uniqa.integration.bpms.start.v1.startup:init,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.226,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.227,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.228,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.229,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.230,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.231,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.232,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.233,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.234,CodeLines,uniqa.integration.bpms.start.v1.startup:init,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.235,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.236,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.237,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.238,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.239,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.240,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.241,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.242,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noInvoke,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.243,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.244,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.245,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.246,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.247,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.248,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.249,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.250,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.251,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.252,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.253,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.254,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.255,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.256,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.257,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.258,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.259,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.260,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.261,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.262,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.263,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.264,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.265,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.266,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.267,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.268,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.269,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.270,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.271,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noMap,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.272,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noMapCopies,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.273,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.274,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.275,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.276,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.277,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.278,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.279,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.280,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.281,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.282,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.283,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.284,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.285,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.286,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.287,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.288,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.289,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noMap,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.290,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noMapCopies,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.291,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noBranch,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.292,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.293,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.294,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noSeq,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.295,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.296,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noInvoke,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.297,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.298,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.299,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.300,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.301,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.302,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.303,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.304,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.305,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.306,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.307,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.308,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.309,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.310,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.311,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.312,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.313,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.314,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.315,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.316,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.317,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.318,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.319,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.320,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.321,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.322,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.323,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.324,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.325,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noMap,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.326,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noMapCopies,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.327,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noBranch,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.328,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noLoop,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.329,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noRetry,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.330,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noSeq,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.331,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noExit,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.332,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noInvoke,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.333,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,noDisabled,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.334,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Loop-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.335,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Loop-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.336,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Loop-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.337,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Branch-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.338,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Branch-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.339,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Branch-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.340,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Repeat-n3,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.341,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Repeat-n2,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.342,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,Repeat-n1,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.343,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,complexityFactor-flow,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.344,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,complexityFactor-flow,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.345,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.346,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.347,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.348,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.349,CodeLines,uniqa.integration.bpms.start.v1.startup:init,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.350,CodeLines,UniqaEbfStartService.v1.ping:_get,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.351,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.352,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.353,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.354,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.355,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.356,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.357,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.358,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.359,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,complexityFactor-flow,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.360,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,complexityFactor-flow,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.361,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,complexityFactor-flow,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.362,CodeLines,uniqa.integration.bpms.start.v1.pub:postEbfprocess,totalLines,N/A,"35",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.363,CodeLines,uniqa.integration.bpms.start.v1.service.errorHandling:checkStartEBFProcessResponse,totalLines,N/A,"22",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.364,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:genericFault_Response,totalLines,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.365,CodeLines,uniqa.integration.bpms.start.v1.service.adapter:callStartEBFProcessResponse,totalLines,N/A,"9",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.366,CodeLines,uniqa.integration.bpms.start.v1.shutdown:deinit,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.367,CodeLines,uniqa.integration.bpms.start.v1.service:postEbfprocess,totalLines,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.368,CodeLines,uniqa.integration.bpms.start.v1.startup:init,totalLines,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.369,CodeLines,UniqaEbfStartService.v1.ping:_get,totalLines,N/A,"3",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.370,CodeLines,uniqa.integration.bpms.start.v1.util.config:getConfiguration,totalLines,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.371,CodeLines,UniqaEbfStartService.v1.ebfprocess:_post,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.372,CodeLines,uniqa.integration.bpms.start.v1.service.mapUniqaEBFServiceToIDM:mapStartEBFProcessResponse,totalLines,N/A,"4",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.373,CodeLines,uniqa.integration.bpms.start.v1.shutdown:unregisterWebservices,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.374,CodeLines,uniqa.integration.bpms.start.v1.startup:registerWebservices,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.375,CodeLines,uniqa.integration.bpms.start.v1.rs:callPostEbfprocess,totalLines,N/A,"1",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.376,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.responseServices:startEBFProcess_PortType_StartEBFProcess_Response,totalLines,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.377,CodeLines,uniqa.integration.bpms.start.v1.startup:initACLs,totalLines,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.378,CodeLines,uniqa.integration.bpms.start.v1.pub:getPing,totalLines,N/A,"35",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.379,CodeLines,uniqa.integration.bpms.start.v1.service.mapIDMToUniqaEBFService:mapEbfprocessRestRequestToUniqaEBFService,totalLines,N/A,"7",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.380,CodeLines,uniqa.integration.bpms.start.v1.ws.consumer.UniqaEBFUniqaEBFService_.connectors:startEBFProcess_PortType_StartEBFProcess,totalLines,N/A,"25",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.1,FlowCodeTotals/CodeLines,Services,CodeLines,N/A,"161",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.2,FlowCodeTotals/CodeLines,Java,CodeLines,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.3,FlowCodeTotals/CodeLines,Flow,CodeLines,N/A,"161",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.4,FlowCodeTotals/CodeLines,Branch,Flow-breakdown,N/A,"8",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.5,FlowCodeTotals/CodeLines,Loop,Flow-breakdown,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.6,FlowCodeTotals/CodeLines,Repeat,Flow-breakdown,N/A,"0",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.7,FlowCodeTotals/CodeLines,Sequence,Flow-breakdown,N/A,"20",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.8,FlowCodeTotals/CodeLines,Exit,Flow-breakdown,N/A,"2",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.9,FlowCodeTotals/CodeLines,Invoke,Flow-breakdown,N/A,"38",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.10,FlowCodeTotals/CodeLines,Map,Flow-breakdown,N/A,"27",FALSE,1
+UniqaAtBpmsStartServiceEBF,SEN2.1.11,FlowCodeTotals/CodeLines,Map-copy,Flow-breakdown,N/A,"66",FALSE,1

@@ -1,0 +1,119 @@
+Testsuite: com.softwareag.utf.runner.UTFSuiteCompositeRunner$init
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.544 sec
+------------- Standard Output ---------------
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Suite Started : UniqaAtBpmsStartServiceDoWF - Testsuite01.xml file=/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test/resources/test/setup/Testsuite01.xml
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.0 tc01 - ping
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.0 tc01 - ping
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.2044 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.1 tc03 - mapToDocumentWorkflow
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.1 tc03 - mapToDocumentWorkflow
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0134 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.2 tc04 - errorHandling - checkCallStartDocumentWorkflowData CRITICAL_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.2 tc04 - errorHandling - checkCallStartDocumentWorkflowData CRITICAL_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.1556 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.3 tc05 - errorHandling - checkCallStartDocumentWorkflowData DUPLICATE_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.3 tc05 - errorHandling - checkCallStartDocumentWorkflowData DUPLICATE_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.019 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.4 tc06 - errorHandling - checkCallStartDocumentWorkflowData VALIDATION_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.4 tc06 - errorHandling - checkCallStartDocumentWorkflowData VALIDATION_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0166 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.5 tc07 - errorHandling - checkCallStartDocumentWorkflowData SAVE_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.5 tc07 - errorHandling - checkCallStartDocumentWorkflowData SAVE_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0161 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.6 tc08 - errorHandling - checkCallStartDocumentWorkflowData UNKNOWN_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.6 tc08 - errorHandling - checkCallStartDocumentWorkflowData UNKNOWN_ERROR
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0139 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.7 tc09 - validation - callId is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.7 tc09 - validation - callId is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0239 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.8 tc10 - validation - location is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.8 tc10 - validation - location is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0152 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.9 tc11 - validation - provider is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.9 tc11 - validation - provider is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0141 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.10 tc12 - validation - StartDocumentWorkflowProperties is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.10 tc12 - validation - StartDocumentWorkflowProperties is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0178 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.11 tc13 - validation - StartDocumentWorkflowProperties/propertyName is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.11 tc13 - validation - StartDocumentWorkflowProperties/propertyName is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0131 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.12 tc14 - validation - StartDocumentWorkflowProperties/propertyValue is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.12 tc14 - validation - StartDocumentWorkflowProperties/propertyValue is mandatory
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.0153 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.13 tc15 - validation - positive
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Finished: 0.13 tc15 - validation - positive
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Duration : 0.014 seconds
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:17 UTC 2024::Test Started: 0.14 TC16.01 - rs - callDocumentWorkflow - success *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Finished: 0.14 TC16.01 - rs - callDocumentWorkflow - success *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Duration : 0.0527 seconds
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Started: 0.15 TC16.02 - rs - callDocumentWorkflow - exception - stream processing *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Finished: 0.15 TC16.02 - rs - callDocumentWorkflow - exception - stream processing *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Duration : 0.12 seconds
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Started: 0.16 TC16.03 - rs - callDocumentWorkflow - exception - processing *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Finished: 0.16 TC16.03 - rs - callDocumentWorkflow - exception - processing *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Duration : 0.0318 seconds
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Started: 0.17 TC17.01 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - payload only *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Finished: 0.17 TC17.01 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - payload only *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Duration : 0.1471 seconds
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Started: 0.18 TC17.02 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - no payload & 1 attachment *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Finished: 0.18 TC17.02 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - no payload & 1 attachment *
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Duration : 0.1311 seconds
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Suite Ended : UniqaAtBpmsStartServiceDoWF - Testsuite01.xml file=/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test/resources/test/setup/Testsuite01.xml
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Suite Started : UniqaAtBpmsStartServiceEBF - Testsuite01.xml file=/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test/resources/test/setup/Testsuite01.xml
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Started: 1.0 tc01 - ping
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Test Finished: 1.0 tc01 - ping
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Duration : 0.0216 seconds
+[WmTestSuite]::Wed Jul 03 06:53:18 UTC 2024::Result: Success
+[WmTestSuite]::Wed Jul 03 ------------- ---------------- ---------------
+------------- Standard Error -----------------
+com.wm.lang.flow.FlowException:messagecom.wm.lang.flow.FlowException:messagecom.wm.lang.flow.FlowException:messagecom.wm.lang.flow.FlowException:messagecom.wm.lang.flow.FlowException:messagecom.wm.lang.flow.FlowException:callId is mandatorycom.wm.lang.flow.FlowException:location is mandatorycom.wm.lang.flow.FlowException:provider is mandatorycom.wm.lang.flow.FlowException:StartDocumentWorkflowProperties is mandatorycom.wm.lang.flow.FlowException:StartDocumentWorkflowProperties/propertyName is mandatorycom.wm.lang.flow.FlowException:StartDocumentWorkflowProperties/propertyValue is mandatorycom.wm.lang.flow.FlowException:message 1com.wm.lang.flow.FlowException:message 2------------- ---------------- ---------------
+
+Testcase: 0.0 tc01 - ping took 0.209 sec
+Testcase: 0.1 tc03 - mapToDocumentWorkflow took 0.018 sec
+Testcase: 0.2 tc04 - errorHandling - checkCallStartDocumentWorkflowData CRITICAL_ERROR took 0.16 sec
+Testcase: 0.3 tc05 - errorHandling - checkCallStartDocumentWorkflowData DUPLICATE_ERROR took 0.025 sec
+Testcase: 0.4 tc06 - errorHandling - checkCallStartDocumentWorkflowData VALIDATION_ERROR took 0.02 sec
+Testcase: 0.5 tc07 - errorHandling - checkCallStartDocumentWorkflowData SAVE_ERROR took 0.023 sec
+Testcase: 0.6 tc08 - errorHandling - checkCallStartDocumentWorkflowData UNKNOWN_ERROR took 0.019 sec
+Testcase: 0.7 tc09 - validation - callId is mandatory took 0.028 sec
+Testcase: 0.8 tc10 - validation - location is mandatory took 0.019 sec
+Testcase: 0.9 tc11 - validation - provider is mandatory took 0.019 sec
+Testcase: 0.10 tc12 - validation - StartDocumentWorkflowProperties is mandatory took 0.022 sec
+Testcase: 0.11 tc13 - validation - StartDocumentWorkflowProperties/propertyName is mandatory took 0.017 sec
+Testcase: 0.12 tc14 - validation - StartDocumentWorkflowProperties/propertyValue is mandatory took 0.02 sec
+Testcase: 0.13 tc15 - validation - positive took 0.019 sec
+Testcase: 0.14 TC16.01 - rs - callDocumentWorkflow - success * took 0.057 sec
+Testcase: 0.15 TC16.02 - rs - callDocumentWorkflow - exception - stream processing * took 0.125 sec
+Testcase: 0.16 TC16.03 - rs - callDocumentWorkflow - exception - processing * took 0.036 sec
+Testcase: 0.17 TC17.01 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - payload only * took 0.151 sec
+Testcase: 0.18 TC17.02 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - no payload & 1 attachment * took 0.111 sec
+Testcase: 1.0 tc01 - ping took 0.026 sec
+Testcase: 1.1 tc02 - mapEbfprocessRestRequestToUniqaEBFService took 0.017 sec
+Testcase: 1.2 tc03 - mapStartEBFProcessResponse took 0.015 sec
+Testcase: 1.3 tc04 - errorHandling - checkStartEBFProcessResponse rc 1 took 0.02 sec
+Testcase: 1.4 tc05 - errorHandling - checkStartEBFProcessResponse rc 2 took 0.017 sec
+Testcase: 1.5 tc06 - mapEbfprocessRestRequestToUniqaEBFService - no SchwebeID took 0.048 sec
+Testcase: 1.6 tc07 - mapEbfprocessRestRequestToUniqaEBFService - creatorID null took 0.017 sec
+Testcase: 1.7 tc08 - mapEbfprocessRestRequestToUniqaEBFService - creatorID empty took 0.016 sec
+Testcase: 1.8 tc09 - mapEbfprocessRestRequestToUniqaEBFService - creatorID 17 chars took 0.016 sec
+Testcase: 1.9 tc10 - mapEbfprocessRestRequestToUniqaEBFService - creatorID under 16 chars took 0.015 sec

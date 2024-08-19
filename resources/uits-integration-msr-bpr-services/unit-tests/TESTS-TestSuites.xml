@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="uits-integration-msr-bpr-se5483f966c49ed387747b50e1ab43b4e2-pod" id="0" name="UniqaAtBpmsStartServiceDoWF - Testsuite01_xml" package="UniqaAtBpmsStartServiceDoWF_Test" skipped="0" tests="19" time="1.223" timestamp="2024-07-03T06:53:17">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries" />
+
+          <property name="watt.net.proxyUser" value="" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="test.reports.dir" value="/workspace/source/reports/unit-tests" />
+
+          <property name="watt.net.secureProxyPass" value="" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/ant" />
+
+          <property name="java.runtime.version" value="11.0.22+7-LTS" />
+
+          <property name="user.name" value="1002160000" />
+
+          <property name="watt.net.proxyPass" value="" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/local/java/lib" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="java.version" value="11.0.22" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="55.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="US" />
+
+          <property name="webMethods.integrationServer.userid" value="testrunner" />
+
+          <property name="java.home" value="/usr/local/java" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/run-composite-runner.xml" />
+
+          <property name="os.version" value="5.14.0-284.59.1.el9_2.x86_64" />
+
+          <property name="watt.net.secureProxyHost" value="" />
+
+          <property name="webMethods.test.profile.result.includeExecutionModelReport" value="true" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="11.0.22+7-LTS" />
+
+          <property name="ant.library.dir" value="/usr/local/ant/lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.specification.maintenance.version" value="2" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/run-composite-runner.xml" />
+
+          <property name="watt.net.proxyHost" value="" />
+
+          <property name="user.home" value="/" />
+
+          <property name="java.version.date" value="2024-01-16" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://www.azul.com/" />
+
+          <property name="pack.location" value="/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test/" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="/workspace/source/reports/unit-tests" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="java.class.path" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/commons-jxpath-1.2.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/hamcrest-core.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/httpunit.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/javax.xml.soap-api.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/junit.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/serviceInterceptor.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/serviceMockClient.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/wmjxpath.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/xmlunit1.0.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/jackson-core.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/xml-apis.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/wm-isclient.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/icu4j.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/enttoolkit.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/IntegrationServer/lib/wm-isserver.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/wm-g11nutils.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/glassfish/gf.jakarta.mail.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ant/ant-contrib-1.0b3.jar:/usr/local/ant/lib/ant-launcher.jar:/usr/local/ant/lib/ant.jar:/usr/local/ant/lib/ant-junit.jar:/usr/local/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=/workspace/source/wmtestexecutor/wm_is_wmtestsuite/junitvmwatcher15083128763116477465.properties propsfile=/workspace/source/wmtestexecutor/wm_is_wmtestsuite/junit1250232277158117285.properties" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="11" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://www.azul.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local" />
+
+          <property name="webMethods.test.scope.packages" value="" />
+
+          <property name="webMethods.test.profile.result.includeServiceLevelReport" value="true" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="watt.net.secureProxyPort" value="" />
+
+          <property name="test.externalClasspath.dir" value="/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/java/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/test/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/java/classes,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/test/classes,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/java/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/test/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/java/classes,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/test/classes,/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class" />
+
+          <property name="user.dir" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="jdk.vendor.version" value="Zulu11.70+16-SA" />
+
+          <property name="basedir" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite" />
+
+          <property name="ant.java.version" value="11" />
+
+          <property name="ant.core.lib" value="/usr/local/ant/lib/ant.jar" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="watt.net.proxyPort" value="" />
+
+          <property name="current.project" value="wm_is_wmtestsuite" />
+
+          <property name="file.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="watt.net.secureProxyUser" value="" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="java.specification.version" value="11" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="java.vendor.version" value="Zulu11.70+16-SA" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test/,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test/" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.0 tc01 - ping" time="0.202" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.1 tc03 - mapToDocumentWorkflow" time="0.018" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.2 tc04 - errorHandling - checkCallStartDocumentWorkflowData CRITICAL_ERROR" time="0.159" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.3 tc05 - errorHandling - checkCallStartDocumentWorkflowData DUPLICATE_ERROR" time="0.025" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.4 tc06 - errorHandling - checkCallStartDocumentWorkflowData VALIDATION_ERROR" time="0.021" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.5 tc07 - errorHandling - checkCallStartDocumentWorkflowData SAVE_ERROR" time="0.023" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.6 tc08 - errorHandling - checkCallStartDocumentWorkflowData UNKNOWN_ERROR" time="0.018" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.7 tc09 - validation - callId is mandatory" time="0.029" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.8 tc10 - validation - location is mandatory" time="0.02" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.9 tc11 - validation - provider is mandatory" time="0.018" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.10 tc12 - validation - StartDocumentWorkflowProperties is mandatory" time="0.022" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.11 tc13 - validation - StartDocumentWorkflowProperties/propertyName is mandatory" time="0.017" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.12 tc14 - validation - StartDocumentWorkflowProperties/propertyValue is mandatory" time="0.019" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.13 tc15 - validation - positive" time="0.018" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.14 TC16.01 - rs - callDocumentWorkflow - success *" time="0.057" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.15 TC16.02 - rs - callDocumentWorkflow - exception - stream processing *" time="0.124" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.16 TC16.03 - rs - callDocumentWorkflow - exception - processing *" time="0.035" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.17 TC17.01 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - payload only *" time="0.151" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.18 TC17.02 - mapIDMToUniqaWFWSService - streamToStartDocumentWorkflowRequest - no payload &amp; 1 attachment *" time="0.112" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="uits-integration-msr-bpr-se5483f966c49ed387747b50e1ab43b4e2-pod" id="1" name="UniqaAtBpmsStartServiceEBF - Testsuite01_xml" package="UniqaAtBpmsStartServiceEBF_Test" skipped="0" tests="10" time="0.248" timestamp="2024-07-03T06:53:18">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries" />
+
+          <property name="watt.net.proxyUser" value="" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="test.reports.dir" value="/workspace/source/reports/unit-tests" />
+
+          <property name="watt.net.secureProxyPass" value="" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/ant" />
+
+          <property name="java.runtime.version" value="11.0.22+7-LTS" />
+
+          <property name="user.name" value="1002160000" />
+
+          <property name="watt.net.proxyPass" value="" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/usr/local/java/lib" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.vm.compressedOopsMode" value="Zero based" />
+
+          <property name="java.version" value="11.0.22" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="org.omg.PortableInterceptor.ORBInitializerClass.org.omg.PortableInterceptor.RuxitOrbInitializer" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="55.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="US" />
+
+          <property name="webMethods.integrationServer.userid" value="testrunner" />
+
+          <property name="java.home" value="/usr/local/java" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/run-composite-runner.xml" />
+
+          <property name="os.version" value="5.14.0-284.59.1.el9_2.x86_64" />
+
+          <property name="watt.net.secureProxyHost" value="" />
+
+          <property name="webMethods.test.profile.result.includeExecutionModelReport" value="true" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="11.0.22+7-LTS" />
+
+          <property name="ant.library.dir" value="/usr/local/ant/lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.specification.maintenance.version" value="2" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/run-composite-runner.xml" />
+
+          <property name="watt.net.proxyHost" value="" />
+
+          <property name="user.home" value="/" />
+
+          <property name="java.version.date" value="2024-01-16" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://www.azul.com/" />
+
+          <property name="pack.location" value="/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test/" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="/workspace/source/reports/unit-tests" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="java.class.path" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/commons-jxpath-1.2.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/hamcrest-core.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/httpunit.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/javax.xml.soap-api.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/junit.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/serviceInterceptor.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/serviceMockClient.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/wmjxpath.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/testsuite/xmlunit1.0.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/jackson-core.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/xml-apis.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/wm-isclient.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/icu4j.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ext/enttoolkit.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/IntegrationServer/lib/wm-isserver.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/wm-g11nutils.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/glassfish/gf.jakarta.mail.jar:/workspace/source/wmtestexecutor/wm_is_wmtestsuite/libraries/common/lib/ant/ant-contrib-1.0b3.jar:/usr/local/ant/lib/ant-launcher.jar:/usr/local/ant/lib/ant.jar:/usr/local/ant/lib/ant-junit.jar:/usr/local/ant/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,/workspace/source/reports/unit-tests/TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=/workspace/source/wmtestexecutor/wm_is_wmtestsuite/junitvmwatcher15083128763116477465.properties propsfile=/workspace/source/wmtestexecutor/wm_is_wmtestsuite/junit1250232277158117285.properties" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="11" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="java.vendor.url.bug" value="http://www.azul.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="msr-bpr-services-deve.uits-integration-msr-bpr-services-deve.svc.cluster.local" />
+
+          <property name="webMethods.test.scope.packages" value="" />
+
+          <property name="webMethods.test.profile.result.includeServiceLevelReport" value="true" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="watt.net.secureProxyPort" value="" />
+
+          <property name="test.externalClasspath.dir" value="/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/java/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/test/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/java/classes,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test//resources/test/classes,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/java/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/test/jars,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/java/classes,/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test//resources/test/classes,/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class/**/*.class" />
+
+          <property name="user.dir" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="jdk.vendor.version" value="Zulu11.70+16-SA" />
+
+          <property name="basedir" value="/workspace/source/wmtestexecutor/wm_is_wmtestsuite" />
+
+          <property name="ant.java.version" value="11" />
+
+          <property name="ant.core.lib" value="/usr/local/ant/lib/ant.jar" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="watt.net.proxyPort" value="" />
+
+          <property name="current.project" value="wm_is_wmtestsuite" />
+
+          <property name="file.encoding" value="ANSI_X3.4-1968" />
+
+          <property name="watt.net.secureProxyUser" value="" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="java.specification.version" value="11" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="java.vendor.version" value="Zulu11.70+16-SA" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="/workspace/source/packages/test/UniqaAtBpmsStartServiceDoWF_Test/,/workspace/source/packages/test/UniqaAtBpmsStartServiceEBF_Test/" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.0 tc01 - ping" time="0.024" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.1 tc02 - mapEbfprocessRestRequestToUniqaEBFService" time="0.017" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.2 tc03 - mapStartEBFProcessResponse" time="0.015" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.3 tc04 - errorHandling - checkStartEBFProcessResponse rc 1" time="0.02" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.4 tc05 - errorHandling - checkStartEBFProcessResponse rc 2" time="0.016" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.5 tc06 - mapEbfprocessRestRequestToUniqaEBFService - no SchwebeID" time="0.048" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.6 tc07 - mapEbfprocessRestRequestToUniqaEBFService - creatorID null" time="0.017" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.7 tc08 - mapEbfprocessRestRequestToUniqaEBFService - creatorID empty" time="0.015" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.8 tc09 - mapEbfprocessRestRequestToUniqaEBFService - creatorID 17 chars" time="0.015" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="1.9 tc10 - mapEbfprocessRestRequestToUniqaEBFService - creatorID under 16 chars" time="0.015" />
+
+  </testsuite>
+</testsuites>

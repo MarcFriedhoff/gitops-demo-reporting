@@ -1,0 +1,108 @@
+Status: OK
+Time Taken: 796
+Size: 2496
+Timestamp: Mon Jul 01 12:37:14 GMT 2024
+TestStep: 01 getFundRate - success
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: http://msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555/ws/uniqa.integration.fund.management.service.v1.ws.provider:FundManagementServiceV1/FundManagementServiceV1SOAP
+Username: SRV_ESB_PREP_SOAPUI
+Encoding: UTF-8
+Password: HUJ5fadd
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://www.uniqagroup.com/integration/services/FundManagementService/v1/getFundRate"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.2)
+Host : msr-finance-and-fund-services-deve.uits-integration-msr-finance-and-fund-services-deve.svc.cluster.local:5555
+Accept-Encoding : gzip,deflate
+Content-Length : 1283
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://www.uniqagroup.com/integration/services/common/header/v2" xmlns:v1="http://www.uniqagroup.com/integration/services/FundManagementService/v1" xmlns:all="http://www.uniqagroup.com/uidm/v3/allgemein">
+   <soapenv:Header>
+      <v2:ServiceRequestHeader>
+         <messageIdentity>
+            <type>REQUEST</type>
+            <contextId>1e996eb0-6b15-450e-986e-a1e5f2c44083</contextId>
+            <messageId>299790f2-f8ff-44ec-9536-7bfd1f145599</messageId>
+            <timestamp>2024-07-01T12:37:14</timestamp>
+            <correlationId>cc66b30b-100a-45b4-9245-7d0780d20bb4</correlationId>
+         </messageIdentity>
+         <consumer>
+            <applicationName>Test-Consumer</applicationName>
+         </consumer>
+      </v2:ServiceRequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:getFundRateRequest>
+         <FondIdentifier>
+            <!--Optional:-->
+            <FondId>4006</FondId>
+         </FondIdentifier>
+         <Stichtag>2022-02-01</Stichtag>
+         <KursArt>
+            <all:Typ/>
+            <all:Wert>MARKET_RATE</all:Wert>
+         </KursArt>
+      </v1:getFundRateRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: #status# : HTTP/1.1 200 OK
+Content-Type : text/xml; charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <tns:ServiceResponseHeader SOAP-ENV:actor="http://schemas.xmlsoap.org/soap/actor/next" xmlns:tns="http://www.uniqagroup.com/integration/services/common/header/v2" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+         <messageIdentity>
+            <type>RESPONSE</type>
+            <contextId>1e996eb0-6b15-450e-986e-a1e5f2c44083</contextId>
+            <messageId>1ac0ccf3-f3f2-4668-ab3b-a16195da3da1</messageId>
+            <timestamp>2024-07-01T14:37:15</timestamp>
+            <repeatCount>0</repeatCount>
+            <correlationId>299790f2-f8ff-44ec-9536-7bfd1f145599</correlationId>
+         </messageIdentity>
+         <provider>
+            <applicationName>FundManagementServiceV1</applicationName>
+            <stage>DEVE</stage>
+            <componentName>FundManagementServiceV1</componentName>
+            <tenant>UNIQA</tenant>
+            <version>uniqa-esb-fund-management-service_1.3.0.0-rc1</version>
+         </provider>
+         <result>
+            <status>SUCCESS</status>
+         </result>
+      </tns:ServiceResponseHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <tns:getFundRateResponse xmlns:tns="http://www.uniqagroup.com/integration/services/FundManagementService/v1">
+         <Fondskurs>
+            <allg:Betrag xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">
+               <dt:Format xmlns:dt="http://www.uniqagroup.com/uidm/v3/datentypen">Betrag_22_8</dt:Format>
+               <dt:Betrag_22_8 xmlns:dt="http://www.uniqagroup.com/uidm/v3/datentypen">164.72</dt:Betrag_22_8>
+            </allg:Betrag>
+            <allg:Waehrung xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">
+               <allg:Typ/>
+               <allg:Wert>EUR</allg:Wert>
+            </allg:Waehrung>
+            <allg:Stichtag xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">2022-02-01</allg:Stichtag>
+            <pm-leben:FondId xmlns:pm-leben="http://www.uniqagroup.com/uidm/v3/versicherung/produktmodell/leben">4006</pm-leben:FondId>
+            <pm-leben:KursArt xmlns:pm-leben="http://www.uniqagroup.com/uidm/v3/versicherung/produktmodell/leben">
+               <allg:Typ xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein"/>
+               <allg:Wert xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">MARKET_RATE</allg:Wert>
+               <allg:Text xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">R</allg:Text>
+            </pm-leben:KursArt>
+            <pm-leben:Aktualisierungsdetails xmlns:pm-leben="http://www.uniqagroup.com/uidm/v3/versicherung/produktmodell/leben">
+               <allg:DOP xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">2022-02-03</allg:DOP>
+               <allg:Ind xmlns:allg="http://www.uniqagroup.com/uidm/v3/allgemein">2022-02-01</allg:Ind>
+            </pm-leben:Aktualisierungsdetails>
+         </Fondskurs>
+      </tns:getFundRateResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
