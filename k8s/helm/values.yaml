@@ -19,9 +19,10 @@ config:
   teamsWebhookUrl: https://uniqagroup.webhook.office.com/webhookb2/9c122505-1948-4d4b-a639-98c534ff4f4a@bd9f112b-82b0-45f6-b02e-1175bb945e33/IncomingWebhook/3d2066c8ffe5449c89ed1c2870dc63b3/c3ccc29a-1b2b-46c1-af9d-db1f9cdb8ed6
   teamsActivityImage: https://adaptivecards.io/content/cats/3.png
   frontEndUrl: http://build-dashboard-integration.testcloud.uniqa.at
-  proxyHost: proxy.r-services.at
-  proxyProtocol: http
-  proxyPort: 57146
+  proxy:
+    proxyHost:
+    proxyProtocol: http
+    proxyPort: 57146
   codeReviewConfig:
     failedChecksAllowed: 600
 

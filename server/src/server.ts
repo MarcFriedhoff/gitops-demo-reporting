@@ -1,5 +1,6 @@
 import { AppConfig, BuildSummary, BuildSummaryItem, ReportResult, ReportResultItem, Project } from "../../shared/models/types";
 import { createMessageCardFromTemplate } from "./messagecard";
+import { AxiosRequestConfig } from "axios";
 
 const express = require('express');
 const { get } = require('http');
@@ -17,6 +18,8 @@ const configFile = process.env.CONFIG_FILE || path.join(__dirname, '../config.ya
 const config: AppConfig = yaml.load(fs.readFileSync(configFile, 'utf8'));
 const upload = multer({ dest: config.uploadDirectory }); // Set the destination for uploaded files
 const versionFile = path.join(__dirname, '../version.json');
+
+const proxyConfig = config.proxy;
 
 app.use(express.static(path.join(__dirname, '../../client/build')));
 
@@ -516,6 +519,8 @@ app.post('/api/projects/:project/:build/rebuild', (req: any, res: any) => {
         const project = req.params.project;
         const build = req.params.build;
 
+
+
         const sendReport = req.body.sendReport;
 
         const projectDir = path.join(config.projectDirectory, project, build);
@@ -527,29 +532,38 @@ app.post('/api/projects/:project/:build/rebuild', (req: any, res: any) => {
         if (sendReport) {
             const messageCard = createTeamsMessageCard(JSON.parse(fs.readFileSync(path.join(projectDir, 'buildSummary.json'), 'utf8')));            
             console.log('messageCard: ', messageCard);   
+
             try {
 
-                if (config.proxyHost) {
-                    axios.post(webhookUrl, messageCard, {
-                        proxy: {
-                            protocol: config.proxyProtocol,
-                            host: config.proxyHost,
-                            port: config.proxyPort
-                        }
-                    });
-                } else  {
-                    axios.post(webhookUrl, messageCard);
+                const axiosConfig: AxiosRequestConfig =  {
+                    method: 'post',
+                    url: webhookUrl,
+                    data: messageCard
                 }
-                console.log('Message card posted to Teams');
+
+                if (proxyConfig.proxyHost) {
+                    console.log('Using Proxyconfiguration: ' + proxyConfig);
+                    axiosConfig.proxy = proxyConfig;
+                }
+
                 sendReportSuccess = true;
+
+                axios.post(axiosConfig).then((response: any) => {
+                    console.log('Message card posted to Teams');
+                    console.log(response.data)
+                }).catch((error: any) => {
+                    console.error('Failed to post message card to Teams: ', error);
+                    sendReportSuccess = false;
+                });
+
             } catch (error) {
                 console.error('Failed to post message card to Teams: ', error);
                 return res.status(500).json({ message: 'Failed to post message card to Teams' }); // Use return to exit early
             }
+        } else {
+            // send back json message 
+            res.status(200).json({ message: 'Rebuild successful.'});
         }
-        
-        // send back json message 
-        res.status(200).json({ message: 'Rebuild successful.' + (sendReport ? (' Report sent to Teams ' + webhookUrl + ': ' + sendReportSuccess) : '') });
     } catch (error) {
         console.error('Failed to rebuild report: ', error);
         res.status(500).json({ message: 'Failed to rebuild report' });

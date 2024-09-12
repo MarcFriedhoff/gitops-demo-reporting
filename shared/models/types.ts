@@ -23,13 +23,17 @@ export class AppConfig {
   codeReviewConfig: CodeReviewConfig = new CodeReviewConfig();
   messageCardTemplate: string = "";
   frontEndUrl: string = "";
-  proxyProtocol: string = "http";
-  proxyHost: string = "";
-  proxyPort: number = 8080;
+  proxy: ProxyConfig = new ProxyConfig();
 
   constructor(projectDirectory: string) {
     this.projectDirectory = projectDirectory;
   }
+}
+
+export class ProxyConfig {
+  proxyProtocol: string = "http";
+  proxyHost: string = "";
+  proxyPort: number = 8080;
 }
 
 export class BuildSummaryItem {
