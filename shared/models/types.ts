@@ -1,6 +1,6 @@
 // define Project class
 
-import type { AxiosProxyConfig } from 'axios';
+import { AxiosProxyConfig } from 'axios';
 
 export class Project {
   id: number = 0;
