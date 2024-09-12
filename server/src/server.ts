@@ -1,6 +1,6 @@
 import { AppConfig, BuildSummary, BuildSummaryItem, ReportResult, ReportResultItem, Project } from "../../shared/models/types";
 import { createMessageCardFromTemplate } from "./messagecard";
-import { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig, AxiosProxyConfig } from "axios";
 
 const express = require('express');
 const { get } = require('http');
@@ -19,7 +19,7 @@ const config: AppConfig = yaml.load(fs.readFileSync(configFile, 'utf8'));
 const upload = multer({ dest: config.uploadDirectory }); // Set the destination for uploaded files
 const versionFile = path.join(__dirname, '../version.json');
 
-const proxyConfig = config.proxy;
+const proxyConfig: AxiosProxyConfig = config.proxy;
 
 app.use(express.static(path.join(__dirname, '../../client/build')));
 

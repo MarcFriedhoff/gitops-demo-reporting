@@ -1,5 +1,7 @@
 // define Project class
 
+import type { AxiosProxyConfig } from 'axios';
+
 export class Project {
   id: number = 0;
   name: string = "";
@@ -23,17 +25,11 @@ export class AppConfig {
   codeReviewConfig: CodeReviewConfig = new CodeReviewConfig();
   messageCardTemplate: string = "";
   frontEndUrl: string = "";
-  proxy: ProxyConfig = new ProxyConfig();
+  proxy: AxiosProxyConfig = new AxiosProxyConfig();
 
   constructor(projectDirectory: string) {
     this.projectDirectory = projectDirectory;
   }
-}
-
-export class ProxyConfig {
-  proxyProtocol: string = "http";
-  proxyHost: string = "";
-  proxyPort: number = 8080;
 }
 
 export class BuildSummaryItem {
