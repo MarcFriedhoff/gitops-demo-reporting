@@ -1,6 +1,5 @@
 import { AppConfig, BuildSummary, BuildSummaryItem, ReportResult, ReportResultItem, Project } from "../../shared/models/types";
 import { createMessageCardFromTemplate } from "./messagecard";
-import { AxiosRequestConfig, AxiosProxyConfig } from "axios";
 
 const express = require('express');
 const { get } = require('http');
@@ -19,7 +18,6 @@ const config: AppConfig = yaml.load(fs.readFileSync(configFile, 'utf8'));
 const upload = multer({ dest: config.uploadDirectory }); // Set the destination for uploaded files
 const versionFile = path.join(__dirname, '../version.json');
 
-const proxyConfig: AxiosProxyConfig = config.proxy;
 
 app.use(express.static(path.join(__dirname, '../../client/build')));
 
@@ -43,6 +41,7 @@ function generateBuildSummary(buildDir: any, buildInfo: any) {
 
     // SOAP UI test directory
     let soapUITestDir = path.join(buildDir, 'soapui');
+    let soapUIReportResults:ReportResult [] = [];
     let soapUIReportResult = new ReportResult(soapUITestDir, []);
     if (fs.existsSync(soapUITestDir)) {
         //iterate over the directories in soapUITestDir
@@ -50,10 +49,16 @@ function generateBuildSummary(buildDir: any, buildInfo: any) {
         soapUITestDirs.forEach((dir: string) => {
             const fullDir = path.join(soapUITestDir, dir);
             if (fs.statSync(fullDir).isDirectory()) {
-                soapUIReportResult = parseTestSuiteXML(fullDir, 'TEST-*.xml');
-                fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
+                const result = parseTestSuiteXML(fullDir, 'TEST-*.xml');
+                soapUIReportResults.push(result);
             }
         });
+
+        soapUIReportResults.forEach(result => {
+            soapUIReportResult.result.push(...result.result);
+        });
+
+        fs.writeFileSync(path.join(soapUITestDir, 'reportResult.json'), JSON.stringify(soapUIReportResult));
 
     }
 
@@ -535,22 +540,11 @@ app.post('/api/projects/:project/:build/rebuild', (req: any, res: any) => {
 
             try {
 
-                const axiosConfig: AxiosRequestConfig =  {
-                    method: 'post',
-                    url: webhookUrl,
-                    data: messageCard
-                }
-
-                if (proxyConfig.proxyHost) {
-                    console.log('Using Proxyconfiguration: ' + proxyConfig);
-                    axiosConfig.proxy = proxyConfig;
-                }
-
                 sendReportSuccess = true;
 
-                axios.post(axiosConfig).then((response: any) => {
+                axios.post(webhookUrl, messageCard).then((response: any) => {
                     console.log('Message card posted to Teams');
-                    console.log(response.data)
+                    console.log(response.data);
                 }).catch((error: any) => {
                     console.error('Failed to post message card to Teams: ', error);
                     sendReportSuccess = false;

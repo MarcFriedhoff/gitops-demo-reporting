@@ -1,7 +1,5 @@
 // define Project class
 
-import { AxiosProxyConfig } from 'axios';
-
 export class Project {
   id: number = 0;
   name: string = "";
@@ -25,8 +23,7 @@ export class AppConfig {
   codeReviewConfig: CodeReviewConfig = new CodeReviewConfig();
   messageCardTemplate: string = "";
   frontEndUrl: string = "";
-  proxy: AxiosProxyConfig = new AxiosProxyConfig();
-
+  
   constructor(projectDirectory: string) {
     this.projectDirectory = projectDirectory;
   }
