@@ -435,11 +435,21 @@ app.post('/api/projects/:project/build', upload.single('file'), async (req: any,
         console.log('Message card: ', messageCard);
 
         const webhookUrl = config.teamsWebhookUrl;
-        axios.post(webhookUrl, messageCard).then((response: any) => {
+
+        // Post the message card to Microsoft Teams
+        try {
+            const response = await axios.post(webhookUrl, messageCard,{
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
             console.log('Message card posted to Teams');
-        }).catch((error: any) => {
+            console.log(response.data);
+
+        } catch (error)  {
             console.error('Failed to post message card to Teams: ', error);
-        });
+        }   
 
         res.status(200).send('File uploaded and extracted successfully');
     } catch (err) {
@@ -518,16 +528,12 @@ app.get('/api/files/*', (req: { params: any[]; }, res: { status: (arg0: number) 
 });
 
 
-app.post('/api/projects/:project/:build/rebuild', (req: any, res: any) => {
+app.post('/api/projects/:project/:build/rebuild', async (req: any, res: any) => {
     try {
 
         const project = req.params.project;
-        const build = req.params.build;
-
-
-
+        const build = req.params.build; 
         const sendReport = req.body.sendReport;
-
         const projectDir = path.join(config.projectDirectory, project, build);
 
         generateBuildSummary(projectDir, JSON.parse(fs.readFileSync(path.join(projectDir, 'buildInfo.json'), 'utf8')));
@@ -542,18 +548,24 @@ app.post('/api/projects/:project/:build/rebuild', (req: any, res: any) => {
 
                 sendReportSuccess = true;
 
-                axios.post(webhookUrl, messageCard).then((response: any) => {
-                    console.log('Message card posted to Teams');
-                    console.log(response.data);
-                }).catch((error: any) => {
-                    console.error('Failed to post message card to Teams: ', error);
-                    sendReportSuccess = false;
+                const response = await axios.post(webhookUrl, messageCard,  {
+                    headers:  {
+                        'Content-Type': 'application/json'
+                    }
                 });
+                console.log('Message card posted to Teams');
+                console.log(response.data);
+                sendReportSuccess = true;
 
             } catch (error) {
                 console.error('Failed to post message card to Teams: ', error);
                 return res.status(500).json({ message: 'Failed to post message card to Teams' }); // Use return to exit early
             }
+        } 
+
+        if (sendReportSuccess) {
+            // send back json message 
+            res.status(200).json({ message: 'Rebuild  and report sending successful.'});
         } else {
             // send back json message 
             res.status(200).json({ message: 'Rebuild successful.'});
